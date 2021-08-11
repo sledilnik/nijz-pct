@@ -10,16 +10,17 @@ mkdir -p "rules"
 cat << ENDHEADER >> rules/README.md
 # List of rules
 
-| Country | Rule ID | File | Source | Title |
-| ------- | ------- | ---- | ------ | ----- |
+| Country | Rule ID | File | Source | Description |
+| ------- | ------- | ---- | ------ | ----------- |
 ENDHEADER
 
 curl -s "${BASEURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
 | while IFS=" " read -r COUNTRY ID HASH; do
     mkdir -p "rules/${COUNTRY}"
-    echo "Downloading ${COUNTRY}: ${ID}"
+    echo -n "Downloading ${COUNTRY}: ${ID} > "
     curl -s "${BASEURL}${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
-
-    echo "| ${COUNTRY} |${ID} | [JSON](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | |" >> rules/README.md
+    DESC=$(jq -r '.Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
+    echo "${DESC}"
+    echo "| ${COUNTRY} |${ID} | [JSON](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> rules/README.md
 done
 rm -rf "rules.bak"
