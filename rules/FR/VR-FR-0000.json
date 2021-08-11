@@ -1,0 +1,32 @@
+{
+  "AffectedFields": [
+    "v.1"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "At most one v-event.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le certificat contient au plus un évènement de vaccination",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-FR-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.v.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.3.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-05T00:00:00Z",
+  "ValidTo": "2030-07-26T00:00:00Z",
+  "Version": "1.0.0"
+}

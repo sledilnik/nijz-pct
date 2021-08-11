@@ -1,0 +1,60 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "ZZ",
+  "Description": [
+    {
+      "desc": "The vaccine must have been administered at least 14 days ago.",
+      "lang": "en"
+    },
+    {
+      "desc": "Seit der Impfung müssen mindestens 14 Tage vergangen sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "La vaccination doit dater de plus de 14 jours.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-ZZ-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              14,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T14:43:21+02:00",
+  "ValidTo": "2031-04-15T14:43:21+02:00",
+  "Version": "1.0.0"
+}

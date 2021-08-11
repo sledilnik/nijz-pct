@@ -5,36 +5,16 @@
     "t.0.tt"
   ],
   "CertificateType": "Test",
-  "Country": "NL",
+  "Country": "ZZ",
   "Description": [
     {
-      "desc": "The sample for a NAA test (e.g., PCR) must have been taken no longer than 48 hours ago.",
+      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
       "lang": "en"
-    },
-    {
-      "desc": "Die Probenahme für einen NAA-Test (z.B. PCR) darf maximal 48 Stunden zurückliegen.",
-      "lang": "de"
-    },
-    {
-      "desc": "Le prélèvement pour un test TAN (p. ex. PCR) ne doit pas dater de plus de 48 heures.",
-      "lang": "fr"
-    },
-    {
-      "desc": "Deben haber transcurrido 48 horas como máximo desde la extracción para una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR).",
-      "lang": "es"
-    },
-    {
-      "desc": "Il campione per il NAAT (test PRC) deve essere stato rilevato nelle ultime 48 ore.",
-      "lang": "it"
-    },
-    {
-      "desc": "Een NAAT-test (bijv. PCR) mag niet langer dan 48 uur geleden zijn afgenomen.",
-      "lang": "nl"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-NL-0005",
+  "Identifier": "TR-ZZ-0003",
   "Logic": {
     "if": [
       {
@@ -66,7 +46,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  48,
+                  72,
                   "hour"
                 ]
               }
@@ -80,7 +60,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-08T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
+  "ValidFrom": "2021-07-16T14:43:21+02:00",
+  "ValidTo": "2031-04-15T14:43:21+02:00",
   "Version": "1.0.0"
 }

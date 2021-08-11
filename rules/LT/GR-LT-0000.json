@@ -1,0 +1,64 @@
+{
+  "AffectedFields": [
+    "v",
+    "t",
+    "r"
+  ],
+  "CertificateType": "General",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Vieno tipo pažymėjimas",
+      "lang": "lt"
+    },
+    {
+      "desc": "Exactly one type of event",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "GR-LT-0000",
+  "Logic": {
+    "===": [
+      {
+        "reduce": [
+          [
+            {
+              "var": "payload.r"
+            },
+            {
+              "var": "payload.t"
+            },
+            {
+              "var": "payload.v"
+            }
+          ],
+          {
+            "+": [
+              {
+                "var": "accumulator"
+              },
+              {
+                "if": [
+                  {
+                    "var": "current.0"
+                  },
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      },
+      1
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-02T14:46:40Z",
+  "ValidTo": "2022-06-27T07:46:40Z",
+  "Version": "2.0.1"
+}

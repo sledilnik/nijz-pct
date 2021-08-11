@@ -7,11 +7,11 @@
   "Country": "LT",
   "Description": [
     {
-      "desc": "Leidžiamos vakcinos pagal ES klasifikatorių",
+      "desc": "Leidžiamos vakcinos pagal EU klasifikatorių",
       "lang": "lt"
     },
     {
-      "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+      "desc": "Allowed vaccines form ES value set.",
       "lang": "en"
     }
   ],
@@ -41,7 +41,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-04T15:00:00Z",
-  "ValidTo": "2023-07-04T00:00:00Z",
+  "ValidFrom": "2021-06-30T19:46:40Z",
+  "ValidTo": "2022-06-27T07:46:40Z",
   "Version": "1.0.0"
 }

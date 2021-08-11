@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-BASEURL="https://dgca-businessrule-service.ezdrav.si/rules/"
+BASEURL="https://dgca-businessrule-service-test.ezdrav.si/rules/"
 
 rm -rf "rules.bak"
 mv "rules" "rules.bak" || true

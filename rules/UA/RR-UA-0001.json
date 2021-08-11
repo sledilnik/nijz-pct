@@ -1,0 +1,66 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.df",
+    "r.0.du"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "UA",
+  "Description": [
+    {
+      "desc": "The Verification Datetime must be between \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "lang": "en"
+    },
+    {
+      "desc": "Дата і час перевірки знаходяться між значеннями полів \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "lang": "ua"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-UA-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.df"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.du"
+              },
+              0,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-03T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

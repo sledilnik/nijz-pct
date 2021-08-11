@@ -1,0 +1,94 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.ci",
+    "t.0",
+    "t.0.ci",
+    "v.0",
+    "v.0.ci"
+  ],
+  "CertificateType": "General",
+  "Country": "DE",
+  "Description": [
+    {
+      "desc": "Certificate with the ID dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96 is not accepted",
+      "lang": "en"
+    },
+    {
+      "desc": "Zertifikat mit der ID dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96 wird nicht akzeptiert",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "IR-DE-0003",
+  "Logic": {
+    "and": [
+      {
+        "if": [
+          {
+            "var": "payload.r.0"
+          },
+          {
+            "!": [
+              {
+                "===": [
+                  {
+                    "var": "payload.r.0.ci"
+                  },
+                  "dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      {
+        "if": [
+          {
+            "var": "payload.t.0"
+          },
+          {
+            "!": [
+              {
+                "===": [
+                  {
+                    "var": "payload.t.0.ci"
+                  },
+                  "dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      {
+        "if": [
+          {
+            "var": "payload.v.0"
+          },
+          {
+            "!": [
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.ci"
+                  },
+                  "dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Invalidation",
+  "ValidFrom": "2021-07-22T16:34:33+02:00",
+  "ValidTo": "2031-07-20T16:34:33+02:00",
+  "Version": "1.0.3"
+}

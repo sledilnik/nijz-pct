@@ -1,0 +1,68 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 120 days.",
+      "lang": "en"
+    },
+    {
+      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 120 Tage zurückliegen.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le test TAN positif (p. ex. PCR) ne doit pas dater de plus de 120 jours.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Deben haber transcurrido 120 días como máximo desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire massimo a 120 giorni fa.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-DX-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              120,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-17T00:00:00Z",
+  "ValidTo": "2021-08-31T23:59:59Z",
+  "Version": "1.0.0"
+}

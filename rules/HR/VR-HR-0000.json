@@ -1,0 +1,28 @@
+{
+  "AffectedFields": [
+    "v.1"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "HR",
+  "Description": [
+    {
+      "desc": "At most one v-event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-HR-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.v.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-01T00:00:00Z",
+  "ValidTo": "2030-08-01T00:00:00Z",
+  "Version": "1.0.0"
+}

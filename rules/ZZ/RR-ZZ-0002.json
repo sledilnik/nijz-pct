@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "ZZ",
+  "Description": [
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 6 months.",
+      "lang": "en"
+    },
+    {
+      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 6 Monate zurückliegen.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "3.0.1",
+  "Identifier": "RR-ZZ-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              183,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T14:43:21+02:00",
+  "ValidTo": "2031-04-15T14:43:21+02:00",
+  "Version": "1.0.0"
+}
