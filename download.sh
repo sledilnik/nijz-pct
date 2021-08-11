@@ -19,7 +19,7 @@ curl -s "${BASEURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash '
     mkdir -p "rules/${COUNTRY}"
     echo -n "Downloading ${COUNTRY}: ${ID} > "
     curl -s "${BASEURL}${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
-    DESC=$(jq -r '.Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
+    DESC=$(jq -r 'select(.Description != null) | .Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
     echo "${DESC}"
     echo "| ${COUNTRY} |${ID} | [JSON](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> rules/README.md
 done
