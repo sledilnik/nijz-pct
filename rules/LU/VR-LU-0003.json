@@ -1,40 +1,35 @@
 {
-  "Identifier": "VR-LU-0003",
-  "Type": "Acceptance",
-  "Country": "LU",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Vaccination",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "The vaccine must have been administered no longer than one year ago."
-    },
-    {
-      "lang": "de",
-      "desc": "Seit der Impfung darf maximal ein Jahr vergangen sein."
-    },
-    {
-      "lang": "fr",
-      "desc": "La vaccination ne doit pas dater de plus d’un an."
-    },
-    {
-      "lang": "es",
-      "desc": "Debe haber transcurrido como máximo un año desde la vacuna."
-    },
-    {
-      "lang": "it",
-      "desc": "La vaccinazione non può risalire a più di un anno fa."
-    }
-  ],
-  "ValidFrom": "2021-07-16T12:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "v.0",
     "v.0.dt"
   ],
+  "CertificateType": "Vaccination",
+  "Country": "LU",
+  "Description": [
+    {
+      "desc": "The vaccine must have been administered no longer than one year ago.",
+      "lang": "en"
+    },
+    {
+      "desc": "Seit der Impfung darf maximal ein Jahr vergangen sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "La vaccination ne doit pas dater de plus d’un an.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Debe haber transcurrido como máximo un año desde la vacuna.",
+      "lang": "es"
+    },
+    {
+      "desc": "La vaccinazione non può risalire a più di un anno fa.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-LU-0003",
   "Logic": {
     "if": [
       {
@@ -64,5 +59,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T12:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

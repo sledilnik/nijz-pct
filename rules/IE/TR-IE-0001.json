@@ -1,24 +1,19 @@
 {
-  "Identifier": "TR-IE-0001",
-  "Type": "Acceptance",
-  "Country": "IE",
-  "Version": "1.0.1",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Test",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Test Certificate must be for a NAA Test performed via PCR"
-    }
-  ],
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "t.0",
     "t.0.tt"
   ],
+  "CertificateType": "Test",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Test Certificate must be for a NAA Test performed via PCR",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-IE-0001",
   "Logic": {
     "if": [
       {
@@ -36,5 +31,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }

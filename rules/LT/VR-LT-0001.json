@@ -1,28 +1,23 @@
 {
-  "Identifier": "VR-LT-0001",
-  "Type": "Acceptance",
-  "Country": "LT",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "1.0.0",
-  "CertificateType": "Vaccination",
-  "Description": [
-    {
-      "lang": "lt",
-      "desc": "Leidžiamos vakcinos pagal ES klasifikatorių"
-    },
-    {
-      "lang": "en",
-      "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed."
-    }
-  ],
-  "ValidFrom": "2021-07-04T15:00:00Z",
-  "ValidTo": "2023-07-04T00:00:00Z",
   "AffectedFields": [
     "v.0",
     "v.0.mp"
   ],
+  "CertificateType": "Vaccination",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Leidžiamos vakcinos pagal ES klasifikatorių",
+      "lang": "lt"
+    },
+    {
+      "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "VR-LT-0001",
   "Logic": {
     "if": [
       {
@@ -43,5 +38,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-04T15:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.0.0"
 }

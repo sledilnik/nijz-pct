@@ -1,24 +1,4 @@
 {
-  "Identifier": "GR-LT-0001",
-  "Type": "Acceptance",
-  "Country": "LT",
-  "Version": "1.0.1",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "1.0.0",
-  "CertificateType": "General",
-  "Description": [
-    {
-      "lang": "lt",
-      "desc": "Tiriama liga arba sukėlėjas yra COVID-19"
-    },
-    {
-      "lang": "en",
-      "desc": "The disease or agent targeted must be COVID-19 of the value set list."
-    }
-  ],
-  "ValidFrom": "2021-07-09T12:00:00Z",
-  "ValidTo": "2022-07-09T00:00:00Z",
   "AffectedFields": [
     "r.0",
     "r.0.tg",
@@ -27,6 +7,21 @@
     "v.0",
     "v.0.tg"
   ],
+  "CertificateType": "General",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Tiriama liga arba sukėlėjas yra COVID-19",
+      "lang": "lt"
+    },
+    {
+      "desc": "The disease or agent targeted must be COVID-19 of the value set list.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "GR-LT-0001",
   "Logic": {
     "and": [
       {
@@ -84,5 +79,10 @@
         ]
       }
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-09T12:00:00Z",
+  "ValidTo": "2022-07-09T00:00:00Z",
+  "Version": "1.0.1"
 }

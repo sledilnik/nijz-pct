@@ -1,29 +1,24 @@
 {
-  "Identifier": "GR-SI-0000",
-  "Type": "Acceptance",
-  "Country": "SI",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "General",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Exactly one type of event."
-    },
-    {
-      "lang": "si",
-      "desc": "Zgolj ena vrsta podatka."
-    }
-  ],
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "r",
     "t",
     "v"
   ],
+  "CertificateType": "General",
+  "Country": "SI",
+  "Description": [
+    {
+      "desc": "Exactly one type of event.",
+      "lang": "en"
+    },
+    {
+      "desc": "Zgolj ena vrsta podatka.",
+      "lang": "si"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-SI-0000",
   "Logic": {
     "===": [
       {
@@ -60,5 +55,10 @@
       },
       1
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-30T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

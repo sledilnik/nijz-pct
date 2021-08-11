@@ -1,29 +1,24 @@
 {
-  "Identifier": "RR-SI-0001",
-  "Type": "Acceptance",
-  "Country": "SI",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Recovery",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "The Verification Datetime must be between \"Certificate Valid From\" and \"Certificate Valid Until\"."
-    },
-    {
-      "lang": "si",
-      "desc": "Veljavnost potrdila mora biti med \"Certificate Valid From\" and \"Certificate Valid Until\"."
-    }
-  ],
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "r.0",
     "r.0.df",
     "r.0.du"
   ],
+  "CertificateType": "Recovery",
+  "Country": "SI",
+  "Description": [
+    {
+      "desc": "The Verification Datetime must be between \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "lang": "en"
+    },
+    {
+      "desc": "Veljavnost potrdila mora biti med \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "lang": "si"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-SI-0001",
   "Logic": {
     "if": [
       {
@@ -62,5 +57,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-30T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

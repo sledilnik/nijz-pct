@@ -1,24 +1,19 @@
 {
-  "Identifier": "VR-IE-0001",
-  "Type": "Acceptance",
-  "Country": "IE",
-  "Version": "1.0.1",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Vaccination",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Unapproved Vaccine listed in Vaccine Certificate"
-    }
-  ],
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "v.0",
     "v.0.mp"
   ],
+  "CertificateType": "Vaccination",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Unapproved Vaccine listed in Vaccine Certificate",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-IE-0001",
   "Logic": {
     "if": [
       {
@@ -39,5 +34,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }

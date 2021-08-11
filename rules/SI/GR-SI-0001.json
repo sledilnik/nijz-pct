@@ -1,24 +1,4 @@
 {
-  "Identifier": "GR-SI-0001",
-  "Type": "Acceptance",
-  "Country": "SI",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "General",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list."
-    },
-    {
-      "lang": "si",
-      "desc": "Bolezen \"disease or agent targeted\" mora biti na seznamu COVID-19 bolezni."
-    }
-  ],
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "r.0",
     "r.0.tg",
@@ -27,6 +7,21 @@
     "v.0",
     "v.0.tg"
   ],
+  "CertificateType": "General",
+  "Country": "SI",
+  "Description": [
+    {
+      "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+      "lang": "en"
+    },
+    {
+      "desc": "Bolezen \"disease or agent targeted\" mora biti na seznamu COVID-19 bolezni.",
+      "lang": "si"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-SI-0001",
   "Logic": {
     "and": [
       {
@@ -84,5 +79,10 @@
         ]
       }
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-30T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

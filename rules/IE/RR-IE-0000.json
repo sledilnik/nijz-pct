@@ -1,28 +1,28 @@
 {
-  "Identifier": "RR-IE-0000",
-  "Type": "Acceptance",
-  "Country": "IE",
-  "Version": "1.0.1",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Recovery",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Recovery Certificate can only relate to a single Recovery from C-19"
-    }
-  ],
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "r.1"
   ],
+  "CertificateType": "Recovery",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Recovery Certificate can only relate to a single Recovery from C-19",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-IE-0000",
   "Logic": {
     "!": [
       {
         "var": "payload.r.1"
       }
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }

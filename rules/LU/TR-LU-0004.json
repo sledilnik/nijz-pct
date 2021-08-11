@@ -1,40 +1,35 @@
 {
-  "Identifier": "TR-LU-0004",
-  "Type": "Acceptance",
-  "Country": "LU",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Test",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "The test result must be negative."
-    },
-    {
-      "lang": "de",
-      "desc": "Das Ergebnis des Tests muss negativ sein."
-    },
-    {
-      "lang": "fr",
-      "desc": "Le résultat du test doit être négatif."
-    },
-    {
-      "lang": "es",
-      "desc": "El resultado de la prueba debe ser negativo."
-    },
-    {
-      "lang": "it",
-      "desc": "Il risultato del test deve essere negativo."
-    }
-  ],
-  "ValidFrom": "2021-07-16T12:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "t.0",
     "t.0.tr"
   ],
+  "CertificateType": "Test",
+  "Country": "LU",
+  "Description": [
+    {
+      "desc": "The test result must be negative.",
+      "lang": "en"
+    },
+    {
+      "desc": "Das Ergebnis des Tests muss negativ sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat du test doit être négatif.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado de la prueba debe ser negativo.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato del test deve essere negativo.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-LU-0004",
   "Logic": {
     "if": [
       {
@@ -50,5 +45,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T12:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

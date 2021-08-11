@@ -1,40 +1,35 @@
 {
-  "Identifier": "VR-LU-0002",
-  "Type": "Acceptance",
-  "Country": "LU",
-  "Version": "1.0.0",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Vaccination",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Only the following vaccines are accepted: AstraZeneca, Biontech, Janssen, Moderna."
-    },
-    {
-      "lang": "de",
-      "desc": "Nur die folgenden Impfstoffe werden akzeptiert: AstraZeneca, Biontech, Janssen, Moderna."
-    },
-    {
-      "lang": "fr",
-      "desc": "Seuls les vaccins suivants sont acceptés : AstraZeneca, Biontech, Janssen, Moderna."
-    },
-    {
-      "lang": "es",
-      "desc": "Solo se aceptan las siguientes vacunas: AstraZeneca, Biontech, Janssen y Moderna."
-    },
-    {
-      "lang": "it",
-      "desc": "Saranno accettati solamente i seguenti vaccini: AstraZeneca, Biontech, Janssen, Moderna."
-    }
-  ],
-  "ValidFrom": "2021-07-16T12:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "v.0",
     "v.0.mp"
   ],
+  "CertificateType": "Vaccination",
+  "Country": "LU",
+  "Description": [
+    {
+      "desc": "Only the following vaccines are accepted: AstraZeneca, Biontech, Janssen, Moderna.",
+      "lang": "en"
+    },
+    {
+      "desc": "Nur die folgenden Impfstoffe werden akzeptiert: AstraZeneca, Biontech, Janssen, Moderna.",
+      "lang": "de"
+    },
+    {
+      "desc": "Seuls les vaccins suivants sont acceptés : AstraZeneca, Biontech, Janssen, Moderna.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Solo se aceptan las siguientes vacunas: AstraZeneca, Biontech, Janssen y Moderna.",
+      "lang": "es"
+    },
+    {
+      "desc": "Saranno accettati solamente i seguenti vaccini: AstraZeneca, Biontech, Janssen, Moderna.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-LU-0002",
   "Logic": {
     "if": [
       {
@@ -55,5 +50,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T12:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

@@ -1,25 +1,20 @@
 {
-  "Identifier": "RR-IE-0001",
-  "Type": "Acceptance",
-  "Country": "IE",
-  "Version": "1.0.1",
-  "SchemaVersion": "1.0.0",
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "CertificateType": "Recovery",
-  "Description": [
-    {
-      "lang": "en",
-      "desc": "Check date is not within recovery certificate validity window"
-    }
-  ],
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
   "AffectedFields": [
     "r.0",
     "r.0.du",
     "r.0.df"
   ],
+  "CertificateType": "Recovery",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Check date is not within recovery certificate validity window",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-IE-0001",
   "Logic": {
     "if": [
       {
@@ -58,5 +53,10 @@
       },
       true
     ]
-  }
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }
