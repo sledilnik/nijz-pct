@@ -1,0 +1,97 @@
+{
+  "valueSetDate": "2021-05-07",
+  "valueSetId": "vaccines-covid-19-names",
+  "valueSetValues": {
+    "BBIBP-CorV": {
+      "active": true,
+      "display": "BBIBP-CorV",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "CVnCoV": {
+      "active": true,
+      "display": "CVnCoV",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Convidecia": {
+      "active": true,
+      "display": "Convidecia",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "CoronaVac": {
+      "active": true,
+      "display": "CoronaVac",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Covaxin": {
+      "active": true,
+      "display": "Covaxin (also known as BBV152 A, B, C)",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Covishield": {
+      "active": true,
+      "display": "Covishield (ChAdOx1_nCoV-19)",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "EU/1/20/1507": {
+      "active": true,
+      "display": "Spikevax (previously COVID-19 Vaccine Moderna)",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
+    "EU/1/20/1525": {
+      "active": true,
+      "display": "COVID-19 Vaccine Janssen",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
+    "EU/1/20/1528": {
+      "active": true,
+      "display": "Comirnaty",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
+    "EU/1/21/1529": {
+      "active": true,
+      "display": "Vaxzevria",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
+    "EpiVacCorona": {
+      "active": true,
+      "display": "EpiVacCorona",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Inactivated-SARS-CoV-2-Vero-Cell": {
+      "active": true,
+      "display": "Inactivated SARS-CoV-2 (Vero Cell)",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
+    "Sputnik-V": {
+      "active": true,
+      "display": "Sputnik-V",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    }
+  }
+}
