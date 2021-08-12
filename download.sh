@@ -10,8 +10,8 @@ mkdir -p "rules"
 cat << ENDHEADER > "rules/README.md"
 # List of rules
 
-| Country | Rule ID | File | Source | Description |
-| ------- | ------- | ---- | ------ | ----------- |
+| Country | Rule | Source | Description |
+| ------- | ---- | ------ | ----------- |
 ENDHEADER
 
 curl -s "${BASEURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
@@ -23,8 +23,8 @@ curl -s "${BASEURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash '
         cat << ENDCOUTRYHEADER > "rules/${COUNTRY}/README.md"
 # List of rules for country ${COUNTRY}
 
-| Rule ID | File | Source | Description |
-| ------- | ---- | ------ | ----------- |
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
 ENDCOUTRYHEADER
     fi
 
@@ -32,7 +32,7 @@ ENDCOUTRYHEADER
     curl -s "${BASEURL}${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
     DESC=$(jq -r 'select(.Description != null) | .Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
     echo "${DESC}"
-    echo "| ${COUNTRY} |${ID} | [JSON](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
-    echo "| ${ID} | [JSON](${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
+    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
+    echo "| [${ID}](${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 rm -rf "rules.bak"
