@@ -1,0 +1,55 @@
+{
+  "origin": "SI",
+  "versions": {
+    "0.1.0": {
+      "outdated": true
+    },
+    "default": {
+      "context": {
+        "pubKeys": [
+          "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+          "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+        ],
+        "url": "https://dgca-verifier-service.ezdrav.si/context"
+      },
+      "endpoints": {
+        "countryList": {
+          "pubKeys": [
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          ],
+          "url": "https://dgca-businessrule-service.ezdrav.si/countrylist"
+        },
+        "rules": {
+          "pubKeys": [
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          ],
+          "url": "https://dgca-businessrule-service.ezdrav.si/rules"
+        },
+        "status": {
+          "pubKeys": [
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          ],
+          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateStatus"
+        },
+        "update": {
+          "pubKeys": [
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          ],
+          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateUpdate"
+        },
+        "valuesets": {
+          "pubKeys": [
+            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
+            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          ],
+          "url": "https://dgca-businessrule-service.ezdrav.si/valuesets"
+        }
+      },
+      "privacyUrl": "https://publications.europa.eu/en/web/about-us/legal-notices/eu-mobile-apps"
+    }
+  }
+}
