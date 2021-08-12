@@ -10,7 +10,7 @@
           "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
           "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
         ],
-        "url": "https://dgca-verifier-service.ezdrav.si/context"
+        "url": "https://dgca-verifier-service-test.ezdrav.si/context"
       },
       "endpoints": {
         "countryList": {
@@ -18,35 +18,35 @@
             "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
             "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/countrylist"
+          "url": "https://dgca-businessrule-service-test.ezdrav.si/countrylist"
         },
         "rules": {
           "pubKeys": [
             "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
             "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/rules"
+          "url": "https://dgca-businessrule-service-test.ezdrav.si/rules"
         },
         "status": {
           "pubKeys": [
             "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
             "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ],
-          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateStatus"
+          "url": "https://dgca-verifier-service-test.ezdrav.si/signercertificateStatus"
         },
         "update": {
           "pubKeys": [
             "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
             "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ],
-          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateUpdate"
+          "url": "https://dgca-verifier-service-test.ezdrav.si/signercertificateUpdate"
         },
         "valuesets": {
           "pubKeys": [
             "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
             "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/valuesets"
+          "url": "https://dgca-businessrule-service-test.ezdrav.si/valuesets"
         }
       },
       "privacyUrl": "https://publications.europa.eu/en/web/about-us/legal-notices/eu-mobile-apps"
