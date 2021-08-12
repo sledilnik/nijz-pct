@@ -43,3 +43,29 @@ ENDCOUTRYHEADER
     echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 rm -rf "rules.bak"
+## /rules
+
+## valuesets
+ValuesetsBaseURL=$(jq -r '.versions.default.endpoints.valuesets.url' "context.json")
+echo "valuesets URL: ${ValuesetsBaseURL}"
+
+rm -rf "valuesets.bak"
+mv "valuesets" "valuesets.bak" || true
+mkdir -p "valuesets"
+
+cat << ENDHEADER > "valuesets/README.md"
+# List of valuesets
+
+| ID | Source |
+| -- | ------ |
+ENDHEADER
+
+curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
+| while IFS=" " read -r ID HASH; do
+    echo "Downloading valueset: ${ID}"
+    curl -s "${ValuesetsBaseURL}/${HASH}" | jq --sort-keys > "valuesets/${ID}.json"
+    echo "| [${ID}](${ID}.json) | [API](${ValuesetsBaseURL}/${HASH}) |" >> "valuesets/README.md"
+
+done
+rm -rf "valuesets.bak"
+## /valuesets
