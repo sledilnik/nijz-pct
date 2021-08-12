@@ -4,12 +4,12 @@ name: NIJZ PCT rules update
 # events but only for the master branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     paths:
     - '.github/workflows/update.yml'
     - 'download.sh'
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
     paths:
     - '.github/workflows/update.yml'
     - 'download.sh'
@@ -44,11 +44,11 @@ jobs:
 
     # Git commit + push, see https://github.com/github-actions-x/commit
     - name: Publish NIJZ PCT rule changes to git
-      if: github.ref == 'refs/heads/master'
+      if: github.ref == 'refs/heads/main'
       uses: github-actions-x/commit@v2.8
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'master'
+        push-branch: 'main'
         commit-message: 'NIJZ PCT rules update 🤖'
         rebase: 'true' # pull and rebase before commit
         files: rules/
