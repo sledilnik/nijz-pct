@@ -1,7 +1,14 @@
 #!/bin/bash
 set -e
 
-BASEURL="https://dgca-businessrule-service-test.ezdrav.si/rules/"
+BASEURL="https://dgca-verifier-service-test.ezdrav.si"
+
+# context
+curl -s "${BASEURL}/context" | jq --sort-keys > context.json
+
+## rules
+RuleBaseURL=$(jq -r '.versions.default.endpoints.rules.url' "context.json")
+echo "Rule URL: ${RuleBaseURL}"
 
 rm -rf "rules.bak"
 mv "rules" "rules.bak" || true
@@ -14,7 +21,7 @@ cat << ENDHEADER > "rules/README.md"
 | ------- | ---- | ------ | ----------- |
 ENDHEADER
 
-curl -s "${BASEURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
+curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
 | while IFS=" " read -r COUNTRY ID HASH; do
     mkdir -p "rules/${COUNTRY}"
 
@@ -29,10 +36,36 @@ ENDCOUTRYHEADER
     fi
 
     echo -n "Downloading ${COUNTRY}: ${ID} > "
-    curl -s "${BASEURL}${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
+    curl -s "${RuleBaseURL}/${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
     DESC=$(jq -r 'select(.Description != null) | .Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
     echo "${DESC}"
-    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
-    echo "| [${ID}](${ID}.json) | [API](${BASEURL}${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
+    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
+    echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 rm -rf "rules.bak"
+## /rules
+
+## valuesets
+ValuesetsBaseURL=$(jq -r '.versions.default.endpoints.valuesets.url' "context.json")
+echo "valuesets URL: ${ValuesetsBaseURL}"
+
+rm -rf "valuesets.bak"
+mv "valuesets" "valuesets.bak" || true
+mkdir -p "valuesets"
+
+cat << ENDHEADER > "valuesets/README.md"
+# List of valuesets
+
+| ID | Source |
+| -- | ------ |
+ENDHEADER
+
+curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
+| while IFS=" " read -r ID HASH; do
+    echo "Downloading valueset: ${ID}"
+    curl -s "${ValuesetsBaseURL}/${HASH}" | jq --sort-keys > "valuesets/${ID}.json"
+    echo "| [${ID}](${ID}.json) | [API](${ValuesetsBaseURL}/${HASH}) |" >> "valuesets/README.md"
+
+done
+rm -rf "valuesets.bak"
+## /valuesets
