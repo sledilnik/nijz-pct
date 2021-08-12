@@ -11,4 +11,6 @@ Exact sources are not published yet, but .apk files are archived in [apk/](apk/)
 
 ## Business rules
 
-Rules are scraped from https://dgca-businessrule-service.ezdrav.si/rules/ and saved into [rules/](rules/) sub-directory.
+[![NIJZ PCT rules update](https://github.com/stefanb/nijz-pct/actions/workflows/update.yml/badge.svg)](https://github.com/stefanb/nijz-pct/actions/workflows/update.yml)
+
+Rules are hourly scraped from [NIJZ's rules server](https://dgca-businessrule-service.ezdrav.si/rules/) and saved into [rules/](rules/) sub-directory.
