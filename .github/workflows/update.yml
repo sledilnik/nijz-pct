@@ -51,6 +51,6 @@ jobs:
         push-branch: 'main'
         commit-message: 'NIJZ PCT rules update 🤖'
         rebase: 'true' # pull and rebase before commit
-        files: rules/ context.json valuesets/
+        files: '*.json rules/ valuesets/'
         name: Sledilnik data scrape bot 🤖
         email: info@sledilnik.org

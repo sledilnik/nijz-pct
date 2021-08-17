@@ -69,3 +69,10 @@ curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
 done
 rm -rf "valuesets.bak"
 ## /valuesets
+
+## countryList
+CountrylistBaseURL=$(jq -r '.versions.default.endpoints.countryList.url' "context.json")
+echo "countryList URL: ${CountrylistBaseURL}"
+curl -s "${CountrylistBaseURL}" | jq --sort-keys > "countrylist.json"
+## /countryList
+
