@@ -1,58 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
-  ],
-  "CertificateType": "Test",
-  "Country": "AT",
-  "Description": [
-    {
-      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-AT-0006",
-  "Logic": {
-    "if": [
-      {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP6464-4"
-        ]
-      },
-      {
-        "before": [
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "payload.t.0.sc"
-              },
-              72,
-              "hour"
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "Region": "AT",
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-26T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.7"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: AT, hash: 92e2f3bba8d98aca526573a0cdc341a60eea8c58d4a770af509ada526420eead"
 }

@@ -1,29 +1,6 @@
 {
-  "AffectedFields": [
-    "v.1"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "AT",
-  "Description": [
-    {
-      "desc": "At most one v-event.",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-AT-0000",
-  "Logic": {
-    "!": [
-      {
-        "var": "payload.v.1"
-      }
-    ]
-  },
-  "Region": "AT",
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-26T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.7"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: AT, hash: b17ec8097bbabd6e6e982a2221f52d1ed68b61dbcc581b12a64f94fdc00c6a0b"
 }

@@ -1,58 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
-  ],
-  "CertificateType": "Test",
-  "Country": "AT",
-  "Description": [
-    {
-      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-AT-0005",
-  "Logic": {
-    "if": [
-      {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP217198-3"
-        ]
-      },
-      {
-        "before": [
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "payload.t.0.sc"
-              },
-              48,
-              "hour"
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "Region": "AT",
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-26T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.7"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: AT, hash: 373e9dfd7b7681c8235118addc52773368a7e1cce4229637c636348ab1c0d6a2"
 }

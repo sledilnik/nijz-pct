@@ -1,45 +1,6 @@
 {
-  "AffectedFields": [
-    "v.0",
-    "v.0.dn",
-    "v.0.sd"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "SI",
-  "Description": [
-    {
-      "desc": "Vaccination doses must be equal or greater than expected doses.",
-      "lang": "en"
-    },
-    {
-      "desc": "Številka odmerka mora biti večji ali enak od potrebnih odmerkov.",
-      "lang": "si"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0002",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.v.0"
-      },
-      {
-        ">=": [
-          {
-            "var": "payload.v.0.dn"
-          },
-          {
-            "var": "payload.v.0.sd"
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: SI, hash: ef9aba5bfa2ceffade13e2f968068aa138ab97dd32ac3175c479811d6f2bf5e4"
 }
