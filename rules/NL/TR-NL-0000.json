@@ -1,6 +1,28 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: NL, hash: ea7623924f9eac35331bb68f660f2e02980b6a782ad5316d8178412fa2c0c972"
+  "AffectedFields": [
+    "t.1"
+  ],
+  "CertificateType": "Test",
+  "Country": "NL",
+  "Description": [
+    {
+      "desc": "At most one t-event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-NL-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.t.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.3.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-17T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }
