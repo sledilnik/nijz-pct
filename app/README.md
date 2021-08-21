@@ -2,7 +2,11 @@
 
 Archive of apps published on [NIJZ's web page](https:/ezdrav.si/storitve/digitalno-covid-potrdilo-eu/) ([hostorical archive](https://web.archive.org/web/*/https://ezdrav.si/storitve/digitalno-covid-potrdilo-eu/)).
 
-## 1st, non-anonymous
+NIJZ's mobile apps are based on [EU sample apps](https://github.com/eu-digital-green-certificates), currently only for Android, with no public source code.
+
+Apps aren't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ) nor [Apple App Store](https://apps.apple.com/si/developer/national-institute-of-public-health/id1527561315).
+
+## 1st version, non-anonymous
 
 2021-07-23: Initial public version (likely similar to the one made first for Police use during border checks). It was quickly retracted on the same day for "upgrade" ([Twitter](https://twitter.com/NIJZ_pr/status/1418595819016622085)).
 
@@ -10,7 +14,7 @@ Archive of apps published on [NIJZ's web page](https:/ezdrav.si/storitve/digital
 
 :book: [Manual 2020-07-23 web archive](https://web.archive.org/web/20210723150249/https:/ezdrav.si/storitve/digitalno-covid-potrdilo-eu/)
 
-## 2nd, fully-anonymous
+## 2nd version, fully-anonymous
 
 2021-07-29: This was fully privacy preserving version, not showing any personal details (neither name nor any part of birth date) to be used by venues to check their visitors. Because of that it was too easily explitable, useless.
 
@@ -19,7 +23,7 @@ Archive of apps published on [NIJZ's web page](https:/ezdrav.si/storitve/digital
 :book: [Manual 2021-07-27](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_27.07.2021.pdf),
 [Manual 2021-07-29](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_29.07.2021.pdf)
 
-## 3rd, semi-anonymous
+## 3rd version, semi-anonymous
 
 2021-08-05: Released as a compromise of previous extreme versions, showing name, surname and birth year.
 It also has added counters of valid and invalid certificates scanned by the app.
