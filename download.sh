@@ -15,7 +15,9 @@ mv "rules" "rules.bak" || true
 mkdir -p "rules"
 
 cat << ENDHEADER > "rules/README.md"
-# List of rules
+# EU digital green certificate verification rules
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}).
 
 | Country | Rule | Source | Description |
 | ------- | ---- | ------ | ----------- |
@@ -27,8 +29,11 @@ curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .ha
 
     if [ ! -f "rules/${COUNTRY}/README.md" ]
     then
+        COUNTRYNAME=$(jq -r ".valueSetValues.${COUNTRY}.display" "valuesets/country-2-codes.json")
         cat << ENDCOUTRYHEADER > "rules/${COUNTRY}/README.md"
-# List of rules for country ${COUNTRY}
+# EU digital green certificate verification rules for ${COUNTRYNAME}
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}/${COUNTRY}).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
