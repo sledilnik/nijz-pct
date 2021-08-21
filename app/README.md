@@ -1,6 +1,6 @@
 # Archive of NIJZ's mobile apps
 
-Archive of apps published on [NIJZ's web page](https:/ezdrav.si/storitve/digitalno-covid-potrdilo-eu/) ([hostorical archive](https://web.archive.org/web/*/https://ezdrav.si/storitve/digitalno-covid-potrdilo-eu/)).
+Archive of apps published on [NIJZ's web page](https:/ezdrav.si/storitve/digitalno-covid-potrdilo-eu/) ([historical archive](https://web.archive.org/web/*/https://ezdrav.si/storitve/digitalno-covid-potrdilo-eu/)).
 
 NIJZ's mobile apps are based on [EU sample apps](https://github.com/eu-digital-green-certificates), currently only for Android, with no public source code.
 
