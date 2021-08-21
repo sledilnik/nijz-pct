@@ -1,4 +1,6 @@
-# List of rules for country IE
+# EU digital green certificate verification rules for Ireland
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/IE).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
