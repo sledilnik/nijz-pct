@@ -1,0 +1,51 @@
+{
+  "AffectedFields": [
+    "mp"
+  ],
+  "CertificateType": "General",
+  "Country": "EL",
+  "Description": [
+    {
+      "desc": "api-test-rule vaccination",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-EL-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              14,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-02T09:00:00+02:00",
+  "ValidTo": "2021-07-07T00:00:00+02:00",
+  "Version": "1.0.0"
+}

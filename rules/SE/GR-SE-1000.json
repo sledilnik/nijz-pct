@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "General",
+  "Country": "SE",
+  "Description": [
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 6 months.",
+      "lang": "en"
+    },
+    {
+      "desc": "Ett positivt NAA test resultat (ex PCR) får inte vara äldre än 6 månader",
+      "lang": "sv"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-SE-1000",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              183,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-08T20:19:18Z",
+  "ValidTo": "2021-07-19T20:19:18Z",
+  "Version": "1.0.0"
+}

@@ -1,5 +1,5 @@
 {
-  "origin": "SI",
+  "origin": "DE",
   "versions": {
     "0.1.0": {
       "outdated": true
@@ -7,46 +7,46 @@
     "default": {
       "context": {
         "pubKeys": [
-          "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-          "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+          "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+          "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
         ],
-        "url": "https://dgca-verifier-service.ezdrav.si/context"
+        "url": "https://dgca-verifier-service.cfapps.eu10.hana.ondemand.com/context"
       },
       "endpoints": {
         "countryList": {
           "pubKeys": [
-            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/countrylist"
+          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/countrylist"
         },
         "rules": {
           "pubKeys": [
-            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/rules"
+          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules"
         },
         "status": {
           "pubKeys": [
-            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
           ],
-          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateStatus"
+          "url": "https://dgca-verifier-service.cfapps.eu10.hana.ondemand.com/signercertificateStatus"
         },
         "update": {
           "pubKeys": [
-            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
           ],
-          "url": "https://dgca-verifier-service.ezdrav.si/signercertificateUpdate"
+          "url": "https://dgca-verifier-service.cfapps.eu10.hana.ondemand.com/signercertificateUpdate"
         },
         "valuesets": {
           "pubKeys": [
-            "C09HDwqD4ATL65ClcsjlJlaFVrvUiQC8S2XOrCAnra8=",
-            "U4hqCn1MKJpcQ6L84NWiM3Ts4awZTlb3ZnUrn6NRjLc="
+            "lKdU1EbQubxyDDm2q3N8KclZ2C94Num3xXjG0pk+3eI=",
+            "r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E="
           ],
-          "url": "https://dgca-businessrule-service.ezdrav.si/valuesets"
+          "url": "https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/valuesets"
         }
       },
       "privacyUrl": "https://publications.europa.eu/en/web/about-us/legal-notices/eu-mobile-apps"

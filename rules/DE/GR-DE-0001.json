@@ -1,0 +1,51 @@
+{
+  "AffectedFields": [
+    "t.0"
+  ],
+  "CertificateType": "General",
+  "Country": "DE",
+  "Description": [
+    {
+      "desc": "Restrictions are to be expected with the given certificate type. The restrictions can be checked at https://reopen.europa.eu/de.",
+      "lang": "en"
+    },
+    {
+      "desc": "Mit dem gegebenen Zertifikatstyp sind Restriktionen zu erwarten. Auf https://reopen.europa.eu/de können die Restriktionen überprüft werden.",
+      "lang": "de"
+    },
+    {
+      "desc": "Restrictions are to be expected with the given certificate type. The restrictions can be checked at https://reopen.europa.eu/de.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Restrictions are to be expected with the given certificate type. The restrictions can be checked at https://reopen.europa.eu/de.",
+      "lang": "es"
+    },
+    {
+      "desc": "Restrictions are to be expected with the given certificate type. The restrictions can be checked at https://reopen.europa.eu/de.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-DE-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "+": [
+          "+",
+          "+"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-20T15:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

@@ -1,0 +1,38 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.ma"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "BE",
+  "Description": [
+    {
+      "desc": "api-test-rule vaccination",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-BE-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "==": [
+          {
+            "var": "payload.v.0.ma"
+          },
+          "ORG-100031184"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-17T12:00:00+02:00",
+  "ValidTo": "2021-07-20T12:00:00+02:00",
+  "Version": "1.0.16"
+}

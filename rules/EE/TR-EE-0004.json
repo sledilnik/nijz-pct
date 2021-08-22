@@ -1,0 +1,61 @@
+{
+  "AffectedFields": [
+    "t.0.sc",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "EE",
+  "Description": [
+    {
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+      "lang": "en"
+    },
+    {
+      "desc": "NAA testi (nt PCR) proov peab olema võetud kuni 72 tundi enne tõendi verifitseerimise hetke.",
+      "lang": "ee"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-EE-0004",
+  "Logic": {
+    "if": [
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          "LP6464-4"
+        ]
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.t.0.sc"
+              },
+              72,
+              "hour"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-15T00:00:00Z",
+  "ValidTo": "2021-12-31T00:00:00Z",
+  "Version": "1.0.0"
+}

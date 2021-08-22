@@ -1,14 +1,13 @@
 {
   "AffectedFields": [
     "r.0",
-    "r.0.df",
-    "r.0.du"
+    "r.0.fr"
   ],
   "CertificateType": "Recovery",
   "Country": "SI",
   "Description": [
     {
-      "desc": "The Verification Datetime must be between \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "desc": "The Verification Datetime must be between +11 days and +180 days after the test date.",
       "lang": "en"
     },
     {
@@ -29,9 +28,9 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.df"
+                "var": "payload.r.0.fr"
               },
-              0,
+              11,
               "day"
             ]
           },
@@ -47,9 +46,9 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.du"
+                "var": "payload.r.0.fr"
               },
-              0,
+              180,
               "day"
             ]
           }
@@ -58,9 +57,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.0.0",
+  "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
+  "ValidFrom": "2021-08-22T20:00:00Z",
+  "ValidTo": "2030-07-26T00:00:00Z",
   "Version": "1.0.0"
 }

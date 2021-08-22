@@ -1,0 +1,137 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.df",
+    "r.0.du",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "SE",
+  "Description": [
+    {
+      "desc": "The validity start date must be greater than or equal to the first positive test date  +11 days and validity end date must be less than or equal to the first postive test date +180.",
+      "lang": "en"
+    },
+    {
+      "desc": "Giltighetstidens startdatum måste infalla efter positiv test dag + 11 dagar och slutdatum mindre än positiv testdag + 180 dagar",
+      "lang": "sv"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-SE-3001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "if": [
+              {
+                "after": [
+                  {
+                    "plus-time": [
+                      {
+                        "var": "payload.r.0.df"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plus-time": [
+                      {
+                        "var": "payload.r.0.fr"
+                      },
+                      11,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "plus-time": [
+                  {
+                    "var": "payload.r.0.df"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plus-time": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  180,
+                  "day"
+                ]
+              }
+            ]
+          },
+          {
+            "plus-time": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "if": [
+              {
+                "before": [
+                  {
+                    "plus-time": [
+                      {
+                        "var": "payload.r.0.du"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plus-time": [
+                      {
+                        "var": "payload.r.0.fr"
+                      },
+                      180,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "plus-time": [
+                  {
+                    "var": "payload.r.0.du"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plus-time": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  180,
+                  "day"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-08T20:30:57Z",
+  "ValidTo": "2021-07-19T20:30:57Z",
+  "Version": "1.0.1"
+}
