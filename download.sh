@@ -42,7 +42,7 @@ ENDCOUTRYHEADER
 
     echo -n "Downloading ${COUNTRY}: ${ID} > "
     curl -s "${RuleBaseURL}/${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
-    DESC=$(jq -r 'select(.Description != null) | .Description[]|select(.lang == "en").desc' "rules/${COUNTRY}/${ID}.json")
+    DESC=$(jq -r 'select(.Description != null) | [.Description[]|select(.lang == "en").desc][0]' "rules/${COUNTRY}/${ID}.json")
     echo "${DESC}"
     echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
     echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
