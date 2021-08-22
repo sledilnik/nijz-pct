@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-BASEURL="https://dgca-verifier-service.ezdrav.si"
+BASEURL="https://dgca-verifier-service.cfapps.eu10.hana.ondemand.com/"
 
 # context
 curl -s "${BASEURL}/context" | jq --sort-keys > context.json
