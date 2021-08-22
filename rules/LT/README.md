@@ -1,6 +1,6 @@
 # EU digital green certificate verification rules for Lithuania
 
-Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/LT).
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/LT).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

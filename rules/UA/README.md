@@ -1,4 +1,6 @@
-# List of rules for country UA
+# EU digital green certificate verification rules for Ukraine
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/UA).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

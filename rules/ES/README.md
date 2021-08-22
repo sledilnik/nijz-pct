@@ -1,6 +1,6 @@
 # EU digital green certificate verification rules for Spain
 
-Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/ES).
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ES).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

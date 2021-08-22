@@ -1,4 +1,6 @@
-# List of rules for country SE
+# EU digital green certificate verification rules for Sweden
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SE).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

@@ -1,32 +1,6 @@
 {
-  "AffectedFields": [
-    "v.1"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "SI",
-  "Description": [
-    {
-      "desc": "At most one v-event.",
-      "lang": "en"
-    },
-    {
-      "desc": "Največ en dogodek cepljenja.",
-      "lang": "si"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0000",
-  "Logic": {
-    "!": [
-      {
-        "var": "payload.v.1"
-      }
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: SI, hash: 93c3f980f5081403818323acfe98f2da469fd6aa7a1729cdb5b5c8d49d5b35aa"
 }

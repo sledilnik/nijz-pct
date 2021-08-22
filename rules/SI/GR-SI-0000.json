@@ -1,64 +1,6 @@
 {
-  "AffectedFields": [
-    "r",
-    "t",
-    "v"
-  ],
-  "CertificateType": "General",
-  "Country": "SI",
-  "Description": [
-    {
-      "desc": "Exactly one type of event.",
-      "lang": "en"
-    },
-    {
-      "desc": "Zgolj ena vrsta podatka.",
-      "lang": "si"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "GR-SI-0000",
-  "Logic": {
-    "===": [
-      {
-        "reduce": [
-          [
-            {
-              "var": "payload.r"
-            },
-            {
-              "var": "payload.t"
-            },
-            {
-              "var": "payload.v"
-            }
-          ],
-          {
-            "+": [
-              {
-                "var": "accumulator"
-              },
-              {
-                "if": [
-                  {
-                    "var": "current.0"
-                  },
-                  1,
-                  0
-                ]
-              }
-            ]
-          },
-          0
-        ]
-      },
-      1
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: SI, hash: b3ff5a3133ecee0c2825c6ae00de3583497db2a73030ac21df28f028dbe0f7da"
 }

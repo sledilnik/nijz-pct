@@ -1,4 +1,6 @@
-# List of rules for country MT
+# EU digital green certificate verification rules for Malta
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MT).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

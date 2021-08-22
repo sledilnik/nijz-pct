@@ -1,4 +1,6 @@
-# List of rules for country HR
+# EU digital green certificate verification rules for Croatia
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/HR).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |

@@ -1,6 +1,6 @@
 # EU digital green certificate verification rules for Luxembourg
 
-Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/LU).
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/LU).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
