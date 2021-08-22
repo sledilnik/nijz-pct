@@ -1,4 +1,6 @@
-# List of rules for country SI
+# EU digital green certificate verification rules for Slovenia
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/SI).
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
