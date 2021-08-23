@@ -10,9 +10,7 @@ curl -s "${BASEURL}/context" | jq --sort-keys > context.json
 RuleBaseURL=$(jq -r '.versions.default.endpoints.rules.url' "context.json")
 echo "Rule URL: ${RuleBaseURL}"
 
-rm -rf "rules.bak"
-mv "rules" "rules.bak" || true
-mkdir -p "rules"
+rm -rf rules/*
 
 cat << ENDHEADER > "rules/README.md"
 # EU digital green certificate verification rules
@@ -47,16 +45,13 @@ ENDCOUTRYHEADER
     echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
     echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
-rm -rf "rules.bak"
 ## /rules
 
 ## valuesets
 ValuesetsBaseURL=$(jq -r '.versions.default.endpoints.valuesets.url' "context.json")
 echo "valuesets URL: ${ValuesetsBaseURL}"
 
-rm -rf "valuesets.bak"
-mv "valuesets" "valuesets.bak" || true
-mkdir -p "valuesets"
+rm -rf valuesets/*
 
 cat << ENDHEADER > "valuesets/README.md"
 # List of valuesets
@@ -72,7 +67,6 @@ curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
     echo "| [${ID}](${ID}.json) | [API](${ValuesetsBaseURL}/${HASH}) |" >> "valuesets/README.md"
 
 done
-rm -rf "valuesets.bak"
 ## /valuesets
 
 ## countryList
