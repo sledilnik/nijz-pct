@@ -4,20 +4,32 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "SI",
+  "Country": "RO",
   "Description": [
     {
-      "desc": "The Verification Datetime must be between +11 days and +180 days after the test date.",
+      "desc": "The positive test result must be no older than 180 days.",
       "lang": "en"
     },
     {
-      "desc": "Veljavnost potrdila mora biti med \"Certificate Valid From\" and \"Certificate Valid Until\".",
-      "lang": "si"
+      "desc": "Das positive Testergebnis darf nicht älter als 180 Tage sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat positif du test ne doit pas dater de plus de 180 jours.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado positivo de la prueba no debe tener más de 180 días.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato positivo del test non deve essere più vecchio di 180 giorni.",
+      "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-SI-0001",
+  "Identifier": "RR-RO-0001",
   "Logic": {
     "if": [
       {
@@ -25,15 +37,6 @@
       },
       {
         "not-after": [
-          {
-            "plusTime": [
-              {
-                "var": "payload.r.0.fr"
-              },
-              11,
-              "day"
-            ]
-          },
           {
             "plusTime": [
               {
@@ -57,9 +60,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.3.0",
+  "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-22T20:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
+  "ValidFrom": "2021-08-13T00:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
   "Version": "1.0.0"
 }

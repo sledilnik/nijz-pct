@@ -4,9 +4,9 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [IR-DE-0001](IR-DE-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/df0e0a2e73624b0f1963cd0dcb6033b5af49fcde79b58ba9f4deac39650cda99) |  |
-| [IR-DE-0002](IR-DE-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/0a5ca6b99fea4ad37de481e55903473bd4b13f0c48c751a38038ce83a14659b7) |  |
-| [IR-DE-0003](IR-DE-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/5fa8def1d6815142522abd1d29f8aa7a7d63273b54d55a6335e1fa7af7704c46) |  |
+| [IR-DE-0001](IR-DE-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/8d6fe3252560f2e8a99ee8b3fdbe6c3ecb1dd60043f97871b5db7aae5ccd7668) | The test center ILLEGAL TC  is not allowed. |
+| [IR-DE-0002](IR-DE-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/826e5e5241bfd51de4aeaa62816946075ead9e8de1439628df5345c295e8f807) | Damaged Badge of Janssen on 2021-05-25. |
+| [IR-DE-0003](IR-DE-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/9303adccffcf01806cc57cedc77b15bd2e05b588e31f4573d92feafd5cb6fa38) | Damaged Badge of Janssen on 2021-05-25. |
 | [RR-DE-0001](RR-DE-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/4713db6a7d33df919de8fafbee02a1e9caa1f59ffc0c06cbddf32b47f2441710) | The positive NAA test result (e.g., PCR) must be older than 28 days. |
 | [RR-DE-0002](RR-DE-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/43a47f0d7010523e3fa45f8ed772dd7370249ece1604ca7a77a1406c5dfa6eb5) | The positive NAA test result (e.g., PCR) must be no older than 6 months. |
 | [TR-DE-0001](TR-DE-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DE/af94f89210d358a2edffd1e9c84c86eb7837ed76f7928aace3f1315974a2100c) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |

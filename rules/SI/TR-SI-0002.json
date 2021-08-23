@@ -1,39 +1,30 @@
 {
   "AffectedFields": [
-    "r.0",
-    "r.0.fr"
+    "t.0",
+    "t.0.sc"
   ],
-  "CertificateType": "Recovery",
+  "CertificateType": "Test",
   "Country": "SI",
   "Description": [
     {
-      "desc": "The Verification Datetime must be between +11 days and +180 days after the test date.",
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime.",
       "lang": "en"
     },
     {
-      "desc": "Veljavnost potrdila mora biti med \"Certificate Valid From\" and \"Certificate Valid Until\".",
+      "desc": "Čas odvzema vzorca ne sme biti starejši od 72 ur.",
       "lang": "si"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-SI-0001",
+  "Identifier": "TR-SI-0002",
   "Logic": {
     "if": [
       {
-        "var": "payload.r.0"
+        "var": "payload.t.0"
       },
       {
-        "not-after": [
-          {
-            "plusTime": [
-              {
-                "var": "payload.r.0.fr"
-              },
-              11,
-              "day"
-            ]
-          },
+        "before": [
           {
             "plusTime": [
               {
@@ -46,10 +37,10 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.fr"
+                "var": "payload.t.0.sc"
               },
-              180,
-              "day"
+              72,
+              "hour"
             ]
           }
         ]

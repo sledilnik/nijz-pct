@@ -1,27 +1,37 @@
 {
   "AffectedFields": [
-    "t.1"
+    "t.0",
+    "t.0.tr"
   ],
   "CertificateType": "Test",
   "Country": "SI",
   "Description": [
     {
-      "desc": "At most one t-event.",
+      "desc": "Test result must be negative (\"not detected\").",
       "lang": "en"
     },
     {
-      "desc": "Največ en dogodek testa.",
+      "desc": "Rezultata testa mora biti negativen (\"not detected\").",
       "lang": "si"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-SI-0000",
+  "Identifier": "TR-SI-0003",
   "Logic": {
-    "!": [
+    "if": [
       {
-        "var": "payload.t.1"
-      }
+        "var": "payload.t.0"
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
     ]
   },
   "SchemaVersion": "1.3.0",

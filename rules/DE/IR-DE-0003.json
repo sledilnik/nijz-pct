@@ -1,6 +1,48 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: DE, hash: 5fa8def1d6815142522abd1d29f8aa7a7d63273b54d55a6335e1fa7af7704c46"
+  "AffectedFields": [
+    "v.0",
+    "v.0.ci"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DE",
+  "Description": [
+    {
+      "desc": "Damaged Badge of Janssen on 2021-05-25.",
+      "lang": "en"
+    },
+    {
+      "desc": "Beschädigte Impfcharge Janssen EU/1/20/1525 am 25.05.2021.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "IR-DE-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.v.0.ci"
+              },
+              "dgci:V1:DE:AJMUIPV2R28VSJGM8651230LL:96"
+            ]
+          },
+          false,
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Invalidation",
+  "ValidFrom": "2021-08-20T11:20:36+02:00",
+  "ValidTo": "2031-08-18T11:20:36+02:00",
+  "Version": "1.0.4"
 }
