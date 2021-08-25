@@ -2,7 +2,9 @@
   "AffectedFields": [
     "v.0",
     "v.0.dt",
-    "v.0.mp"
+    "v.0.mp",
+    "v.0.dn",
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "SI",
@@ -27,11 +29,25 @@
       {
         "if": [
           {
-            "===": [
+            "and": [
               {
-                "var": "payload.v.0.mp"
+                "===": [
+                  {
+                    "var": "payload.v.0.mp"
+                  },
+                  "EU/1/20/1507"
+                ]
               },
-              "EU/1/20/1507"
+              {
+                ">=": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
+              }
             ]
           },
           {
@@ -64,7 +80,7 @@
   },
   "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-25T14:00:00Z",
+  "ValidFrom": "2021-08-26T19:00:00Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }

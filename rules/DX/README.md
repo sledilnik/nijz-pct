@@ -1,0 +1,21 @@
+# EU digital green certificate verification rules for null
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [GR-DX-0000](GR-DX-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/b1d63214cf22204aa15fc3bc1a6fdf9d97754f60cc1396aaf008bd0d73da018d) | Exactly one type of event. |
+| [GR-DX-0001](GR-DX-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/e83ce698383c673418900681f7b5417f823429e05b9ff68c5426fd3303dc90ad) | The "disease or agent targeted" must be COVID-19 of the value set list. |
+| [RR-DX-0000](RR-DX-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/0eb27ea853be497f53a97315142711d4ec127fb7f0ce9bc7d4c5b4ecb97a7d56) | At most one r-event. |
+| [RR-DX-0001](RR-DX-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/d288a94d30ab25ad12688d54bef976f151cc3ebc0ec5542417a204171f5c9db3) | The Verification Datetime must be between "Certificate Valid From" and "Certificate Valid Until". |
+| [RR-DX-0002](RR-DX-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/6dce3d583f63975bc05db348ffd67ee3bcbcb419044236fc0254fb3c3c382079) | The validity start date must be greater than or equal to the first positive test date  +11 days and validity end date must be less than or equal to the first postive test date +180. |
+| [TR-DX-0000](TR-DX-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/05551eeddacd9ed7798a33c8272034f0f1e0fac98f89f037c1e5acfbb157f510) | At most one t-event. |
+| [TR-DX-0001](TR-DX-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/30cd2b1385ad5aa3a2437aaffaa0dbae6ac08ed4bbe4c5295f637fe6b25a6966) | The test type must be one of the value set list (RAT OR NAA). |
+| [TR-DX-0002](TR-DX-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/d802983097762b4fb21adb6791153ea8b39291de2dca600fc1eb2f36d7c12502) | If the test type is "RAT" then the "test product and manufacturer" MUST be in the valueset list, if it's NAA return true. |
+| [TR-DX-0004](TR-DX-0004.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/afc9710c29aeae87a444cdfbeba4ad460b50e5b07119153d4386538e751fdf14) | Test result must be negative ("not detected"). |
+| [TR-DX-0005](TR-DX-0005.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/71107fc3006f0adb869f3bc91b5f21d3823b99850b6dc59e17aa898ceb385f99) | DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test). |
+| [TR-DX-0006](TR-DX-0006.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/2bff00959c7f9e5703cad1f86a446f06d45ec58a3c408769dba921d0651d77d0) | DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test). |
+| [VR-DX-0000](VR-DX-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/1c1ebb3fd93f46bd6fcadd71bd00b6f5fd537ea588f435eea8d5733a3a5a0ee1) | At most one v-event. |
+| [VR-DX-0001](VR-DX-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/a58640f26c0d7ea58134d42c53564104c6f9c04f9b8db509e321386da70c39c1) | Only vaccines in the allowed valueset that have been approved by the EMA are allowed. |
+| [VR-DX-0002](VR-DX-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/4452c2bbf4850da88e6d711472a536071295f52f9f6cd8a924162bdc5453731a) | Vaccination doses must be equal or greater than expected doses. |
+| [VR-DX-0003](VR-DX-0003.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/DX/7e468058d62f880f7a9579e9265999588ef03d9e578d80ca6e1a88d10202cce4) | Verification Datetime must be more than 14 days and less than 365 days after the last date of vaccination. |

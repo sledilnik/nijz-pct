@@ -1,0 +1,60 @@
+{
+  "AffectedFields": [
+    "r",
+    "t",
+    "v"
+  ],
+  "CertificateType": "General",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "Exactly one type of event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-DX-0000",
+  "Logic": {
+    "===": [
+      {
+        "reduce": [
+          [
+            {
+              "var": "payload.r"
+            },
+            {
+              "var": "payload.t"
+            },
+            {
+              "var": "payload.v"
+            }
+          ],
+          {
+            "+": [
+              {
+                "var": "accumulator"
+              },
+              {
+                "if": [
+                  {
+                    "var": "current.0"
+                  },
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      },
+      1
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-27T09:35:01+02:00",
+  "ValidTo": "2031-08-25T09:35:01+02:00",
+  "Version": "1.0.0"
+}

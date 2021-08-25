@@ -1,0 +1,61 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "Verification Datetime must be more than 14 days and less than 365 days after the last date of vaccination.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-DX-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              14,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              365,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-27T09:35:01+02:00",
+  "ValidTo": "2031-08-25T09:35:01+02:00",
+  "Version": "1.0.0"
+}

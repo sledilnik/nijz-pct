@@ -1,0 +1,57 @@
+{
+  "AffectedFields": [
+    "t.0.sc",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-DX-0006",
+  "Logic": {
+    "if": [
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          "LP6464-4"
+        ]
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.t.0.sc"
+              },
+              72,
+              "hour"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-27T09:35:01+02:00",
+  "ValidTo": "2031-08-25T09:35:01+02:00",
+  "Version": "1.0.0"
+}

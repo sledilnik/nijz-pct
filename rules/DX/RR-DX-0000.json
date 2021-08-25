@@ -1,0 +1,28 @@
+{
+  "AffectedFields": [
+    "r.1"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "At most one r-event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-DX-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.r.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-27T09:35:01+02:00",
+  "ValidTo": "2031-08-25T09:35:01+02:00",
+  "Version": "1.0.0"
+}
