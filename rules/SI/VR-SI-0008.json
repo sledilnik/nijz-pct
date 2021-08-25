@@ -10,17 +10,17 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "With Sputnik-V vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
+      "desc": "With Sinovac Biotech vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Zaščita s cepivom Sputnik V je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
+      "desc": "Zaščita s cepivom Sinovac Biotech je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
       "lang": "si"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0004",
+  "Identifier": "VR-SI-0008",
   "Logic": {
     "if": [
       {
@@ -35,7 +35,7 @@
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "Sputnik-V"
+                  "CoronaVac"
                 ]
               },
               {

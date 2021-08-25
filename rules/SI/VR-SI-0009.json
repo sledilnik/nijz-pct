@@ -2,25 +2,23 @@
   "AffectedFields": [
     "v.0",
     "v.0.dt",
-    "v.0.mp",
-    "v.0.dn",
-    "v.0.sd"
+    "v.0.mp"
   ],
   "CertificateType": "Vaccination",
   "Country": "SI",
   "Description": [
     {
-      "desc": "With Sputnik-V vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
+      "desc": "With Sinopharm vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Zaščita s cepivom Sputnik V je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
+      "desc": "Zaščita s cepivom Sinopharm je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
       "lang": "si"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0004",
+  "Identifier": "VR-SI-0009",
   "Logic": {
     "if": [
       {
@@ -29,25 +27,11 @@
       {
         "if": [
           {
-            "and": [
+            "===": [
               {
-                "===": [
-                  {
-                    "var": "payload.v.0.mp"
-                  },
-                  "Sputnik-V"
-                ]
+                "var": "payload.v.0.mp"
               },
-              {
-                ">=": [
-                  {
-                    "var": "payload.v.0.dn"
-                  },
-                  {
-                    "var": "payload.v.0.sd"
-                  }
-                ]
-              }
+              "BBIBP-CorV"
             ]
           },
           {
