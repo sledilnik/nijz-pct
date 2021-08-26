@@ -1,8 +1,9 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.dt",
-    "v.0.mp"
+    "v.0.mp",
+    "v.0.dn",
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "SI",
@@ -18,7 +19,7 @@
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0007",
+  "Identifier": "VR-SI-0015",
   "Logic": {
     "if": [
       {
@@ -27,35 +28,28 @@
       {
         "if": [
           {
-            "===": [
+            "and": [
               {
-                "var": "payload.v.0.mp"
-              },
-              "EU/1/20/1507"
-            ]
-          },
-          {
-            "not-before": [
-              {
-                "plusTime": [
+                "===": [
                   {
-                    "var": "external.validationClock"
+                    "var": "payload.v.0.mp"
                   },
-                  0,
-                  "day"
+                  "EU/1/20/1507"
                 ]
               },
               {
-                "plusTime": [
+                "<": [
                   {
-                    "var": "payload.v.0.dt"
+                    "var": "payload.v.0.dn"
                   },
-                  14,
-                  "day"
+                  {
+                    "var": "payload.v.0.sd"
+                  }
                 ]
               }
             ]
           },
+          false,
           true
         ]
       },
@@ -64,7 +58,7 @@
   },
   "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-25T14:00:00Z",
+  "ValidFrom": "2021-08-27T14:00:00Z",
   "ValidTo": "2030-07-26T00:00:00Z",
   "Version": "1.0.0"
 }
