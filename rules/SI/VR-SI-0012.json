@@ -10,17 +10,17 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "With Sinovac Biotech vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
+      "desc": "With Janssen vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Zaščita s cepivom Sinovac Biotech je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
+      "desc": "Zaščita s cepivom Janssen je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
       "lang": "si"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-SI-0016",
+  "Identifier": "VR-SI-0012",
   "Logic": {
     "if": [
       {
@@ -46,7 +46,7 @@
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "CoronaVac"
+                  "EU/1/20/1525"
                 ]
               },
               {
@@ -72,5 +72,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2021-08-28T10:00:00Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.2"
+  "Version": "1.0.0"
 }
