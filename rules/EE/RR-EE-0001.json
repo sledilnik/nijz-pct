@@ -1,35 +1,39 @@
 {
   "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
+    "r.0",
+    "r.0.fr"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Recovery",
   "Country": "EE",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+      "desc": "The Verification Datetime must be between 11 days and 180 days after the test date.",
       "lang": "en"
     },
     {
-      "desc": "NAA test (nt PCR) peab olema tehtud kuni 72h enne tõendi kontrolli.",
+      "desc": "Proovivõtu kuupäevast ei tohi olla möödas vähem kui 11 ja rohkem kui 180 päeva.",
       "lang": "ee"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-EE-0004",
+  "Identifier": "RR-EE-0001",
   "Logic": {
     "if": [
       {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP6464-4"
-        ]
+        "var": "payload.r.0"
       },
       {
-        "before": [
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              11,
+              "day"
+            ]
+          },
           {
             "plusTime": [
               {
@@ -42,10 +46,10 @@
           {
             "plusTime": [
               {
-                "var": "payload.t.0.sc"
+                "var": "payload.r.0.fr"
               },
-              72,
-              "hour"
+              180,
+              "day"
             ]
           }
         ]
@@ -57,5 +61,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2021-08-29T00:00:00Z",
   "ValidTo": "2022-08-29T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.0"
 }
