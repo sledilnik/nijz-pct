@@ -11,7 +11,7 @@
       "lang": "en"
     },
     {
-      "desc": "Testi tulemus peab olema negatiivne.",
+      "desc": "Analüüsi tulemus peab olema negatiivne.",
       "lang": "ee"
     }
   ],
@@ -36,7 +36,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-15T00:00:00Z",
-  "ValidTo": "2021-12-31T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-08-29T00:00:00Z",
+  "ValidTo": "2022-08-29T00:00:00Z",
+  "Version": "1.0.1"
 }
