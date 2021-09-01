@@ -1,0 +1,65 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "EE",
+  "Description": [
+    {
+      "desc": "The Verification Datetime must be between 11 days and 180 days after the test date.",
+      "lang": "en"
+    },
+    {
+      "desc": "Proovivõtu kuupäevast ei tohi olla möödas vähem kui 11 ja rohkem kui 180 päeva.",
+      "lang": "ee"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-EE-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              11,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              180,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-04T00:00:00Z",
+  "ValidTo": "2022-08-29T00:00:00Z",
+  "Version": "1.0.0"
+}

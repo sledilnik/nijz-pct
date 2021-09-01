@@ -1,0 +1,45 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "EE",
+  "Description": [
+    {
+      "desc": "Vaccination must be complete.",
+      "lang": "en"
+    },
+    {
+      "desc": "Vaktsineerimine peab olema lõpetatud.",
+      "lang": "ee"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-EE-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-04T00:00:00Z",
+  "ValidTo": "2022-08-29T00:00:00Z",
+  "Version": "1.0.0"
+}

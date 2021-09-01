@@ -1,0 +1,23 @@
+# EU digital green certificate verification rules for Monaco
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [GR-MC-0000](GR-MC-0000.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/a2df77823f976a2a727bb461a660315fce1ef9de2ec3e256d5b502391a65bb6d) | Exactly one type of event. |
+| [GR-MC-0001](GR-MC-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/f93ea3f8d7d9b8fae202bf8533a954605080374ea119f5303f2394ea1e77e4f5) | The "disease or agent targeted" must be COVID-19 of the value set list. |
+| [RR-MC-0000](RR-MC-0000.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/e49a00aedda6ebdf245d25007d1885ddcc6582b7977c68e5244c9109ae0b7ac4) | At most one r-event. |
+| [RR-MC-0001](RR-MC-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/da7a8f44931d049f632a08d2102bd0bb88675395193a11132c66c7aeea2230a2) | The Verification Datetime must be between +11 days and +180 days after the test date. |
+| [TR-MC-0000](TR-MC-0000.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/96310747b630249fa1d249f2efaae1a4080bebe424cfe9009be0917ed532d109) | At most one t-event. |
+| [TR-MC-0001](TR-MC-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/90543f642544665298f9ff0d491101f7f1e88eefcfc4a47d42189137de1f8ed5) | The test type must be one of the value set list (RAT OR NAA). |
+| [TR-MC-0002](TR-MC-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/1eaae8778f3d41e3a870f7e770715b464816c2406252fcb62f41ba95f2cad637) | DateTime of Sample Collection must be less than 72 hours before the Verification Datetime. |
+| [TR-MC-0003](TR-MC-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/44377f0ff67e6e2353b1cfc0f1bdd1931bacea2abce97aa94944afddecb35204) | Test result must be negative ("not detected"). |
+| [TR-MC-0004](TR-MC-0004.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/85b3f7c132a06dd42ba4eb195ead715759c820f41c9793c83b781e3a336f55fd) | The antigen test (e.g., rapid test) must be included in the EU’s "Common list of COVID-19 rapid antigen tests". |
+| [VR-MC-0000](VR-MC-0000.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/119435b319267ab48ee9bb36ccce2c59ea4695ddeb6c922867dd85cb215662b4) | At most one v-event. |
+| [VR-MC-0001](VR-MC-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/f3ed5ec63275222ffe442006668bb17cc434dfc847574baa53ff0c35a86ca422) | Only vaccines in the allowed valueset that have been approved by the EMA are allowed. |
+| [VR-MC-0002](VR-MC-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/098377b9c91f2a66ec5dc3db173d04fa95511cad43837be8eff2bc8cc9a40b53) | Vaccination doses must be equal or greater than expected doses. |
+| [VR-MC-0003](VR-MC-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/9cd5c2c6015f1d41ba92531875583601d50bfd9fbeba55b50e64d7f5c5ddf235) | Date of vaccination must be before the current date. |
+| [VR-MC-0004](VR-MC-0004.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/9bfceb5d5ca5c2948bc1dc4285322c183ab79513178563e29ee8107c20a540eb) | With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination. |
+| [VR-MC-0005](VR-MC-0005.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/8ce79c19020f36946f3029308f1ee5bbbe9dd8089c59276926c589dfd11d5add) | With Moderna vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination |
+| [VR-MC-0006](VR-MC-0006.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/357cfa15ec45fb0050b257a1df3002a52746e78aaad17f50bf219cf78fc65921) | With BioNTech/Pfizer vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination |
+| [VR-MC-0007](VR-MC-0007.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/MC/f87701ba3d710246013391f4be388b9102e66de59379bc37344cbb107a8a5d64) | With AstraZeneca vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination. |
