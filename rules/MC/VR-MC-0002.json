@@ -1,0 +1,45 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "MC",
+  "Description": [
+    {
+      "desc": "Vaccination doses must be equal or greater than expected doses.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le nombre de doses de vaccin injecté doit être supérieur ou égal au nombre de doses attendues",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-MC-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.3.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-05T00:00:00Z",
+  "ValidTo": "2030-07-26T00:00:00Z",
+  "Version": "1.0.0"
+}
