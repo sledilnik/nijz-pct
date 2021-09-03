@@ -14,7 +14,7 @@
       "lang": "en"
     },
     {
-      "desc": "Vaktsineerimisest peab möödas olema vähemalt 14 päeva (va revaktsineerimise ja Comirnaty vaktsiini puhul)",
+      "desc": "Vaktsineerimisest peab möödas olema vähemalt 14 päeva (va tõhustusdoosi ja Comirnaty vaktsiini puhul)",
       "lang": "ee"
     }
   ],
@@ -84,7 +84,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-29T00:00:00Z",
-  "ValidTo": "2022-08-29T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-09-06T00:00:00Z",
+  "ValidTo": "2022-09-01T00:00:00Z",
+  "Version": "1.0.2"
 }
