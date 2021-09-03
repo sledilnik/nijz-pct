@@ -11,7 +11,7 @@
       "lang": "en"
     },
     {
-      "desc": "Le type de test doit être l'une des valeurs proposés du value set (PCR ou antigénique)",
+      "desc": "Le type de test doit etre l'une des valeurs proposées du value set (RAT OR NAA).",
       "lang": "fr"
     }
   ],
@@ -36,9 +36,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.3.0",
+  "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-05T00:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-09-05T00:00:00Z",
+  "ValidTo": "2030-09-05T00:00:00Z",
+  "Version": "1.0.1"
 }

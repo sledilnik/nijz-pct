@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Le test antigénique doit figurer sur la liste commune des tests antigéniques rapides « Common list of rapid antigen tests » de l’UE",
+      "desc": "Le test antigénique (p. ex. test rapide) doit figurer sur la liste commune des tests antigéniques rapides « Common list of rapid antigen tests » de l’UE.",
       "lang": "fr"
     }
   ],
@@ -52,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-05T00:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-09-05T00:00:00Z",
+  "ValidTo": "2030-09-05T00:00:00Z",
+  "Version": "1.0.1"
 }

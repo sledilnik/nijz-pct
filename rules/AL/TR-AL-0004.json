@@ -4,20 +4,36 @@
     "t.0.tr"
   ],
   "CertificateType": "Test",
-  "Country": "EE",
+  "Country": "AL",
   "Description": [
     {
       "desc": "The test result must be negative.",
       "lang": "en"
     },
     {
-      "desc": "Analüüsi tulemus peab olema negatiivne.",
-      "lang": "ee"
+      "desc": "Das Ergebnis des Tests muss negativ sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat du test doit être négatif.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado de la prueba debe ser negativo.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato del test deve essere negativo.",
+      "lang": "it"
+    },
+    {
+      "desc": "Rezultati i testit duhet të jetë negativ.",
+      "lang": "sq"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-EE-0002",
+  "Identifier": "TR-AL-0004",
   "Logic": {
     "if": [
       {
@@ -36,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-06T00:00:00Z",
+  "ValidFrom": "2021-09-06T22:00:00Z",
   "ValidTo": "2022-09-01T00:00:00Z",
-  "Version": "1.0.2"
+  "Version": "1.0.0"
 }

@@ -4,32 +4,36 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "DX",
+  "Country": "AL",
   "Description": [
     {
-      "desc": "The positive NAA test result (e.g., PCR) must be older than 21 days.",
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 28 days.",
       "lang": "en"
     },
     {
-      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 21 Tage zurückliegen.",
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 28 Tage zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 21 jours.",
+      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 28 jours.",
       "lang": "fr"
     },
     {
-      "desc": "Deben haber transcurrido como mínimo 21 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
+      "desc": "Deben haber transcurrido como mínimo 28 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
       "lang": "es"
     },
     {
-      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 21 giorni fa.",
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 28 giorni fa.",
       "lang": "it"
+    },
+    {
+      "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet të jetë më i vjetër se 28 ditë.",
+      "lang": "sq"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-DX-0001",
+  "Identifier": "RR-AL-0002",
   "Logic": {
     "if": [
       {
@@ -51,7 +55,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              21,
+              28,
               "day"
             ]
           }
@@ -62,7 +66,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-03T14:52:31+02:00",
-  "ValidTo": "2031-09-01T14:52:31+02:00",
-  "Version": "1.0.1"
+  "ValidFrom": "2021-09-06T22:00:00Z",
+  "ValidTo": "2022-09-01T00:00:00Z",
+  "Version": "1.0.0"
 }

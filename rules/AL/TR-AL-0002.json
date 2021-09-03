@@ -1,0 +1,86 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.sc",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "AL",
+  "Description": [
+    {
+      "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
+      "lang": "en"
+    },
+    {
+      "desc": "Die Probenahme für einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zurückliegen.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le prélèvement pour un test antigénique (p. ex. test rapide) ne doit pas dater de plus de 48 heures.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Deben haber transcurrido 48 horas como máximo desde la extracción para una prueba de antígenos (por ejemplo, un autotest rápido).",
+      "lang": "es"
+    },
+    {
+      "desc": "Il campione per il test antigenico (test rapido) deve essere stato rilevato nelle ultime 48 ore.",
+      "lang": "it"
+    },
+    {
+      "desc": "Mostra për një test antigjeni (p.sh., test i shpejtë) duhet të jetë marrë jo më shumë se 48 orë më parë.",
+      "lang": "sq"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-AL-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP217198-3"
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  48,
+                  "hour"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-06T22:00:00Z",
+  "ValidTo": "2022-09-01T00:00:00Z",
+  "Version": "1.0.0"
+}
