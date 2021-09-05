@@ -8,11 +8,11 @@
   "Country": "FR",
   "Description": [
     {
-      "desc": "With AstraZeneca vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination.",
+      "desc": "With AstraZeneca vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Avec le vaccin AstraZeneca, le schéma vaccinal est considéré comme complet 7 jours après la date de la derniere injection.",
+      "desc": "Avec le vaccin AstraZeneca, un parcours vaccinale terminé est concideré comme protecteur au plus tôt à partir de 7 jours apres la date de la derniere injection.",
       "lang": "fr"
     }
   ],
@@ -62,9 +62,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.3.0",
+  "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-05T00:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-09-05T00:00:00Z",
+  "ValidTo": "2030-09-05T00:00:00Z",
+  "Version": "1.0.1"
 }
