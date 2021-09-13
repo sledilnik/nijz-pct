@@ -1,0 +1,26 @@
+# EU digital green certificate verification rules for Switzerland
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [GR-CH-0001](GR-CH-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/61eb35210ee0dcf171665955bb685b0d493d421f9790e6bb9dc10aaa699ae286) | The targeted disease agent must be COVID-19 of the value set list. |
+| [RR-CH-0000](RR-CH-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/28078c175d17eb6ea1b22529221b888ab2306e8da8dae345d1abf9f4af2a9615) | At most one r-event. |
+| [RR-CH-0001](RR-CH-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/83f9ec5e272e0d6419fd1e3f193f44b4a75b657d611c42089889e584500dcd3c) | Date of first positive test must exist |
+| [RR-CH-0002](RR-CH-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/074962da734969d1727d4f6f45471a9cf4f2d0e9c87a21f3b4451db6f1447c63) | The validation date must be after the date of first positive test plus 10 days |
+| [RR-CH-0003](RR-CH-0003.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/6e487f034447e2b7ff638ee02f2c9740817a7deef5ca897c02ae89f682d2783d) | The validation date must be less than the date of first positive test plus 179 days |
+| [TR-CH-0000](TR-CH-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/4a7828c71d4d320fc8198cc78a76f29e29eabe7e099ce351b853e6974eb51eef) | At most one t-event. |
+| [TR-CH-0001](TR-CH-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/d94356226667ab68fd4cdd7c86a9da111fa24cf371dcd1988e80f4c8ff7a0f0b) | Test result must be negative ("not detected"). |
+| [TR-CH-0002](TR-CH-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/1b09107f82fd6fc13c7e74c2ff1a333d668fcc243e7fee9fd8b743fd53d7c630) | The test Type must be one of the value set list (RAT OR NAA). |
+| [TR-CH-0004](TR-CH-0004.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/1593ee54a09ec3892959d069e946b1549aa59ffdff4eef057da2d3b98fc15c15) | Date of sample collection must exist |
+| [TR-CH-0005](TR-CH-0005.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/c462c8dccadfab4018fc687bdf02aab2a50f877d4f97db2da439f40e7d2347b9) | The date of sample collection must be before the validation date |
+| [TR-CH-0006](TR-CH-0006.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/23b6b5ea8e4fae1b888c18b925c902e3e96eab4678fdfc856b52c361745ae36f) | If the test Type is "RAT" then the validation date must be before the date of sample collection plus 48 hours |
+| [TR-CH-0007](TR-CH-0007.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/26134bff82cb61de7f917b61fd1e87bd4d42c806757f97505e1dee6ef665f698) | If the test Type is "PCR" then the validation date must be before the date of sample collection plus 72 hours |
+| [VR-CH-0000](VR-CH-0000.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/f4068efaeb56c80abb26a2b605279a94e299045f90171939ceb2c53e984f9696) | At most one v-event. |
+| [VR-CH-0001](VR-CH-0001.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/3d6662bae3788cf898a5b3a628eba884915f3eea716cd54530fc60f1eedbbd76) | Vaccination doses must be equal or greater than expected doses. |
+| [VR-CH-0002](VR-CH-0002.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/e97b88a35e40cd11f78880892aa543b76105cb6fbe753eecd99bd665409d5144) | Only vaccines in the allowed valueset that have been approved by the EMA are allowed. |
+| [VR-CH-0003](VR-CH-0003.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/d3a67387c5a0e89d6a3bdff520ebcbff9d592568e3bda06466d202737a127bf7) | Date of vaccination must exist |
+| [VR-CH-0004](VR-CH-0004.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/232b5a6941bba6a7e7e8f4dd461672010b479f8038279c493560b614aa1701cd) | If the vaccine requires two doses, the vaccination date must be before today |
+| [VR-CH-0005](VR-CH-0005.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/8f3b1fb07b24e68fad40f682387b63db18e983dc24480c229e27abe2a11a6aba) | If the vaccine requires one dose, and only one dose was administered, it is valid after 21 days  |
+| [VR-CH-0006](VR-CH-0006.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/bfc1387778281493be07288e299310bd0c4ce9927289f29c73a18ada13248ba8) | Today must be less than the vaccination date plus 364 days |
+| [VR-CH-0007](VR-CH-0007.json) | [API](https://dgca-businessrule-service.cfapps.eu10.hana.ondemand.com/rules/CH/0a011a91e61e70f2331ebdf4de66c4ab6967fc6bacbd94e8ae44af26e6a0fccc) | If the vaccine requires only one dose but more than one dose was administered, it is valid from today  |

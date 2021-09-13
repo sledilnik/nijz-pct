@@ -4,20 +4,16 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "SI",
+  "Country": "CH",
   "Description": [
     {
-      "desc": "The certificate validity period is between 11 and 240 days inclusive after the test date.",
+      "desc": "The validation date must be less than the date of first positive test plus 179 days",
       "lang": "en"
-    },
-    {
-      "desc": "Obseg veljavnosti potrdila je vključno med 11. in 240. dnem po datumu testa.",
-      "lang": "si"
     }
   ],
-  "Engine": "CERTLOGIC",
+  "Engine": "CertLogic",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-SI-0001",
+  "Identifier": "RR-CH-0003",
   "Logic": {
     "if": [
       {
@@ -28,16 +24,7 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.fr"
-              },
-              11,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
+                "var": "external.validationClockAtStartOfDay"
               },
               0,
               "day"
@@ -48,7 +35,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              240,
+              179,
               "day"
             ]
           }
@@ -60,6 +47,6 @@
   "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
   "ValidFrom": "2021-09-11T00:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.1.0"
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.0"
 }

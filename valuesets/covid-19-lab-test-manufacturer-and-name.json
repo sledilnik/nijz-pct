@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-09-03",
+  "valueSetDate": "2021-09-13",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -277,7 +277,7 @@
     },
     "1343": {
       "active": true,
-      "display": "Zhezhiang Orient Gene Biotech Co., Ltd, Coronavirus Ag Rapid Test Cassette (Swab)",
+      "display": "Zhejiang Orient Gene Biotech Co.,Ltd., Coronavirus Ag Rapid Test Cassette (Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "version": "2021-02-17 00:00:00 CET"
