@@ -1,23 +1,19 @@
 {
   "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
+    "t.0.tt",
+    "t.0.sc"
   ],
   "CertificateType": "Test",
-  "Country": "UA",
+  "Country": "CH",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
-      "lang": "en"
-    },
-    {
-      "desc": "DateTime відбору проб повинен бути менше ніж за 48 годин до дати верифікації для тесту типу RAT (швидкий тест на антиген).",
+      "desc": "If the test Type is \"RAT\" then the validation date must be before the date of sample collection plus 48 hours",
       "lang": "en"
     }
   ],
-  "Engine": "CERTLOGIC",
+  "Engine": "CertLogic",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-UA-0005",
+  "Identifier": "TR-CH-0006",
   "Logic": {
     "if": [
       {
@@ -36,7 +32,7 @@
                 "var": "external.validationClock"
               },
               0,
-              "hour"
+              "day"
             ]
           },
           {
@@ -53,9 +49,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.0.0",
+  "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-10T20:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "ValidFrom": "2021-09-16T00:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.0"
 }
