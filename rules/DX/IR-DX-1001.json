@@ -13,7 +13,7 @@
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "2.0.1",
-  "Identifier": "GR-DX-1001",
+  "Identifier": "IR-DX-1001",
   "Logic": {
     "and": [
       {
@@ -35,8 +35,8 @@
     ]
   },
   "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-09-16T10:20:40+02:00",
-  "ValidTo": "2021-09-21T10:20:40+02:00",
+  "Type": "Invalidation",
+  "ValidFrom": "2021-09-14T11:03:13+02:00",
+  "ValidTo": "2021-09-19T11:03:13+02:00",
   "Version": "1.0.0"
 }
