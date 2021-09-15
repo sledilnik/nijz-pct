@@ -4,9 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [GR-DX-1001](GR-DX-1001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/d24a1446fd6a155ccb5e1433b93c4d9699d0a1e4d5f8b83bd3a7781b6b82fc28) | api-test-rule for use in api test |
 | [IR-DX-0001](IR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/93a5425911656c8d8e18c90b5319d82ad51da0846ed1eee52b29692d108663f3) | The test center ILLEGAL TC  is not allowed. |
-| [IR-DX-1001](IR-DX-1001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/75986676ce38e81691818b08d3e79bcfcc3aa8c5183e6c07f07106d775f47cfb) | api-test-rule for use in api test |
 | [RR-DX-0001](RR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/07d3796270571c31222680f6963a702046716c09dc996ba359ae3529e8e87937) | The positive NAA test result (e.g., PCR) must be older than 21 days. |
 | [RR-DX-0002](RR-DX-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/ee948e1b4bc7ce76d75f6fd8da0047b916621bb23801fcc075c00db386c6cb2e) | The positive NAA test result (e.g., PCR) must be no older than 120 days. |
 | [TR-DX-0001](TR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/aff63b3ca6b036c713f6efbbe387133eda444149ecd17e3fb59f26f0073cccae) | This must be a NAA test (e.g., PCR). |
