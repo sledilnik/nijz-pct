@@ -5,6 +5,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
 | [IR-ZZ-0001](IR-ZZ-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ZZ/9d8a5941c3c2c602075be72365d43b0bb3dc6409e5fb596c268ad8ce6c5e62ff) | The test center ILLEGAL TC  is not allowed. |
+| [IR-ZZ-0002](IR-ZZ-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ZZ/1caa396152c9590e0146aa31cbd33dd4bf9ead54f5d2118d0b5669d6b515880c) | Issuer that has been compromised |
 | [RR-ZZ-0001](RR-ZZ-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ZZ/4cbee53c6a697cbd9b0b8c7eb4060ed8a907723caecf091dfe997d1ba7500749) | The positive NAA test result (e.g., PCR) must be older than 28 days. |
 | [RR-ZZ-0002](RR-ZZ-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ZZ/81245a8ac4beab8eef6a3acd89d5b348d72a60308b6a8d98e20f0895d3ae5964) | The positive NAA test result (e.g., PCR) must be no older than 6 months. |
 | [TR-ZZ-0001](TR-ZZ-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/ZZ/496f1a90421c58781b725c8fe1e470be96df14b574a009151c66edc6f8124397) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |

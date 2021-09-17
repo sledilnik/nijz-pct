@@ -1,17 +1,19 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.dt"
+    "v.0.dt",
+    "v.0.dn",
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "LT",
   "Description": [
     {
-      "desc": "Skiepijimo apsauga prasideda po 14 dienų po pilno skiepijimo kurso",
+      "desc": "Skiepijimo apsauga prasideda po 14 dienų po pilno skiepijimo kurso, ir iškarto po sustiprinančio skiepo",
       "lang": "lt"
     },
     {
-      "desc": "The full vaccination protection starts up 14 days after full vaccination",
+      "desc": "The full vaccination protection starts up 14 days after full vaccination and right away after booster",
       "lang": "en"
     }
   ],
@@ -21,36 +23,107 @@
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
-      },
-      {
-        "not-after": [
+        "and": [
           {
-            "plusTime": [
+            "var": "payload.v.0"
+          },
+          {
+            ">=": [
               {
-                "var": "payload.v.0.dt"
+                "var": "payload.v.0.dn"
               },
-              14,
-              "day"
+              {
+                "var": "payload.v.0.sd"
+              }
             ]
           },
           {
-            "plusTime": [
+            "<": [
               {
-                "var": "external.validationClock"
+                "var": "payload.v.0.dn"
               },
-              0,
-              "day"
+              3
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  14,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              }
             ]
           }
         ]
       },
-      true
+      true,
+      {
+        "and": [
+          {
+            "var": "payload.v.0"
+          },
+          {
+            ">=": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              {
+                "var": "payload.v.0.sd"
+              }
+            ]
+          },
+          {
+            ">=": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              3
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      true,
+      false
     ]
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-14T15:00:00Z",
-  "ValidTo": "2022-07-04T00:00:00Z",
-  "Version": "1.0.1"
+  "ValidFrom": "2021-09-16T12:00:00Z",
+  "ValidTo": "2023-09-04T00:00:00Z",
+  "Version": "1.1.0"
 }
