@@ -81,3 +81,9 @@ echo "signercertificateStatus URL: ${SignercertificateStatusURL}"
 curl -s "${SignercertificateStatusURL}" | jq --sort-keys > "signercertificateStatus.json"
 ## /signercertificateStatus
 
+## signercertificateUpdate
+SignercertificateUpdateURL=$(jq -r '.versions.default.endpoints.update.url' "context.json")
+echo "signercertificateUpdate URL: ${SignercertificateUpdateURL}"
+curl -s "${SignercertificateUpdateURL}" > "signercertificateUpdate.txt"
+## /signercertificateUpdate
+
