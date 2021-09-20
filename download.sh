@@ -84,6 +84,15 @@ curl -s "${SignercertificateStatusURL}" | jq --sort-keys > "signercertificateSta
 ## signercertificateUpdate
 SignercertificateUpdateURL=$(jq -r '.versions.default.endpoints.update.url' "context.json")
 echo "signercertificateUpdate URL: ${SignercertificateUpdateURL}"
-curl -s "${SignercertificateUpdateURL}" > "signercertificateUpdate.txt"
+# Save to proper .pem certificate:
+{
+    echo "-----BEGIN CERTIFICATE-----"
+    curl -s "${SignercertificateUpdateURL}" | fold -w 64
+    echo
+    echo -n "-----END CERTIFICATE-----"
+ } > "signercertificateUpdate.pem"
+
+# human readable certificate description
+openssl x509 -text -noout -in signercertificateUpdate.pem > "signercertificateUpdate.txt"
 ## /signercertificateUpdate
 
