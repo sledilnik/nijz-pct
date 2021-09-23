@@ -1,28 +1,6 @@
 {
-  "AffectedFields": [
-    "r.1"
-  ],
-  "CertificateType": "Recovery",
-  "Country": "IE",
-  "Description": [
-    {
-      "desc": "Recovery Certificate can only relate to a single Recovery from C-19",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "RR-IE-0000",
-  "Logic": {
-    "!": [
-      {
-        "var": "payload.r.1"
-      }
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: IE, hash: b3b8e4c9b7476bc45fa344ff564261c8c6275b3f47e190b61b4fa236d758d366"
 }
