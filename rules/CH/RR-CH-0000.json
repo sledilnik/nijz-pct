@@ -13,7 +13,7 @@
       "lang": "en"
     }
   ],
-  "Engine": "CertLogic",
+  "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
   "Identifier": "RR-CH-0000",
   "Logic": {
@@ -57,7 +57,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-22T12:00:00Z",
+  "ValidFrom": "2021-09-30T12:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
