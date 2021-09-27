@@ -1,37 +1,36 @@
 Certificate:
     Data:
         Version: 3 (0x2)
-        Serial Number:
-            4a:aa:41:2b:56:3f:ce:ce:d7:b1:59:21:a5:d4:69:5a:31:d5:07:cc
+        Serial Number: 9530221666186547762 (0x8442261cb3c7d232)
     Signature Algorithm: ecdsa-with-SHA256
-        Issuer: C=EE, ST=Harjumaa, L=Tallinn, O=Health and Welfare Information Systems Center, CN=DGC_CSCA_TEST_EE_01
+        Issuer: C=AM, L=Yerevan, O=Armed, OU=DGCOperations, CN=CSCA_DGC_AM_01
         Validity
-            Not Before: May 18 13:24:46 2021 GMT
-            Not After : May 18 13:24:46 2022 GMT
-        Subject: C=EE, ST=Harjumaa, L=Tallinn, O=Health and Welfare Information Systems Center, CN=DGC_DSC_AP_TEST_EE_04
+            Not Before: Sep 22 11:43:04 2021 GMT
+            Not After : Sep 22 11:43:04 2023 GMT
+        Subject: C=AM, L=Yerevan, O=Armed, CN=DSC_AM_01
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub: 
-                    04:d5:5b:fb:99:65:45:01:25:a9:61:5a:27:88:74:
-                    8f:ea:b6:a9:82:c5:96:4a:14:f3:b3:9e:a7:d7:e4:
-                    6a:04:18:34:6d:82:6c:7e:49:a3:96:c4:dd:d4:99:
-                    27:d4:ae:48:5b:38:51:f9:a6:0d:b7:a4:86:4b:e8:
-                    bb:23:58:9c:0d
+                    04:ec:29:2e:35:2d:61:87:ad:5d:86:9e:04:8a:ab:
+                    ff:18:6c:95:29:40:d9:d4:f5:4d:04:a6:bf:8e:41:
+                    a1:22:68:b7:77:3e:1e:78:9c:e9:49:60:3d:f3:fa:
+                    ef:0e:d5:93:e8:0f:1c:b1:34:76:46:cc:5d:82:1b:
+                    18:55:5c:ea:a5
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
         X509v3 extensions:
             X509v3 Key Usage: critical
                 Digital Signature
             X509v3 Subject Key Identifier: 
-                D8:F3:30:1A:61:07:AF:AA:21:FB:2D:66:F9:38:F6:73:54:11:1F:8D
+                85:E5:B7:FC:9E:B5:A6:C4:2F:49:96:D7:D7:CE:87:95:A4:1D:B0:00
             X509v3 Authority Key Identifier: 
-                keyid:C2:08:98:3A:F0:ED:DF:75:E0:1A:B4:AA:4A:E2:3F:98:EF:8A:C2:02
+                keyid:1C:77:20:C2:1F:D4:84:D2:94:59:BD:28:A8:22:12:16:6F:64:B0:13
 
             X509v3 Extended Key Usage: 
-                1.3.6.1.4.1.0.1847.2021.1.2
+                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
     Signature Algorithm: ecdsa-with-SHA256
-         30:44:02:20:6f:f7:9e:86:44:69:77:ff:8f:7c:fb:d3:cd:3b:
-         92:85:d6:30:eb:16:77:b3:5a:23:1b:f7:5d:7b:df:c2:3a:52:
-         02:20:28:9c:8c:ed:25:b3:7d:cd:6b:1a:76:67:16:a2:20:59:
-         4c:d5:16:6f:01:cf:ae:e6:67:73:8f:48:50:b4:ce:5c
+         30:45:02:21:00:89:5a:d2:94:2c:a1:cc:1e:f9:bd:49:ba:f9:
+         04:c2:ba:ee:2b:aa:73:1a:0a:7a:08:19:72:8d:61:3e:58:61:
+         ba:02:20:72:af:7e:ff:86:61:45:01:95:f1:e5:61:dc:50:0a:
+         22:a5:c9:d2:74:82:43:37:07:0d:21:83:31:01:97:09:39

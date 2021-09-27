@@ -1,0 +1,42 @@
+{
+  "AffectedFields": [
+    "dt",
+    "nm"
+  ],
+  "CertificateType": "General",
+  "Country": "TG",
+  "Description": [
+    {
+      "desc": "api-test-rule for use in api test",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "2.0.1",
+  "Identifier": "GR-TG-1001",
+  "Logic": {
+    "and": [
+      {
+        ">=": [
+          {
+            "var": "dt"
+          },
+          "23.12.2012"
+        ]
+      },
+      {
+        ">=": [
+          {
+            "var": "nm"
+          },
+          "ABC"
+        ]
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-29T10:39:17Z",
+  "ValidTo": "2021-10-04T10:39:17Z",
+  "Version": "1.0.1"
+}
