@@ -1,57 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0.tt",
-    "t.0.sc"
-  ],
-  "CertificateType": "Test",
-  "Country": "IE",
-  "Description": [
-    {
-      "desc": "Test Certificate has expired for entry",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-IE-0006",
-  "Logic": {
-    "if": [
-      {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP6464-4"
-        ]
-      },
-      {
-        "before": [
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "payload.t.0.sc"
-              },
-              72,
-              "hour"
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: IE, hash: b77b5f97085018df70156291a3f0ec990ee69f80c5ba11d99ac73116ab79d7ce"
 }

@@ -1,38 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0",
-    "t.0.tr"
-  ],
-  "CertificateType": "Test",
-  "Country": "IE",
-  "Description": [
-    {
-      "desc": "Test Certificate result must indicate a negative test COVID-19 not detected",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-IE-0004",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.t.0"
-      },
-      {
-        "===": [
-          {
-            "var": "payload.t.0.tr"
-          },
-          "260415000"
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-12T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: IE, hash: da2a34f1ac4856ab6779c5510fa15049913a178fd5d19fedce147cc6ebd65963"
 }
