@@ -1,6 +1,28 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: IE, hash: 84f13a846c63b7b07e1e31462f7ff8b463889fe318ffdabfba16ddd643a267d5"
+  "AffectedFields": [
+    "t.1"
+  ],
+  "CertificateType": "Test",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Test Certificate can only relate to a single Test for C-19",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-IE-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.t.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }

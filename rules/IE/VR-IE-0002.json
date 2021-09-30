@@ -1,6 +1,41 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: IE, hash: 3433d93a7ad4abbeda99718c19cb0d8e7270769b72828b0d93fde5a1248eb7ef"
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Dosage information is less than expected number of doses",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-IE-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
 }
