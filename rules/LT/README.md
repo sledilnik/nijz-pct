@@ -17,4 +17,4 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | [VR-LT-0000](VR-LT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/5082f3551c5598c59a77f69c81f910e314a3a7eac274ababf566b6b9d8f8b129) | One type of event of vaccination |
 | [VR-LT-0001](VR-LT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/f1cd20e3f268cd3627c070ee99a8abe4102ade9166d51ff84d254042ebe354f7) | Only vaccines in the allowed valueset that have been approved by the EMA are allowed. |
 | [VR-LT-0002](VR-LT-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/399e43119d944c97336ab2d3db23f849243a27c5d9db0d08399921c065bf671b) | The vaccination course must be completed to provide enough protection. |
-| [VR-LT-0003](VR-LT-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/df37086da815bdd689b38e18fe11e628b9298650db4776a509e00d513885be8c) | The full vaccination protection starts up 14 days after full vaccination |
+| [VR-LT-0003](VR-LT-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/df37086da815bdd689b38e18fe11e628b9298650db4776a509e00d513885be8c) |  |

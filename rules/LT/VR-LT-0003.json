@@ -1,56 +1,6 @@
 {
-  "AffectedFields": [
-    "v.0",
-    "v.0.dt"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "LT",
-  "Description": [
-    {
-      "desc": "Skiepijimo apsauga prasideda po 14 dienų po pilno skiepijimo kurso",
-      "lang": "lt"
-    },
-    {
-      "desc": "The full vaccination protection starts up 14 days after full vaccination",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "1.0.0",
-  "Identifier": "VR-LT-0003",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.v.0"
-      },
-      {
-        "not-after": [
-          {
-            "plusTime": [
-              {
-                "var": "payload.v.0.dt"
-              },
-              14,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-04T15:00:00Z",
-  "ValidTo": "2023-07-04T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: LT, hash: df37086da815bdd689b38e18fe11e628b9298650db4776a509e00d513885be8c"
 }
