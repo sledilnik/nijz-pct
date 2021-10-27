@@ -8,16 +8,24 @@
     "v.0.tg"
   ],
   "CertificateType": "General",
-  "Country": "CH",
+  "Country": "PL",
   "Description": [
     {
-      "desc": "The targeted disease agent must be COVID-19 of the value set list.",
+      "desc": "Wartość \"disease or agent targeted\" musi być COVID-19 i pochodzić z listy zestawu wartości.",
+      "lang": "pl"
+    },
+    {
+      "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
       "lang": "en"
+    },
+    {
+      "desc": "\"disease or agent targeted\" darf nur COVID-19 aus der Value-Set Liste sein.",
+      "lang": "de"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "GR-CH-0001",
+  "Identifier": "GR-PL-0001",
   "Logic": {
     "and": [
       {
@@ -30,9 +38,9 @@
               {
                 "var": "payload.r.0.tg"
               },
-              [
-                "840539006"
-              ]
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
             ]
           },
           true
@@ -48,9 +56,9 @@
               {
                 "var": "payload.t.0.tg"
               },
-              [
-                "840539006"
-              ]
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
             ]
           },
           true
@@ -66,9 +74,9 @@
               {
                 "var": "payload.v.0.tg"
               },
-              [
-                "840539006"
-              ]
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
             ]
           },
           true
@@ -78,7 +86,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.0.0"
 }

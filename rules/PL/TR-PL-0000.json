@@ -4,16 +4,24 @@
     "t.0.tt"
   ],
   "CertificateType": "Test",
-  "Country": "CH",
+  "Country": "PL",
   "Description": [
+    {
+      "desc": "Typ testu musi być jednym z listy zestawów wartości (RAT lub NAAT).",
+      "lang": "pl"
+    },
     {
       "desc": "The test type must be one of the value set list (RAT OR NAA).",
       "lang": "en"
+    },
+    {
+      "desc": "Es muss ein Antigen-Test (z.B. Schnelltest) oder NAA-Test (z.B. PCR) sein.",
+      "lang": "de"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CH-0002",
+  "Identifier": "TR-PL-0000",
   "Logic": {
     "if": [
       {
@@ -35,7 +43,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.0.0"
 }

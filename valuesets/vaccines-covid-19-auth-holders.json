@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-05-07",
+  "valueSetDate": "2021-09-29",
   "valueSetId": "vaccines-covid-19-auth-holders",
   "valueSetValues": {
     "Bharat-Biotech": {
@@ -8,6 +8,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
       "version": "1.0"
+    },
+    "Fiocruz": {
+      "active": true,
+      "display": "Fiocruz",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.3"
     },
     "Gamaleya-Research-Institute": {
       "active": true,
@@ -40,6 +47,13 @@
     "ORG-100006270": {
       "active": true,
       "display": "Curevac AG",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
+    },
+    "ORG-100007893": {
+      "active": true,
+      "display": "R-Pharm CJSC",
       "lang": "en",
       "system": "https://spor.ema.europa.eu/v1/organisations",
       "version": ""

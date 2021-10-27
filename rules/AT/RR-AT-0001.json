@@ -4,32 +4,20 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "RO",
+  "Country": "AT",
   "Description": [
     {
-      "desc": "The positive test result must be older than 14 days.",
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
       "lang": "en"
     },
     {
-      "desc": "Das positive Testergebnis muss älter als 14 Tage sein.",
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zurückliegen.",
       "lang": "de"
-    },
-    {
-      "desc": "Le résultat positif du test doit dater de plus de 14 jours.",
-      "lang": "fr"
-    },
-    {
-      "desc": "El resultado positivo de la prueba debe tener más de 14 días.",
-      "lang": "es"
-    },
-    {
-      "desc": "Il risultato positivo del test deve essere più vecchio di 14 giorni.",
-      "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-RO-0002",
+  "Identifier": "RR-AT-0001",
   "Logic": {
     "if": [
       {
@@ -51,7 +39,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              14,
+              11,
               "day"
             ]
           }
@@ -60,9 +48,10 @@
       true
     ]
   },
+  "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-13T00:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.11"
 }

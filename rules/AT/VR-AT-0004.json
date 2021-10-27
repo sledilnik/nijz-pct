@@ -1,21 +1,21 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.mp",
     "v.0.dn",
+    "v.0.sd",
     "v.0.dt"
   ],
   "CertificateType": "Vaccination",
-  "Country": "CH",
+  "Country": "AT",
   "Description": [
     {
-      "desc": "If the vaccine requires only one dose but more than one dose was administered, it is valid from today ",
+      "desc": "If (sequencenumber < total number of doses) (AT: 'Erstimpfung') Verification Datetime must be more than 22 days and less than 90 days after the date of vaccination.",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CH-0007",
+  "Identifier": "VR-AT-0004",
   "Logic": {
     "if": [
       {
@@ -24,29 +24,26 @@
       {
         "if": [
           {
-            "and": [
+            "<": [
               {
-                "in": [
-                  {
-                    "var": "payload.v.0.mp"
-                  },
-                  [
-                    "EU/1/20/1525"
-                  ]
-                ]
+                "var": "payload.v.0.dn"
               },
               {
-                ">": [
-                  {
-                    "var": "payload.v.0.dn"
-                  },
-                  1
-                ]
+                "var": "payload.v.0.sd"
               }
             ]
           },
           {
-            "not-before": [
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  22,
+                  "day"
+                ]
+              },
               {
                 "plusTime": [
                   {
@@ -61,7 +58,7 @@
                   {
                     "var": "payload.v.0.dt"
                   },
-                  0,
+                  90,
                   "day"
                 ]
               }
@@ -73,9 +70,10 @@
       true
     ]
   },
+  "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.10"
 }

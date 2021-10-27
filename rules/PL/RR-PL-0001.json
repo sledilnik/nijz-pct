@@ -4,32 +4,24 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "RO",
+  "Country": "PL",
   "Description": [
     {
-      "desc": "The positive test result must be no older than 180 days.",
+      "desc": "Dodatni wynik testu NAA (np. PCR) nie może być starszy niż 180 dni.",
+      "lang": "pl"
+    },
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
       "lang": "en"
     },
     {
-      "desc": "Das positive Testergebnis darf nicht älter als 180 Tage sein.",
+      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 180 Tage zurückliegen.",
       "lang": "de"
-    },
-    {
-      "desc": "Le résultat positif du test ne doit pas dater de plus de 180 jours.",
-      "lang": "fr"
-    },
-    {
-      "desc": "El resultado positivo de la prueba no debe tener más de 180 días.",
-      "lang": "es"
-    },
-    {
-      "desc": "Il risultato positivo del test non deve essere più vecchio di 180 giorni.",
-      "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-RO-0001",
+  "Identifier": "RR-PL-0001",
   "Logic": {
     "if": [
       {
@@ -62,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-13T00:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
   "Version": "1.0.0"
 }

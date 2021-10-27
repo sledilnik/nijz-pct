@@ -4,23 +4,31 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "CH",
+  "Country": "PL",
   "Description": [
     {
-      "desc": "The validation date must be less than the date of first positive test plus 179 days",
+      "desc": "Dodatni wynik testu NAA (np. PCR) musi być starszy niż 11 dni.",
+      "lang": "pl"
+    },
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
       "lang": "en"
+    },
+    {
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zurückliegen.",
+      "lang": "de"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-CH-0003",
+  "Identifier": "RR-PL-0000",
   "Logic": {
     "if": [
       {
         "var": "payload.r.0"
       },
       {
-        "before": [
+        "not-before": [
           {
             "plusTime": [
               {
@@ -35,7 +43,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              180,
+              11,
               "day"
             ]
           }
@@ -46,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.0.0"
 }

@@ -4,7 +4,7 @@
     "t.0.tt"
   ],
   "CertificateType": "Test",
-  "Country": "CH",
+  "Country": "AT",
   "Description": [
     {
       "desc": "The test type must be one of the value set list (RAT OR NAA).",
@@ -13,7 +13,7 @@
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CH-0002",
+  "Identifier": "TR-AT-0001",
   "Logic": {
     "if": [
       {
@@ -33,9 +33,10 @@
       true
     ]
   },
+  "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.11"
 }

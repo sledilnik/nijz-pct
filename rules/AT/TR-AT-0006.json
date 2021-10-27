@@ -1,19 +1,19 @@
 {
   "AffectedFields": [
-    "t.0.tt",
-    "t.0.sc"
+    "t.0.sc",
+    "t.0.tt"
   ],
   "CertificateType": "Test",
-  "Country": "CH",
+  "Country": "AT",
   "Description": [
     {
-      "desc": "If the test type is \"PCR\" then the validation date must be before the date of sample collection plus 72 hours",
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CH-0007",
+  "Identifier": "TR-AT-0006",
   "Logic": {
     "if": [
       {
@@ -49,9 +49,10 @@
       true
     ]
   },
+  "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.11"
 }
