@@ -4,7 +4,8 @@ Archive of apps published on [NIJZ's ezdrav.si web page](https://ezdrav.si/stori
 
 NIJZ's mobile app is based on [EU DGCA verifier app](https://github.com/eu-digital-green-certificates/dgca-verifier-app-android), currently only for Android, with no public source code.
 
-Apps aren't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ) nor [Apple App Store](https://apps.apple.com/si/developer/national-institute-of-public-health/id1527561315).
+App isn't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ),
+but is [available in Apple App Store](https://apps.apple.com/si/app/preverjanje-eu-dcp/id1584012481).
 
 NIJZ [home page](https://nijz.si) ([virustotal](https://www.virustotal.com/gui/domain/nijz.si))
 
