@@ -1,0 +1,26 @@
+# EU digital green certificate verification rules for null
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/FR).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [GR-FR-0000](GR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/4ba947377bd069a5387f31974a6768b6ade67fa90c1618e7b23cad440c65a896) | Only a vaccine or test is allowed, and in a EU standard format. |
+| [GR-FR-0001](GR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/580686306287356f0dfc876f725fbc4f58343f08bb99ca6aceb8c7c7a3dd336f) | The "disease or agent targeted" must be COVID-19 of the value set list. |
+| [RR-FR-0000](RR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/96b9fa534fceb33893341571b8f9b13d0700d01ac461a04b98c77486673ab6e1) |  Recovery format is not EU standard. |
+| [RR-FR-0001](RR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/29afec667d533fbf104e31f4d767c59050cc83c37e9fba79497360ae453b573e) | The Verification Datetime must be between +11 days and +180 days after the test date. |
+| [TR-FR-0000](TR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/0b179dc87d90d593641f03c343f5c75ff950cafeac5d6f3e9ec5f15fa2b719f4) | Test format is not EU standard. |
+| [TR-FR-0001](TR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/b139360cd98081762ee8b33fa627dca70d863bae0f21e718e6074ee3ab0a1923) | The test type must be one of the value set list (RAT OR NAA). |
+| [TR-FR-0002](TR-FR-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/a0090a9faeb45fd03119e4d48cf554c2a45df940d14241220bf9425df08d720e) | DateTime of Sample Collection must be less than 72 hours before the Verification Datetime. |
+| [TR-FR-0003](TR-FR-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/caf2595083fdaede95c4f2508ae1ce26b5a5abb55d327325a7e6a19b85bb1edb) | Test result must be negative. |
+| [TR-FR-0004](TR-FR-0004.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/c00dba08281eaed8b1deaf881daf9b48eca76fabcb67d96525bc6e8a586d7405) | The antigen test (e.g., rapid test) must be included in the EU’s "Common list of COVID-19 rapid antigen tests". |
+| [VR-FR-0000](VR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/5eedabd880f7caef6d369fea6ed6d640808cfa26c8348f847cb49c47e9bd4b61) | Vaccin format is not EU standard. |
+| [VR-FR-0001](VR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/3bbc8799bfe8127604b4f5a552d1e33607e58f079ba7ef9127cc4452fac3ed8a) | Only vaccines in the allowed valueset that have been approved by the ANSM or Covishield, R-COVI and Fiocruz-covid-19 vaccines are allowed. |
+| [VR-FR-0002](VR-FR-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/72830c1270629ccb48d760c3cdd1a9532fe6a8a08afd41c57ad3b3f729141deb) | Vaccination doses must be equal or greater than expected doses. |
+| [VR-FR-0003](VR-FR-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/d2154e08547683b2e14a2f02faeafe003c3cca8361afe9fe347075b17b267b06) | Date of vaccination must be before the current date. |
+| [VR-FR-0004](VR-FR-0004.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/84a4ad7b1ea3bbb00214193ab76998ec30020d68164307ef387ce6f3e697e664) | With Jansen vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination. |
+| [VR-FR-0005](VR-FR-0005.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/4d1ff7f7a52eb59e4f93752c227a09e2d1e6748fcdb32fa67ad1e9c4686f1147) | With Moderna vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination. |
+| [VR-FR-0006](VR-FR-0006.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/d5436ccf3a6fde6e1ca4dd263434dbd2bf61497846eccc0698360968a934e27c) | With BioNTech/Pfizer vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination. |
+| [VR-FR-0007](VR-FR-0007.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/b274faa06cac8f2f77f541a9ed5a59285591fefbe3365df7e472c46448631736) | With AstraZeneca vaccine, a finished vaccination course is considered protective earliest from 28 days after the date of the last vaccination. |
+| [VR-FR-0008](VR-FR-0008.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/7c95ade9a6e9941d91a317df11dfff01cd6291adbd97f4cf0bb19719883d2a73) | With not Jansen vaccine, a finished vaccination course is considered protective earliest from 7 days after the date of the last vaccination. |
+| [VR-FR-0009](VR-FR-0009.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/33084a3479cd302da33a4b6230a3cdf173b81c452b12ad040c078f1a8eb3da5a) | Only manufacturers in the allowed valueset that have been approved by the EMA are allowed. |
+| [VR-FR-0010](VR-FR-0010.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/191dd63d78ac7d2c93aa9a8a29319911b7a0b1787f03f974014c2ce493be0c38) | Only prophylactic agents in the allowed valueset that have been approved by the EMA are allowed. |

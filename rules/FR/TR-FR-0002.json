@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.sc"
+  ],
+  "CertificateType": "Test",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime.",
+      "lang": "en"
+    },
+    {
+      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 72 heures avant la date de vérification.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-FR-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.t.0.sc"
+              },
+              72,
+              "hour"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-06T00:00:00Z",
+  "ValidTo": "2030-09-06T00:00:00Z",
+  "Version": "1.0.1"
+}

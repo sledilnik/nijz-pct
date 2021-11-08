@@ -1,6 +1,77 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: IE, hash: 40ea40b1e17ded313369c2922a69ed67f0875f63bd8ba3a62d9216307e6950f3"
+  "AffectedFields": [
+    "r.0"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Check date is not within recovery certificate validity window",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-IE-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "and": [
+          {
+            "not-before": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  11,
+                  "day"
+                ]
+              }
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  180,
+                  "day"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-13T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.2"
 }
