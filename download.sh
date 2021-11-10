@@ -78,7 +78,7 @@ curl -s "${CountrylistBaseURL}" | jq --sort-keys > "countrylist.json"
 ## signercertificateStatus
 SignercertificateStatusURL=$(jq -r '.versions.default.endpoints.status.url' "context.json")
 echo "signercertificateStatus URL: ${SignercertificateStatusURL}"
-curl -s "${SignercertificateStatusURL}" | jq --sort-keys > "signercertificateStatus.json"
+curl -s "${SignercertificateStatusURL}" | jq --sort-keys 'sort' > "signercertificateStatus.json"
 ## /signercertificateStatus
 
 ## signercertificateUpdate
