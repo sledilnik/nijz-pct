@@ -1,13 +1,6 @@
 {
-  "valueSetDate": "2021-04-27",
-  "valueSetId": "disease-agent-targeted",
-  "valueSetValues": {
-    "840539006": {
-      "active": true,
-      "display": "COVID-19",
-      "lang": "en",
-      "system": "http://snomed.info/sct",
-      "version": "http://snomed.info/sct/900000000000207008/version/20210131"
-    }
-  }
+  "code": "0x001",
+  "details": "",
+  "problem": "Possible reasons: The provided hash value is not correct",
+  "sendValue": "9810aafdbb7ad976845179c152c356987553eb82291b18d300db5044c4185bd8"
 }
