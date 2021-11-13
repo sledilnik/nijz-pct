@@ -24,16 +24,18 @@
         "var": "payload.r.0"
       },
       {
-        "!": {
-          "in": [
-            {
-              "var": "payload.r.0.ci"
-            },
-            [
-              "URN:UVCI:01:SI:D05FD0F3219A2178E053#E"
+        "!": [
+          {
+            "in": [
+              {
+                "var": "payload.r.0.ci"
+              },
+              [
+                "URN:UVCI:01:SI:D05FD0F3219A2178E053#E"
+              ]
             ]
-          ]
-        }
+          }
+        ]
       },
       true
     ]
