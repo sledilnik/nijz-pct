@@ -1,52 +1,6 @@
 {
-  "AffectedFields": [
-    "v.0",
-    "v.0.dt"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "CH",
-  "Description": [
-    {
-      "desc": "Today must be less than the vaccination date plus 364 days",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-CH-0006",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.v.0"
-      },
-      {
-        "before": [
-          {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
-          },
-          {
-            "plusTime": [
-              {
-                "var": "payload.v.0.dt"
-              },
-              365,
-              "day"
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: CH, hash: f255fe7922a526f0d53de71605c9ed0985cd8749e8567cf84584304d762a728c"
 }

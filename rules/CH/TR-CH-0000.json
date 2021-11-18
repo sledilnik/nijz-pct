@@ -1,63 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0",
-    "t.1",
-    "r.0",
-    "v.0"
-  ],
-  "CertificateType": "Test",
-  "Country": "CH",
-  "Description": [
-    {
-      "desc": "At most one t-event.",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-CH-0000",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.t.0"
-      },
-      {
-        "if": [
-          {
-            "and": [
-              {
-                "!": [
-                  {
-                    "var": "payload.t.1"
-                  }
-                ]
-              },
-              {
-                "!": [
-                  {
-                    "var": "payload.r.0"
-                  }
-                ]
-              },
-              {
-                "!": [
-                  {
-                    "var": "payload.v.0"
-                  }
-                ]
-              }
-            ]
-          },
-          true,
-          false
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: CH, hash: a8f6a9cb71df6e81f1cb11c58d8032e18061bfb6945117956c4e2ac899cede01"
 }

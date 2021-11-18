@@ -1,41 +1,6 @@
 {
-  "AffectedFields": [
-    "v.0",
-    "v.0.dt"
-  ],
-  "CertificateType": "Vaccination",
-  "Country": "CH",
-  "Description": [
-    {
-      "desc": "Date of vaccination must exist",
-      "lang": "en"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-CH-0003",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.v.0"
-      },
-      {
-        "!": [
-          {
-            "!": [
-              {
-                "var": "payload.v.0.dt"
-              }
-            ]
-          }
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: CH, hash: a670d711890de3be3b6a4e5ffbd07b84a180311a90b102a92e301c500cfe0c8a"
 }
