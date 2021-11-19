@@ -1,6 +1,41 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: CH, hash: b306d2f71f6c9a1e639d94267ed80f755a0dc6f68eff1a2fe9e719f892bc919d"
+  "AffectedFields": [
+    "t.0",
+    "t.0.sc"
+  ],
+  "CertificateType": "Test",
+  "Country": "CH",
+  "Description": [
+    {
+      "desc": "Date of sample collection must exist",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CH-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "!": [
+          {
+            "!": [
+              {
+                "var": "payload.t.0.sc"
+              }
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-18T12:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.4"
 }

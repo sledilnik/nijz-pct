@@ -1,6 +1,54 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: CH, hash: 69f3bdcad24589483843831f76c131a4d56868ddbe459682d518df9ca5923267"
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "CH",
+  "Description": [
+    {
+      "desc": "For rapid or PCR test, the result must be negative (\"not detected\").",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CH-0001",
+  "Logic": {
+    "if": [
+      {
+        "and": [
+          {
+            "var": "payload.t.0"
+          },
+          {
+            "in": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              [
+                "LP217198-3",
+                "LP6464-4"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-18T12:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.4"
 }

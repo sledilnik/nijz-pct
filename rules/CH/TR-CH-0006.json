@@ -1,6 +1,57 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: CH, hash: 41e259ab220f2953ac7c20fdaf423bef0f9989009d1ec603ae24d1737671edc1"
+  "AffectedFields": [
+    "t.0.tt",
+    "t.0.sc"
+  ],
+  "CertificateType": "Test",
+  "Country": "CH",
+  "Description": [
+    {
+      "desc": "If the test type is \"RAT\" then the validation date must be before the date of sample collection plus 48 hours",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CH-0006",
+  "Logic": {
+    "if": [
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          "LP217198-3"
+        ]
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.t.0.sc"
+              },
+              48,
+              "hour"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-18T12:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.4"
 }

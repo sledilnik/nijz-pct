@@ -1,0 +1,42 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr"
+  ],
+  "CertificateType": "Test",
+  "Country": "RS",
+  "Description": [
+    {
+      "desc": "The test result must be negative.",
+      "lang": "en"
+    },
+    {
+      "desc": "Rezultat testa mora biti negativan.",
+      "lang": "sr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-RS-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-19T16:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

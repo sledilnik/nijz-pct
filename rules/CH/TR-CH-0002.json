@@ -1,6 +1,42 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: CH, hash: 43e463261521029b141ed35cab09e355f5e7c77a7ac8203d990c964d206d032b"
+  "AffectedFields": [
+    "t.0",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "CH",
+  "Description": [
+    {
+      "desc": "The test type must be one of the value set list (RAT OR NAA or serum antibody).",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CH-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "in": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          [
+            "LP217198-3",
+            "LP6464-4",
+            "94504-8"
+          ]
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-18T12:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.4"
 }
