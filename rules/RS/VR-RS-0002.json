@@ -11,7 +11,7 @@
       "lang": "en"
     },
     {
-      "desc": "Samo sledece vakcine su odobrene: AstraZeneca, Biontech (Pfizer), Moderna, Sputnik-V, Sinopharm.",
+      "desc": "Samo sledece vakcine su odobrene: AstraZeneca, Biontech (Pfizer), Moderna, Sputnik-V, Sinopharm, JJ.",
       "lang": "sr"
     }
   ],
@@ -33,7 +33,20 @@
             "EU/1/20/1507",
             "EU/1/21/1529",
             "Sputnik-V",
-            "Inactivated-SARS-CoV-2-Vero-Cell"
+            "Inactivated-SARS-CoV-2-Vero-Cell",
+            "EU/1/20/1525",
+            "CVnCoV",
+            "Convidecia",
+            "EpiVacCorona",
+            "BBIBP-CorV",
+            "CoronaVac",
+            "Covaxin",
+            "Covishield",
+            "Covid-19-recombinant",
+            "R-COVI",
+            "CoviVac",
+            "Sputnik-Light",
+            "Hayat-Vax"
           ]
         ]
       },
@@ -42,7 +55,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-19T16:00:00Z",
+  "ValidFrom": "2021-11-21T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.0"
 }
