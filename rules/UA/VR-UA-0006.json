@@ -59,7 +59,7 @@
                   {
                     "var": "payload.v.0.dt"
                   },
-                  180,
+                  365,
                   "day"
                 ]
               }
@@ -73,7 +73,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-22T10:00:00Z",
+  "ValidFrom": "2021-11-27T12:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.0"
 }
