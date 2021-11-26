@@ -1,6 +1,5 @@
 {
   "AffectedFields": [
-    "v.0.dn",
     "v.0.dt",
     "v.0.mp"
   ],
@@ -8,11 +7,11 @@
   "Country": "NL",
   "Description": [
     {
-      "desc": "A first vaccination with the Janssen vaccine has to be administered at least 28 days ago.",
+      "desc": "A vaccination with the Janssen vaccine has to be administered at least 28 days ago.",
       "lang": "en"
     },
     {
-      "desc": "Een eerste vaccinatie met het Janssen-vaccin moet ten minste 28 dagen geleden uitgevoerd zijn.",
+      "desc": "Een vaccinatie met het Janssen-vaccin moet ten minste 28 dagen geleden uitgevoerd zijn.",
       "lang": "nl"
     }
   ],
@@ -32,14 +31,47 @@
       {
         "if": [
           {
-            ">": [
+            "before": [
               {
-                "var": "payload.v.0.dn"
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  0,
+                  "day"
+                ]
               },
-              1
+              {
+                "plusTime": [
+                  "2021-08-14",
+                  0,
+                  "day"
+                ]
+              }
             ]
           },
-          true,
+          {
+            "not-before": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  14,
+                  "day"
+                ]
+              }
+            ]
+          },
           {
             "not-before": [
               {
@@ -69,7 +101,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-27T00:00:00+01:00",
+  "ValidFrom": "2021-08-14T00:00:00+02:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }
