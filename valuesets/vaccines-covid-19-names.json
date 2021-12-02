@@ -1,7 +1,14 @@
 {
-  "valueSetDate": "2021-09-29",
+  "valueSetDate": "2021-11-09",
   "valueSetId": "vaccines-covid-19-names",
   "valueSetValues": {
+    "Abdala": {
+      "active": true,
+      "display": "Abdala",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.5"
+    },
     "BBIBP-CorV": {
       "active": true,
       "display": "BBIBP-CorV",
@@ -127,6 +134,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "WIBP-CorV": {
+      "active": true,
+      "display": "WIBP-CorV",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.5"
     }
   }
 }

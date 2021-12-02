@@ -9,4 +9,4 @@
 | [disease-agent-targeted](disease-agent-targeted.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/9810aafdbb7ad976845179c152c356987553eb82291b18d300db5044c4185bd8) |
 | [sct-vaccines-covid-19](sct-vaccines-covid-19.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/aad9707271d4e8434134efa0c2875882c322474ef1b8c36637d3a2e90db9be4f) |
 | [vaccines-covid-19-auth-holders](vaccines-covid-19-auth-holders.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/269b0b976878a4585a95ea1d8a877c74540a8cfc4e9113fbe41c8514ed441a18) |
-| [vaccines-covid-19-names](vaccines-covid-19-names.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/adbdaf4cd18c4d281fbd165c47ea8f83fb5ca9b0f6298cd695ea550f663ea524) |
+| [vaccines-covid-19-names](vaccines-covid-19-names.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/bc2d8801deef378388ce0bf537ff64459bae1e27e2345e29b26820dcb0334699) |
