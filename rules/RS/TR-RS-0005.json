@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Антигенски тест мора бити на ЕУ листи \"Common list of COVID-19 rapid antigen tests\".",
+      "desc": "Antigenski test (rapid test) mora biti u listi EU \"Common list of COVID-19 rapid antigen tests\".",
       "lang": "sr"
     }
   ],
@@ -52,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T01:00:00Z",
+  "ValidFrom": "2021-11-19T16:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }
