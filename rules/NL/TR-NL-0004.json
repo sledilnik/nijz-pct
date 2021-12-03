@@ -9,6 +9,26 @@
     {
       "desc": "Test result must be negative (\"not detected\").",
       "lang": "en"
+    },
+    {
+      "desc": "Das Testergebnis muss negativ sein (\"nicht nachgewiesen\").",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat du test doit être négatif (\"non détecté\").",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado de la prueba debe ser negativo (\"no se detecta\").",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato del test deve essere negativo (\"non rilevato\").",
+      "lang": "it"
+    },
+    {
+      "desc": "Het testresultaat moet negatief zijn (\"niet te detecteren\").",
+      "lang": "nl"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -32,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-19T00:00:00+02:00",
+  "ValidFrom": "2021-12-06T00:00:00+01:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }
