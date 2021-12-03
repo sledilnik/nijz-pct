@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Uzorak brzog antigenskog testa (rapid test) ne sme biti stariji od 48 sati.",
+      "desc": "Узорак брзог антигенског теста не сме бити старији од 48 сати.",
       "lang": "sr"
     }
   ],
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-19T16:00:00Z",
+  "ValidFrom": "2021-12-04T01:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.0"
 }
