@@ -10,26 +10,6 @@
     {
       "desc": "Vaccination doses must be equal or greater than expected doses.",
       "lang": "en"
-    },
-    {
-      "desc": "Die Impfdosen müssen gleich oder höher sein als die erwarteten Dosen.",
-      "lang": "de"
-    },
-    {
-      "desc": "Les doses de vaccination doivent être égales ou supérieures aux doses prévues.",
-      "lang": "fr"
-    },
-    {
-      "desc": "Las dosis de vacunación deben ser iguales o superiores a las previstas.",
-      "lang": "es"
-    },
-    {
-      "desc": "Le dosi di vaccinazione devono essere uguali o superiori alle dosi previste.",
-      "lang": "it"
-    },
-    {
-      "desc": "Vaccinatiedoses moeten gelijk of groter zijn dan de verwachte doses.",
-      "lang": "nl"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -55,7 +35,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:00+01:00",
+  "ValidFrom": "2021-08-19T00:00:00+02:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.1"
+  "Version": "1.1.0"
 }

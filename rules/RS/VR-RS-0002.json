@@ -7,11 +7,11 @@
   "Country": "RS",
   "Description": [
     {
-      "desc": "Only the following vaccines are accepted: AstraZeneca, Biontech (Pfizer), Moderna, Sputnik-V, Sinopharm.",
+      "desc": "Only the listed vaccines are allowed.",
       "lang": "en"
     },
     {
-      "desc": "Samo sledece vakcine su odobrene: AstraZeneca, Biontech (Pfizer), Moderna, Sputnik-V, Sinopharm, JJ.",
+      "desc": "Вакцина није на листи одобрених вакцина.",
       "lang": "sr"
     }
   ],
@@ -55,7 +55,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T00:00:00Z",
+  "ValidFrom": "2021-12-04T01:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }

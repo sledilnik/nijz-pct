@@ -6,28 +6,8 @@
   "Country": "NL",
   "Description": [
     {
-      "desc": "At most one test-event.",
+      "desc": "At most one t-event.",
       "lang": "en"
-    },
-    {
-      "desc": "Höchstens ein test-Ereignis.",
-      "lang": "de"
-    },
-    {
-      "desc": "Au maximum un événement de test.",
-      "lang": "fr"
-    },
-    {
-      "desc": "Como máximo un evento de test.",
-      "lang": "es"
-    },
-    {
-      "desc": "Al massimo un test-evento.",
-      "lang": "it"
-    },
-    {
-      "desc": "Maximaal één testgebeurtenis.",
-      "lang": "nl"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -42,7 +22,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:00+01:00",
+  "ValidFrom": "2021-08-19T00:00:00+02:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.1"
+  "Version": "1.1.0"
 }
