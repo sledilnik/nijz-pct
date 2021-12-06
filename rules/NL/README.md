@@ -4,7 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [GR-NL-0000](GR-NL-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/NL/df9ee1851c20cd570be45ff630d1c886e17eff512636bfa3d565bef6e7667fea) |  |
+| [GR-NL-0000](GR-NL-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/NL/df9ee1851c20cd570be45ff630d1c886e17eff512636bfa3d565bef6e7667fea) | Exactly one type of event. |
 | [GR-NL-0001](GR-NL-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/NL/5000751db2c52b6dbc3b052b35bc6affb131834d3d8d485651ccc6a8e3fa36c9) | The certificate must pertain to a disease or agent that's recognised by the EMA and the WHO (COVID-19). |
 | [RR-NL-0000](RR-NL-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/NL/53ec8e8f7a81048ef0bbd2d4216c074632445cf6fc1ff7bf8d0047c5c938a687) | At most one recovery-event. |
 | [RR-NL-0001](RR-NL-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/NL/edda09cdf796b61f8daf1aec2ad220ec5057f68f08fd860b38d060de46fc192a) | The moment of verification must lie within the validity period of this recovery certificate. |
