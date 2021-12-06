@@ -7,11 +7,11 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "The certificate validity period is between 11 and 240 days inclusive after the test date.",
+      "desc": "The Verification Datetime must be between +11 days and +180 days, inclusive after the test date.",
       "lang": "en"
     },
     {
-      "desc": "Obseg veljavnosti potrdila je vključno med 11. in 240. dnem po datumu testa.",
+      "desc": "Veljavnost potrdila mora biti vključno med 11. in 180. dnem po datumu testa.",
       "lang": "si"
     }
   ],
@@ -48,7 +48,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              240,
+              180,
               "day"
             ]
           }
@@ -59,7 +59,7 @@
   },
   "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-11T00:00:00Z",
+  "ValidFrom": "2021-11-15T00:00:00Z",
   "ValidTo": "2030-07-26T00:00:00Z",
   "Version": "1.1.0"
 }

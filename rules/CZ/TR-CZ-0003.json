@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The antigen test (e.g., rapid test) must be included in the EU’s Common list of COVID-19 rapid antigen tests.",
+      "desc": "The antigen test  must be included in the EU’s Common list of COVID-19 rapid antigen tests",
       "lang": "en"
     },
     {
-      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců.",
+      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců",
       "lang": "cs"
     }
   ],
@@ -52,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-04T23:00:00Z",
+  "ValidTo": "2031-12-04T23:00:00Z",
+  "Version": "3.0.0"
 }

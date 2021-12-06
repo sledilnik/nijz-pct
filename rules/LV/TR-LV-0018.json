@@ -4,21 +4,21 @@
     "t.0.sc",
     "t.0.tt"
   ],
-  "CertificateType": "General",
-  "Country": "TG",
+  "CertificateType": "Test",
+  "Country": "LV",
   "Description": [
     {
-      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 7 days ago.",
-      "lang": "en"
+      "desc": "Kopš NAAT testa veikšanas nav pagājis vairāk kā 72 stundas",
+      "lang": "lv"
     },
     {
-      "desc": "Le prélèvement pour un test TAN (p. ex. PCR) ne doit pas dater de plus de 7 jours.",
-      "lang": "fr"
+      "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+      "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
-  "EngineVersion": "2.0.1",
-  "Identifier": "GR-TG-0001",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-LV-0018",
   "Logic": {
     "if": [
       {
@@ -50,8 +50,8 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  7,
-                  "day"
+                  72,
+                  "hour"
                 ]
               }
             ]
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-27T22:20:15Z",
-  "ValidTo": "2025-11-26T22:20:15Z",
+  "ValidFrom": "2021-11-07T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
   "Version": "1.0.0"
 }

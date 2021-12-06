@@ -4,39 +4,39 @@
     "r.0.fr"
   ],
   "CertificateType": "Recovery",
-  "Country": "RO",
+  "Country": "SV",
   "Description": [
     {
-      "desc": "The positive test result must be no older than 180 days.",
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
       "lang": "en"
     },
     {
-      "desc": "Das positive Testergebnis darf nicht älter als 180 Tage sein.",
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le résultat positif du test ne doit pas dater de plus de 180 jours.",
+      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 11 jours.",
       "lang": "fr"
     },
     {
-      "desc": "El resultado positivo de la prueba no debe tener más de 180 días.",
+      "desc": "Deben haber transcurrido como mínimo 11 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
       "lang": "es"
     },
     {
-      "desc": "Il risultato positivo del test non deve essere più vecchio di 180 giorni.",
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
       "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-RO-0001",
+  "Identifier": "RR-SV-0001",
   "Logic": {
     "if": [
       {
         "var": "payload.r.0"
       },
       {
-        "not-after": [
+        "not-before": [
           {
             "plusTime": [
               {
@@ -51,7 +51,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              180,
+              11,
               "day"
             ]
           }
@@ -62,7 +62,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-13T00:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
+  "ValidFrom": "2021-11-10T00:00:00Z",
+  "ValidTo": "2030-11-10T00:00:00Z",
   "Version": "1.0.0"
 }

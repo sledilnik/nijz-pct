@@ -1,7 +1,7 @@
 {
   "AffectedFields": [
-    "v.0",
     "v.0.mp",
+    "v.0",
     "v.0.dn",
     "v.0.dt"
   ],
@@ -9,7 +9,7 @@
   "Country": "CH",
   "Description": [
     {
-      "desc": "If the vaccine requires one dose, and only one dose was administered, it is valid after 21 days ",
+      "desc": "If the vaccine requires one dose, and only one dose was administered, it becomes valid after 21 days",
       "lang": "en"
     }
   ],
@@ -75,7 +75,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
+  "ValidFrom": "2021-12-06T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.6"
 }

@@ -24,6 +24,16 @@
       {
         "and": [
           {
+            "in": [
+              {
+                "var": "payload.v.0.co"
+              },
+              [
+                "UA"
+              ]
+            ]
+          },
+          {
             "===": [
               {
                 "var": "payload.v.0.dn"
@@ -68,7 +78,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:01Z",
+  "ValidFrom": "2021-11-25T20:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
   "Version": "1.0.0"
 }

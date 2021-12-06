@@ -1,7 +1,14 @@
 {
-  "valueSetDate": "2021-09-29",
+  "valueSetDate": "2021-11-09",
   "valueSetId": "vaccines-covid-19-names",
   "valueSetValues": {
+    "Abdala": {
+      "active": true,
+      "display": "Abdala",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.5"
+    },
     "BBIBP-CorV": {
       "active": true,
       "display": "BBIBP-CorV",
@@ -36,6 +43,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "CoviVac": {
+      "active": true,
+      "display": "CoviVac",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.4"
     },
     "Covid-19-recombinant": {
       "active": true,
@@ -86,6 +100,13 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
     },
+    "Hayat-Vax": {
+      "active": true,
+      "display": "Hayat-Vax",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.4"
+    },
     "Inactivated-SARS-CoV-2-Vero-Cell": {
       "active": true,
       "display": "Inactivated SARS-CoV-2 (Vero Cell)",
@@ -100,12 +121,26 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.3"
     },
+    "Sputnik-Light": {
+      "active": true,
+      "display": "Sputnik Light",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.4"
+    },
     "Sputnik-V": {
       "active": true,
       "display": "Sputnik-V",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "WIBP-CorV": {
+      "active": true,
+      "display": "WIBP-CorV",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.5"
     }
   }
 }

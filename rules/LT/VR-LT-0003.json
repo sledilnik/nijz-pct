@@ -2,6 +2,7 @@
   "AffectedFields": [
     "v.0",
     "v.0.dt",
+    "v.0.mp",
     "v.0.dn",
     "v.0.sd"
   ],
@@ -23,30 +24,21 @@
   "Logic": {
     "if": [
       {
-        "and": [
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
           {
-            "var": "payload.v.0"
-          },
-          {
-            ">=": [
+            "not-before": [
               {
-                "var": "payload.v.0.dn"
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
               },
-              {
-                "var": "payload.v.0.sd"
-              }
-            ]
-          },
-          {
-            "<": [
-              {
-                "var": "payload.v.0.dn"
-              },
-              3
-            ]
-          },
-          {
-            "not-after": [
               {
                 "plusTime": [
                   {
@@ -55,75 +47,92 @@
                   14,
                   "day"
                 ]
-              },
+              }
+            ]
+          },
+          true,
+          {
+            "if": [
               {
-                "plusTime": [
+                ">": [
                   {
-                    "var": "external.validationClock"
+                    "var": "payload.v.0.dn"
                   },
-                  0,
-                  "day"
+                  2
+                ]
+              },
+              true,
+              {
+                "if": [
+                  {
+                    "and": [
+                      {
+                        ">": [
+                          {
+                            "var": "payload.v.0.dn"
+                          },
+                          1
+                        ]
+                      },
+                      {
+                        "===": [
+                          {
+                            "var": "payload.v.0.mp"
+                          },
+                          "EU/1/20/1525"
+                        ]
+                      }
+                    ]
+                  },
+                  true,
+                  {
+                    "and": [
+                      {
+                        "and": [
+                          {
+                            "===": [
+                              {
+                                "var": "payload.v.0.sd"
+                              },
+                              1
+                            ]
+                          },
+                          {
+                            "===": [
+                              {
+                                "var": "payload.v.0.dn"
+                              },
+                              1
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "in": [
+                          {
+                            "var": "payload.v.0.mp"
+                          },
+                          [
+                            "EU/1/20/1528",
+                            "EU/1/20/1507",
+                            "EU/1/21/1529"
+                          ]
+                        ]
+                      }
+                    ]
+                  }
                 ]
               }
             ]
           }
         ]
       },
-      true,
-      {
-        "and": [
-          {
-            "var": "payload.v.0"
-          },
-          {
-            ">=": [
-              {
-                "var": "payload.v.0.dn"
-              },
-              {
-                "var": "payload.v.0.sd"
-              }
-            ]
-          },
-          {
-            ">=": [
-              {
-                "var": "payload.v.0.dn"
-              },
-              3
-            ]
-          },
-          {
-            "not-after": [
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.v.0.dt"
-                  },
-                  0,
-                  "day"
-                ]
-              },
-              {
-                "plusTime": [
-                  {
-                    "var": "external.validationClock"
-                  },
-                  0,
-                  "day"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      true,
-      false
+      true
     ]
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-16T12:00:00Z",
-  "ValidTo": "2023-09-04T00:00:00Z",
-  "Version": "1.1.0"
+  "ValidFrom": "2021-12-01T10:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.2.0"
 }

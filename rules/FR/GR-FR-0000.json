@@ -1,6 +1,5 @@
 {
   "AffectedFields": [
-    "r",
     "t",
     "v"
   ],
@@ -8,11 +7,11 @@
   "Country": "FR",
   "Description": [
     {
-      "desc": "Exactly one type of event.",
+      "desc": "Only a vaccine or test is allowed, and in a EU standard format.",
       "lang": "en"
     },
     {
-      "desc": "Ne contient qu'un seul évènement.",
+      "desc": "Seul un vaccin ou un test est autorisé, et dans un format au standard UE.",
       "lang": "fr"
     }
   ],
@@ -24,9 +23,6 @@
       {
         "reduce": [
           [
-            {
-              "var": "payload.r"
-            },
             {
               "var": "payload.t"
             },
@@ -58,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-05T00:00:00Z",
-  "ValidTo": "2030-09-05T00:00:00Z",
-  "Version": "1.0.1"
+  "ValidFrom": "2021-10-30T00:00:00Z",
+  "ValidTo": "2030-10-30T00:00:00Z",
+  "Version": "1.0.2"
 }

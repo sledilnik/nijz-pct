@@ -1,13 +1,13 @@
 {
   "AffectedFields": [
-    "v.0",
-    "v.0.mp"
+    "v.0.mp",
+    "v.0"
   ],
   "CertificateType": "Vaccination",
   "Country": "CH",
   "Description": [
     {
-      "desc": "Only vaccines in the allowed valueset that have been approved by the EMA are allowed.",
+      "desc": "Only vaccines in the allowed valueset that have been approved by the EMA or are otherwise accepted in Switzerland are allowed.",
       "lang": "en"
     }
   ],
@@ -31,7 +31,11 @@
             "EU/1/20/1525",
             "CoronaVac",
             "BBIBP-CorV",
-            "Covishield"
+            "Covishield",
+            "Covaxin",
+            "BBIBP-CorV_T",
+            "CoronaVac_T",
+            "Covaxin_T"
           ]
         ]
       },
@@ -40,7 +44,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
+  "ValidFrom": "2021-12-06T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.6"
 }

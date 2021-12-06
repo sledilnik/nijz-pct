@@ -10,10 +10,6 @@
     {
       "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
       "lang": "en"
-    },
-    {
-      "desc": "Узорак брзог антигенског теста не сме бити старији од 48 сати.",
-      "lang": "sr"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -64,7 +60,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T01:00:00Z",
+  "ValidFrom": "2021-11-05T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }

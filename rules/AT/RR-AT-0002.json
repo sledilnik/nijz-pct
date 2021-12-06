@@ -51,7 +51,7 @@
   "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidFrom": "2021-11-29T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.11"
+  "Version": "1.0.12"
 }

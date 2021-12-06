@@ -1,7 +1,7 @@
 {
   "AffectedFields": [
-    "r.0",
-    "r.0.fr"
+    "r.0.fr",
+    "r.0"
   ],
   "CertificateType": "Recovery",
   "Country": "CH",
@@ -35,7 +35,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
+  "ValidFrom": "2021-12-06T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.6"
 }

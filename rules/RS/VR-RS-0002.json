@@ -7,12 +7,8 @@
   "Country": "RS",
   "Description": [
     {
-      "desc": "Only the listed vaccines are allowed.",
+      "desc": "Only the following vaccines are accepted: AstraZeneca, Biontech (Pfizer), Moderna, Sputnik-V, Sinopharm.",
       "lang": "en"
-    },
-    {
-      "desc": "Вакцина није на листи одобрених вакцина.",
-      "lang": "sr"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -33,20 +29,7 @@
             "EU/1/20/1507",
             "EU/1/21/1529",
             "Sputnik-V",
-            "Inactivated-SARS-CoV-2-Vero-Cell",
-            "EU/1/20/1525",
-            "CVnCoV",
-            "Convidecia",
-            "EpiVacCorona",
-            "BBIBP-CorV",
-            "CoronaVac",
-            "Covaxin",
-            "Covishield",
-            "Covid-19-recombinant",
-            "R-COVI",
-            "CoviVac",
-            "Sputnik-Light",
-            "Hayat-Vax"
+            "Inactivated-SARS-CoV-2-Vero-Cell"
           ]
         ]
       },
@@ -55,7 +38,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T01:00:00Z",
+  "ValidFrom": "2021-11-05T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.1"
+  "Version": "1.0.0"
 }

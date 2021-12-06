@@ -9,11 +9,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The vaccine Comirnaty must have been completed.",
+      "desc": "The certificate of the first dose of Comirnaty is not accepted",
       "lang": "en"
     },
     {
-      "desc": "Očkování Comirnaty být dokončené.",
+      "desc": "Certifikát první dávky Comirnaty není akceptován",
       "lang": "cs"
     }
   ],
@@ -53,7 +53,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-04T23:00:00Z",
+  "ValidTo": "2031-12-04T23:00:00Z",
+  "Version": "3.0.0"
 }

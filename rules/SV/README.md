@@ -1,0 +1,15 @@
+# EU digital green certificate verification rules for El Salvador
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [RR-SV-0001](RR-SV-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/d8bfdaa99f60f7a09042ac73030a3476cfa2d2b48e73c6e7bf17bbd59542b2a7) | The positive NAA test result (e.g., PCR) must be older than 11 days. |
+| [RR-SV-0002](RR-SV-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/7319396afa1e4a16ea486cce93515c45d9b9ad40a975be55cac8b62f4a028707) | The positive NAA test result (e.g., PCR) must be no older than 180 days. |
+| [TR-SV-0001](TR-SV-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/f159d58dce5bc110e989cec9b2f8b40187e3ee85d886e503e6d34f9a88cac723) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |
+| [TR-SV-0002](TR-SV-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/3bfd13ae5e7e607be02d13d965aec2ead04d673d67835609262ff800d32e6264) | The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago. |
+| [TR-SV-0003](TR-SV-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/99245e9edb8b256b63f318e9d1f2cc1cf10415e0b2689136f3023195817bfc94) | The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago. |
+| [TR-SV-0004](TR-SV-0004.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/e413cb5fe425a547eec9a07dc369cea537958641e52da0b3af899a9d58372a98) | The test result must be negative. |
+| [VR-SV-0001](VR-SV-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/b19ae0105090eeb3c7f54644887df5d534186f47807c9e435195554968a48534) | The vaccination schedule must be complete (e.g., 1/1, 2/2, 3/3) and be older than 14 days in the case 1/1. |
+| [VR-SV-0002](VR-SV-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/8fbb031bc8f5bd5122ba6cd122f9c23d96ef757a5e0e9aef15735d5e678c4ec2) | Only the following vaccines are accepted: AstraZeneca, Biontech, Janssen, Moderna. |
+| [VR-SV-0003](VR-SV-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/SV/748e8b758777104465cb339bfdd65108883b042046cc11521b0cdec0c753e092) | The vaccine must have been administered no longer than one year ago. |

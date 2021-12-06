@@ -1,0 +1,55 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "Broken Rule - must fail",
+      "lang": "en"
+    },
+    {
+      "desc": "Inkorrekte Regel - muss fehlschlagen",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-DX-0005",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "or": [
+          {
+            "operatorDoesNotExist": [
+              {
+                "var": "payload.v.0.sd"
+              },
+              "4"
+            ]
+          },
+          {
+            "operatorDoesNotExist": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              "4"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-11T11:11:11Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.2"
+}

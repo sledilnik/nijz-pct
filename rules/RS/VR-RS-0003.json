@@ -9,10 +9,6 @@
     {
       "desc": "The vaccine must have been administered no longer than seven months ago.",
       "lang": "en"
-    },
-    {
-      "desc": "Вакцинација мора бити обављена пре највише 7 месеци.",
-      "lang": "sr"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -50,7 +46,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T01:00:00Z",
+  "ValidFrom": "2021-11-05T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }

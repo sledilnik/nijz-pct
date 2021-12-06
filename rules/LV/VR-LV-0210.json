@@ -1,31 +1,30 @@
 {
   "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
+    "v.0",
+    "v.0.dt"
   ],
-  "CertificateType": "Test",
-  "Country": "AT",
+  "CertificateType": "Vaccination",
+  "Country": "LV",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+      "desc": "Kopš vakcinācijas ir pagājis vairāk nekā 14 dienas",
+      "lang": "lv"
+    },
+    {
+      "desc": "Finished vaccination course is considered protective at earliest 14 days after the date of the last vaccination",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-AT-0005",
+  "Identifier": "VR-LV-0210",
   "Logic": {
     "if": [
       {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP217198-3"
-        ]
+        "var": "payload.v.0"
       },
       {
-        "before": [
+        "not-before": [
           {
             "plusTime": [
               {
@@ -38,10 +37,10 @@
           {
             "plusTime": [
               {
-                "var": "payload.t.0.sc"
+                "var": "payload.v.0.dt"
               },
-              48,
-              "hour"
+              14,
+              "day"
             ]
           }
         ]
@@ -49,10 +48,9 @@
       true
     ]
   },
-  "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-29T00:00:00Z",
+  "ValidFrom": "2021-11-07T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.11"
+  "Version": "1.0.0"
 }

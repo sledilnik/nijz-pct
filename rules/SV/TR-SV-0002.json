@@ -5,32 +5,32 @@
     "t.0.tt"
   ],
   "CertificateType": "Test",
-  "Country": "RO",
+  "Country": "SV",
   "Description": [
     {
-      "desc": "The sample for an NAA test (e.g. PCR) must have been taken no longer than 72 hours ago.",
+      "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
       "lang": "en"
     },
     {
-      "desc": "Die Probe für einen NAA-Test (z.B. PCR) darf nicht länger als 72 Stunden zurückliegen.",
+      "desc": "Die Probenahme für einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "L'échantillon pour un test NAA (par exemple PCR) ne doit pas avoir été prélevé il y a plus de 72 heures.",
+      "desc": "Le prélèvement pour un test antigénique (p. ex. test rapide) ne doit pas dater de plus de 48 heures.",
       "lang": "fr"
     },
     {
-      "desc": "La muestra para una prueba de NAA (p. Ej. PCR) no debe haberse tomado hace más de 72 horas.",
+      "desc": "Deben haber transcurrido 48 horas como máximo desde la extracción para una prueba de antígenos (por ejemplo, un autotest rápido).",
       "lang": "es"
     },
     {
-      "desc": "Il campione per un test NAA (es. PCR) deve essere stato prelevato non più di 72 ore prima.",
+      "desc": "Il campione per il test antigenico (test rapido) deve essere stato rilevato nelle ultime 48 ore.",
       "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-RO-0002",
+  "Identifier": "TR-SV-0002",
   "Logic": {
     "if": [
       {
@@ -43,7 +43,7 @@
               {
                 "var": "payload.t.0.tt"
               },
-              "LP6464-4"
+              "LP217198-3"
             ]
           },
           {
@@ -62,7 +62,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  72,
+                  48,
                   "hour"
                 ]
               }
@@ -76,7 +76,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-13T00:00:00Z",
-  "ValidTo": "2031-01-01T00:00:00Z",
+  "ValidFrom": "2021-11-10T00:00:00Z",
+  "ValidTo": "2030-11-10T00:00:00Z",
   "Version": "1.0.0"
 }

@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-09-29",
+  "valueSetDate": "2021-11-09",
   "valueSetId": "vaccines-covid-19-auth-holders",
   "valueSetValues": {
     "Bharat-Biotech": {
@@ -8,6 +8,20 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
       "version": "1.0"
+    },
+    "CIGB": {
+      "active": true,
+      "display": "Center for Genetic Engineering and Biotechnology",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.5"
+    },
+    "Chumakov-Federal-Scientific-Center": {
+      "active": true,
+      "display": "Chumakov Federal Scientific Center for Research and Development of Immune-and-Biological Products",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.4"
     },
     "Fiocruz": {
       "active": true,
@@ -79,6 +93,13 @@
       "system": "https://spor.ema.europa.eu/v1/organisations",
       "version": ""
     },
+    "ORG-100023050": {
+      "active": true,
+      "display": "Gulf Pharmaceutical Industries",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
+    },
     "ORG-100024420": {
       "active": true,
       "display": "Sinopharm Zhijun (Shenzhen) Pharmaceutical Co. Ltd. - Shenzhen location",
@@ -106,6 +127,13 @@
       "lang": "en",
       "system": "https://spor.ema.europa.eu/v1/organisations",
       "version": ""
+    },
+    "Sinopharm-WIBP": {
+      "active": true,
+      "display": "Sinopharm - Wuhan Institute of Biological Products",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.5"
     },
     "Sinovac-Biotech": {
       "active": true,

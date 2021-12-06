@@ -7,7 +7,7 @@
   "Country": "CH",
   "Description": [
     {
-      "desc": "If the test type is \"RAT\" then the validation date must be before the date of sample collection plus 48 hours",
+      "desc": "If the test type is \\\"RAT\\\" then the validation date must be before the date of sample collection plus 24 hours",
       "lang": "en"
     }
   ],
@@ -40,7 +40,7 @@
               {
                 "var": "payload.t.0.sc"
               },
-              48,
+              24,
               "hour"
             ]
           }
@@ -51,7 +51,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-18T12:00:00Z",
+  "ValidFrom": "2021-12-06T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.6"
 }

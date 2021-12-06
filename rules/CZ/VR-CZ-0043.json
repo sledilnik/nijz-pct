@@ -9,11 +9,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The vaccine VAXZEVRIA must have been completed.",
+      "desc": "The uncompleted vaccination by VAXZEVRIA must have been administered at least more than 14 days ago and no more than 0 days ago.",
       "lang": "en"
     },
     {
-      "desc": "Očkování VAXZEVRIA být dokončené.",
+      "desc": "Nedokončené očkování látkou VAXZEVRIA bylo aplikováno minimálně před 14 dny a maximálne před 0 dny.",
       "lang": "cs"
     }
   ],
@@ -28,20 +28,72 @@
       {
         "if": [
           {
-            "===": [
+            "and": [
               {
-                "var": "payload.v.0.mp"
+                ">": [
+                  {
+                    "var": "payload.v.0.sd"
+                  },
+                  {
+                    "var": "payload.v.0.dn"
+                  }
+                ]
               },
-              "EU/1/21/1529"
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.mp"
+                  },
+                  "EU/1/21/1529"
+                ]
+              }
             ]
           },
           {
-            ">=": [
+            "and": [
               {
-                "var": "payload.v.0.dn"
+                "not-before": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      14,
+                      "day"
+                    ]
+                  }
+                ]
               },
               {
-                "var": "payload.v.0.sd"
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      0,
+                      "day"
+                    ]
+                  }
+                ]
               }
             ]
           },
@@ -53,7 +105,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
+  "ValidFrom": "2021-11-12T23:00:00Z",
+  "ValidTo": "2031-11-12T23:00:00Z",
   "Version": "2.0.0"
 }

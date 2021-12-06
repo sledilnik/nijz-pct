@@ -10,10 +10,6 @@
     {
       "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
       "lang": "en"
-    },
-    {
-      "desc": "Имунизација мора бити комплетна (1/1, 2/2).",
-      "lang": "sr"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -39,7 +35,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T01:00:00Z",
+  "ValidFrom": "2021-11-05T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }

@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The vaccine SPIKEVAX must have been administered no longer than 1440 days ago.",
+      "desc": "Vaccination SPIKEVAX may not be older than 1440 days",
       "lang": "en"
     },
     {
-      "desc": "Očkování SPIKEVAX nesmí být starší než 1440 dní.",
+      "desc": "Očkování SPIKEVAX nesmí být starší než 1440 dní",
       "lang": "cs"
     }
   ],
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-04T23:00:00Z",
+  "ValidTo": "2031-12-04T23:00:00Z",
+  "Version": "3.0.0"
 }

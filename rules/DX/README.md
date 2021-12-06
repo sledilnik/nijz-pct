@@ -5,6 +5,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
 | [IR-DX-0001](IR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/93a5425911656c8d8e18c90b5319d82ad51da0846ed1eee52b29692d108663f3) | The test center ILLEGAL TC  is not allowed. |
+| [IR-DX-0002](IR-DX-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/5a1670f3a116ed293549e5428f0d1fed6883dd88117d8f8549aca554ea33b727) | Compromised DSC: DCC issued after 2021-10-01 are invalid |
 | [RR-DX-0001](RR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/07d3796270571c31222680f6963a702046716c09dc996ba359ae3529e8e87937) | The positive NAA test result (e.g., PCR) must be older than 21 days. |
 | [RR-DX-0002](RR-DX-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/ee948e1b4bc7ce76d75f6fd8da0047b916621bb23801fcc075c00db386c6cb2e) | The positive NAA test result (e.g., PCR) must be no older than 120 days. |
 | [TR-DX-0001](TR-DX-0001.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/aff63b3ca6b036c713f6efbbe387133eda444149ecd17e3fb59f26f0073cccae) | This must be a NAA test (e.g., PCR). |
@@ -15,3 +16,4 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | [VR-DX-0002](VR-DX-0002.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/3b04d382b8f0feeb1f95ec90f6adab0b5df1174550ccc3055f86688a7a475600) | Only the following vaccines are accepted: Biontech, Janssen, Moderna. |
 | [VR-DX-0003](VR-DX-0003.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/5f079576d7fb44a02146d05934d24cd95ae195f76f5ad7e46313796c37de0df1) | The vaccine must have been administered at least 7 days ago. |
 | [VR-DX-0004](VR-DX-0004.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/e3cfd20feca94a13cee95e86479829173a7aef08b456d0ae27cd963f42baf694) | The vaccine must have been administered no longer than 180 days ago. |
+| [VR-DX-0005](VR-DX-0005.json) | [API](https://dgca-businessrule-service-test.ezdrav.si/rules/DX/2b77f485a984ae9fb52a14b8ba4bf52948f9948c6a6bf3b3d0c15f052b7b6263) | Broken Rule - must fail |
