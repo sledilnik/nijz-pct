@@ -1,14 +1,17 @@
 # Archive of NIJZ's mobile apps
 
+## Covid certificate check app
+
 Archive of apps published on [NIJZ's ezdrav.si web page](https://ezdrav.si/storitve/digitalno-covid-potrdilo-eu/) ([historical archive](https://web.archive.org/web/*/https://ezdrav.si/storitve/digitalno-covid-potrdilo-eu/), [virustotal](https://www.virustotal.com/gui/domain/ezdrav.si)).
 
 NIJZ's mobile app is based on [EU DGCA verifier app](https://github.com/eu-digital-green-certificates/dgca-verifier-app-android), currently only for Android, with no public source code.
 
-Apps aren't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ) nor [Apple App Store](https://apps.apple.com/si/developer/national-institute-of-public-health/id1527561315).
+App isn't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ),
+but is [available in Apple App Store](https://apps.apple.com/si/app/preverjanje-eu-dcp/id1584012481).
 
 NIJZ [home page](https://nijz.si) ([virustotal](https://www.virustotal.com/gui/domain/nijz.si))
 
-## 1st version, non-anonymous
+### 1st version, non-anonymous
 
 2021-07-23: Initial public version (likely similar to the one made first for Police use during border checks). It was quickly retracted on the same day for "upgrade" ([Twitter](https://twitter.com/NIJZ_pr/status/1418595819016622085)).
 
@@ -18,7 +21,7 @@ NIJZ [home page](https://nijz.si) ([virustotal](https://www.virustotal.com/gui/d
 * [origin](https://ezdrav.si/wp-content/uploads/2021/07/covid19_release_new_appid.apk)
 * :book: [Manual 2020-07-23 web archive](https://web.archive.org/web/20210723150249/https:/ezdrav.si/storitve/digitalno-covid-potrdilo-eu/)
 
-## 2nd version, fully-anonymous
+### 2nd version, fully-anonymous
 
 2021-07-29: This was fully privacy preserving version, not showing any personal details (neither name nor any part of birth date) to be used by venues to check their visitors. Because of that it was too easily explitable, useless.
 
@@ -29,7 +32,7 @@ NIJZ [home page](https://nijz.si) ([virustotal](https://www.virustotal.com/gui/d
 * :book: [Manual 2021-07-27](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_27.07.2021.pdf)
 * :book: [Manual 2021-07-29](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_29.07.2021.pdf)
 
-## 3rd version, semi-anonymous
+### 3rd version, semi-anonymous
 
 2021-08-05: Released as a compromise of previous extreme versions, showing name, surname and birth year.
 It also has added counters of valid and invalid certificates scanned by the app.
@@ -40,3 +43,14 @@ It also has added counters of valid and invalid certificates scanned by the app.
 * [virustotal](https://www.virustotal.com/gui/file/fdb7e0ca601006dc3bba95c9f339a1ce1170d42fd9c91f19a9995f15af863eba)
 * [origin](https://www.nijz.si/sites/www.nijz.si/files/uploaded/preverjanje_eu_dcp_semi_anon.apk)
 * :book: [Manual 2021-08-06](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_06.08.2021.pdf)
+
+## zVem
+
+Wallet for digital covid certificates & accessing other health services
+
+[zVem official page](https://zvem.ezdrav.si/-/aplikacija-zvem-za-pametne-telefone),
+linking to the app in:
+
+* [Google Play store](https://play.google.com/store/apps/details?id=si.gov.zvem)
+* [Apple app store](https://apps.apple.com/si/app/zvem/id1574669660)
+* [Huawei App Gallery](https://appgallery.huawei.com/#/app/C104549339)

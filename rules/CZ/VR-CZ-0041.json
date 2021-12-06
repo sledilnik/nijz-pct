@@ -1,18 +1,24 @@
 {
   "AffectedFields": [
-    "v.0"
+    "v.0",
+    "v.0.mp",
+    "v.0.dt"
   ],
   "CertificateType": "Vaccination",
-  "Country": "IE",
+  "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+      "desc": "The vaccine VAXZEVRIA must have been administered no longer than 1440 days ago.",
       "lang": "en"
+    },
+    {
+      "desc": "Očkování VAXZEVRIA nesmí být starší než 1440 dní.",
+      "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-IE-0005",
+  "Identifier": "VR-CZ-0041",
   "Logic": {
     "if": [
       {
@@ -33,15 +39,6 @@
               {
                 "plusTime": [
                   {
-                    "var": "payload.v.0.dt"
-                  },
-                  15,
-                  "day"
-                ]
-              },
-              {
-                "plusTime": [
-                  {
                     "var": "external.validationClock"
                   },
                   0,
@@ -50,8 +47,10 @@
               },
               {
                 "plusTime": [
-                  "2022-06-30T23:59:59-00:00",
-                  0,
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  1440,
                   "day"
                 ]
               }
@@ -65,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2021-11-21T23:00:00Z",
+  "ValidTo": "2031-11-21T23:00:00Z",
+  "Version": "2.0.0"
 }

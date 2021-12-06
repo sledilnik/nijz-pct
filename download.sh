@@ -72,13 +72,13 @@ done
 ## countryList
 CountrylistBaseURL=$(jq -r '.versions.default.endpoints.countryList.url' "context.json")
 echo "countryList URL: ${CountrylistBaseURL}"
-curl -s "${CountrylistBaseURL}" | jq --sort-keys > "countrylist.json"
+curl -s "${CountrylistBaseURL}" | jq --sort-keys 'sort'> "countrylist.json"
 ## /countryList
 
 ## signercertificateStatus
 SignercertificateStatusURL=$(jq -r '.versions.default.endpoints.status.url' "context.json")
 echo "signercertificateStatus URL: ${SignercertificateStatusURL}"
-curl -s "${SignercertificateStatusURL}" | jq --sort-keys > "signercertificateStatus.json"
+curl -s "${SignercertificateStatusURL}" | jq --sort-keys 'sort' > "signercertificateStatus.json"
 ## /signercertificateStatus
 
 ## signercertificateUpdate

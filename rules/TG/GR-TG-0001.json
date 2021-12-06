@@ -1,44 +1,41 @@
 {
   "AffectedFields": [
-    "v.0"
+    "t.0",
+    "t.0.sc",
+    "t.0.tt"
   ],
-  "CertificateType": "Vaccination",
-  "Country": "IE",
+  "CertificateType": "General",
+  "Country": "TG",
   "Description": [
     {
-      "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 7 days ago.",
       "lang": "en"
+    },
+    {
+      "desc": "Le prélèvement pour un test TAN (p. ex. PCR) ne doit pas dater de plus de 7 jours.",
+      "lang": "fr"
     }
   ],
   "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "VR-IE-0005",
+  "EngineVersion": "2.0.1",
+  "Identifier": "GR-TG-0001",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.t.0"
       },
       {
         "if": [
           {
             "===": [
               {
-                "var": "payload.v.0.mp"
+                "var": "payload.t.0.tt"
               },
-              "EU/1/21/1529"
+              "LP6464-4"
             ]
           },
           {
             "not-after": [
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.v.0.dt"
-                  },
-                  15,
-                  "day"
-                ]
-              },
               {
                 "plusTime": [
                   {
@@ -50,8 +47,10 @@
               },
               {
                 "plusTime": [
-                  "2022-06-30T23:59:59-00:00",
-                  0,
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  7,
                   "day"
                 ]
               }
@@ -65,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2021-11-27T22:20:15Z",
+  "ValidTo": "2025-11-26T22:20:15Z",
+  "Version": "1.0.0"
 }

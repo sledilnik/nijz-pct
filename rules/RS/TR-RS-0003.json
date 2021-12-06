@@ -1,44 +1,41 @@
 {
   "AffectedFields": [
-    "v.0"
+    "t.0",
+    "t.0.sc",
+    "t.0.tt"
   ],
-  "CertificateType": "Vaccination",
-  "Country": "IE",
+  "CertificateType": "Test",
+  "Country": "RS",
   "Description": [
     {
-      "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
       "lang": "en"
+    },
+    {
+      "desc": "Узорак NAA (PCR) теста не сме бити старији од 72 сата.",
+      "lang": "sr"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-IE-0005",
+  "Identifier": "TR-RS-0003",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.t.0"
       },
       {
         "if": [
           {
             "===": [
               {
-                "var": "payload.v.0.mp"
+                "var": "payload.t.0.tt"
               },
-              "EU/1/21/1529"
+              "LP6464-4"
             ]
           },
           {
             "not-after": [
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.v.0.dt"
-                  },
-                  15,
-                  "day"
-                ]
-              },
               {
                 "plusTime": [
                   {
@@ -50,9 +47,11 @@
               },
               {
                 "plusTime": [
-                  "2022-06-30T23:59:59-00:00",
-                  0,
-                  "day"
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  72,
+                  "hour"
                 ]
               }
             ]
@@ -65,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T00:00:00Z",
+  "ValidFrom": "2021-12-04T01:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.2"
+  "Version": "1.1.0"
 }

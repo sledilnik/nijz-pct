@@ -1710,6 +1710,13 @@
       "system": "urn:iso:std:iso:3166",
       "version": ""
     },
+    "XK": {
+      "active": true,
+      "display": "Kosovo, Republic of",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/countrycodes",
+      "version": "1.4"
+    },
     "YE": {
       "active": true,
       "display": "Yemen",
