@@ -6,7 +6,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | ---- | ------ | ----------- |
 | [GR-UA-0000](GR-UA-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/9ba853e242846f968c7d3404b6e604ea1180f647d86f33763053eb8d2ed0b890) | Exactly one type of event. |
 | [GR-UA-0001](GR-UA-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/681e61115cc42b7542996e5b833fd1d59c3dc5fd7d15b6af2f11a2a80dcf2cca) | The "disease or agent targeted" must be COVID-19 of the value set list. |
-| [RR-UA-0000](RR-UA-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/472d54858f8ab105b819891f87209b2c031ce16a028a80c1ce43877d47adc5dd) |  |
+| [RR-UA-0000](RR-UA-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/472d54858f8ab105b819891f87209b2c031ce16a028a80c1ce43877d47adc5dd) | At most one r-event. |
 | [RR-UA-0001](RR-UA-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/25645b9fd43bd7e3fa632ee700db212190bc939613e81b4d291e2a7f37e9b496) | The Verification Datetime must be between "Certificate Valid From" and "Certificate Valid Until". |
 | [RR-UA-0002](RR-UA-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/6232f66ddb7ff4fa4422d891660b4d3a25792cbe64c85164036ca92557b08c0a) | The validity start date must be greater than or equal to the first positive test date  +14 days and validity end date must be less than or equal to the first postive test date +180. |
 | [TR-UA-0000](TR-UA-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/427584945c619356011286502d551bc6b1cb3a13e4f1e157adde76f446fe2b68) | At most one t-event. |
