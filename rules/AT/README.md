@@ -5,8 +5,8 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
 | [GR-AT-0000](GR-AT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/0fd533cefdc99df52cf40d5de01be4e1de0e6ba6b492ba5bd00834b251d220c5) | Exactly one type of event. |
-| [GR-AT-0001](GR-AT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/02f84b762731ae8d7cee80b4d36f38a7a248f9d0ebf0501ceae12d6e901301f6) | The "disease or agent targeted" must be COVID-19 of the value set list. |
-| [RR-AT-0000](RR-AT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/5d0da8377045aefe9940ed9ac4489d2746b464e6d5ca07f13e297b0fa5cfd6e2) |  |
+| [GR-AT-0001](GR-AT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/02f84b762731ae8d7cee80b4d36f38a7a248f9d0ebf0501ceae12d6e901301f6) |  |
+| [RR-AT-0000](RR-AT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/5d0da8377045aefe9940ed9ac4489d2746b464e6d5ca07f13e297b0fa5cfd6e2) | At most one r-event. |
 | [RR-AT-0001](RR-AT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/6f0ab761d64dd267653bd4f11ed5c8807af3a711598cd94610ab450755b5089b) | The positive NAA test result (e.g., PCR) must be older than 11 days. |
 | [RR-AT-0002](RR-AT-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/2cd0f3495394a65260caf152c5c9e9f99087eede0fd8a99e58af6559fa5a0f1c) | The positive NAA test result (e.g., PCR) must be no older than 180 days. |
 | [TR-AT-0000](TR-AT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/AT/3788759c6554ccf464d898fb365b26d70af3e54b154a44f7fcdfbe7fab162673) | At most one t-event. |
