@@ -43,14 +43,38 @@ jobs:
         git diff rules/
 
     # Git commit + push, see https://github.com/github-actions-x/commit
-    - name: Publish NIJZ PCT rule changes to git
+    - name: Publish NIJZ PCT rule for Slovenia changes to git
       if: github.ref == 'refs/heads/main'
       uses: github-actions-x/commit@v2.8
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'main'
-        commit-message: 'NIJZ PCT rules update 🤖'
+        commit-message: 'NIJZ PCT rules for Slovenia🇸🇮 update 🤖'
         rebase: 'true' # pull and rebase before commit
-        files: '*.json rules/ valuesets/ signercertificateUpdate.*'
+        files: 'rules/SI/'
+        name: Sledilnik data scrape bot 🤖
+        email: info@sledilnik.org
+
+    - name: Publish other NIJZ PCT data changes to git
+      if: github.ref == 'refs/heads/main'
+      uses: github-actions-x/commit@v2.8
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'main'
+        commit-message: 'NIJZ PCT data update 🤖'
+        rebase: 'true' # pull and rebase before commit
+        files: '*.json valuesets/ signercertificateUpdate.*'
+        name: Sledilnik data scrape bot 🤖
+        email: info@sledilnik.org
+
+    - name: Publish NIJZ PCT rules for other countries changes to git
+      if: github.ref == 'refs/heads/main'
+      uses: github-actions-x/commit@v2.8
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'main'
+        commit-message: 'NIJZ PCT rules for other🇪🇺 update 🤖'
+        rebase: 'true' # pull and rebase before commit
+        files: 'rules/'
         name: Sledilnik data scrape bot 🤖
         email: info@sledilnik.org
