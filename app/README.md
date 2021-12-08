@@ -54,3 +54,15 @@ linking to the app in:
 * [Google Play store](https://play.google.com/store/apps/details?id=si.gov.zvem)
 * [Apple app store](https://apps.apple.com/si/app/zvem/id1574669660)
 * [Huawei App Gallery](https://appgallery.huawei.com/#/app/C104549339)
+
+Unofficial archives:
+
+* [apkpure](https://apkpure.com/zvem/si.gov.zvem)
+* [apktada](https://apktada.com/app/si.gov.zvem)
+
+Virus total analysis:
+
+* [Version 1.0.25](https://www.virustotal.com/gui/file/f569b5f2e6c01a1373b763d0b566e3ff0dcdf3b405db1bb8e4dcd7a677fca58c)
+* [Version 1.0.23](https://www.virustotal.com/gui/file/7c46fddef5f88ce4cae2b2b27b447eac4f989c64bca621db0681c45ff11e577a)
+* [Version 1.0.18](https://www.virustotal.com/gui/file/a553cf0e2e93798014226a87e73557d68c8c371ed691c8e1d10da372ec947051)
+* [Version 1.0.12](https://www.virustotal.com/gui/file/7a0e2f1abdd6d0a683e9a1f811a5511adfa8ae9ad451b283a0b756e7154c921c)
