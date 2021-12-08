@@ -5,7 +5,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
 | [GR-FR-0000](GR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/4ba947377bd069a5387f31974a6768b6ade67fa90c1618e7b23cad440c65a896) | Only a vaccine or test is allowed, and in a EU standard format. |
-| [GR-FR-0001](GR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/580686306287356f0dfc876f725fbc4f58343f08bb99ca6aceb8c7c7a3dd336f) | The "disease or agent targeted" must be COVID-19 of the value set list. |
+| [GR-FR-0001](GR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/580686306287356f0dfc876f725fbc4f58343f08bb99ca6aceb8c7c7a3dd336f) |  |
 | [RR-FR-0000](RR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/96b9fa534fceb33893341571b8f9b13d0700d01ac461a04b98c77486673ab6e1) |  Recovery format is not EU standard. |
 | [RR-FR-0001](RR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/29afec667d533fbf104e31f4d767c59050cc83c37e9fba79497360ae453b573e) | The Verification Datetime must be between +11 days and +180 days after the test date. |
 | [TR-FR-0000](TR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/0b179dc87d90d593641f03c343f5c75ff950cafeac5d6f3e9ec5f15fa2b719f4) | Test format is not EU standard. |
