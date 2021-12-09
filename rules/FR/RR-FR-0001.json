@@ -11,7 +11,7 @@
       "lang": "en"
     },
     {
-      "desc": "La date de verification doit etre comprise entre +11 jours et +183 jours apres la date de test.",
+      "desc": "La date de verification doit etre comprise entre +11 jours et +183 jours après la date de test.",
       "lang": "fr"
     }
   ],
@@ -59,7 +59,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-31T00:00:00Z",
-  "ValidTo": "2030-10-31T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2021-12-11T12:00:00Z",
+  "ValidTo": "2021-12-14T12:00:00Z",
+  "Version": "1.0.3"
 }
