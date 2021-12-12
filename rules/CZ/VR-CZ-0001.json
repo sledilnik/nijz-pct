@@ -1,0 +1,47 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.mp"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "CZ",
+  "Description": [
+    {
+      "desc": "Only vaccines in the allowed valueset that have been approved Comirnaty, COVID-19 Vaccine Janssen, SPIKEVAX, VAXZEVRIA.",
+      "lang": "en"
+    },
+    {
+      "desc": "Vakcína musí být na seznamu schválených vakcín: Comirnaty, COVID-19 Vaccine Janssen, SPIKEVAX, VAXZEVRIA",
+      "lang": "cs"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-CZ-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "in": [
+          {
+            "var": "payload.v.0.mp"
+          },
+          [
+            "EU/1/20/1507",
+            "EU/1/20/1525",
+            "EU/1/20/1528",
+            "EU/1/21/1529"
+          ]
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-21T23:00:00Z",
+  "ValidTo": "2031-11-21T23:00:00Z",
+  "Version": "2.0.0"
+}
