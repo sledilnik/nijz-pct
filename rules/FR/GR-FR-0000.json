@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "t"
+  ],
+  "CertificateType": "General",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "Only test is allowed, and in a EU standard format.",
+      "lang": "en"
+    },
+    {
+      "desc": "Seuls un test est autorisé, et dans un format au standard UE.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-FR-0000",
+  "Logic": {
+    "===": [
+      {
+        "reduce": [
+          [
+            {
+              "var": "payload.t"
+            }
+          ],
+          {
+            "+": [
+              {
+                "var": "accumulator"
+              },
+              {
+                "if": [
+                  {
+                    "var": "current.0"
+                  },
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      },
+      1
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-12-11T12:00:00Z",
+  "ValidTo": "2030-12-11T00:00:00Z",
+  "Version": "1.0.3"
+}
