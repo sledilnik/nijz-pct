@@ -1,24 +1,24 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.ma",
+    "t.0.is",
     "t.0.tt"
   ],
   "CertificateType": "Test",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The antigen test  must be included in the EU’s Common list of COVID-19 rapid antigen tests",
+      "desc": "The Antigen test must have a certificate issuer. ",
       "lang": "en"
     },
     {
-      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců",
+      "desc": "Antigenní test musí mít vydavatele certifikátu",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0003",
+  "Identifier": "TR-CZ-0005",
   "Logic": {
     "if": [
       {
@@ -35,13 +35,12 @@
             ]
           },
           {
-            "in": [
+            "if": [
               {
-                "var": "payload.t.0.ma"
+                "var": "payload.t.0.is"
               },
-              {
-                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
-              }
+              true,
+              false
             ]
           },
           true

@@ -1,46 +1,47 @@
 {
   "AffectedFields": [
-    "t.0",
-    "t.0.ma",
-    "t.0.tt"
+    "v.0",
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.mp"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Vaccination",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The antigen test  must be included in the EU’s Common list of COVID-19 rapid antigen tests",
+      "desc": "The certificate of the first dose of VAXZEVRIA is not accepted",
       "lang": "en"
     },
     {
-      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců",
+      "desc": "Certifikát první dávky VAXZEVRIA není akceptován",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0003",
+  "Identifier": "VR-CZ-0053",
   "Logic": {
     "if": [
       {
-        "var": "payload.t.0"
+        "var": "payload.v.0"
       },
       {
         "if": [
           {
             "===": [
               {
-                "var": "payload.t.0.tt"
+                "var": "payload.v.0.mp"
               },
-              "LP217198-3"
+              "EU/1/21/1529"
             ]
           },
           {
-            "in": [
+            ">=": [
               {
-                "var": "payload.t.0.ma"
+                "var": "payload.v.0.dn"
               },
               {
-                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                "var": "payload.v.0.sd"
               }
             ]
           },
