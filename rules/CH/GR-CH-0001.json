@@ -1,11 +1,11 @@
 {
   "AffectedFields": [
+    "v.0.tg",
     "r.0",
-    "r.0.tg",
     "t.0",
-    "t.0.tg",
     "v.0",
-    "v.0.tg"
+    "r.0.tg",
+    "t.0.tg"
   ],
   "CertificateType": "General",
   "Country": "CH",
@@ -78,7 +78,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-18T12:00:00Z",
+  "ValidFrom": "2021-12-17T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.4"
+  "Version": "1.0.7"
 }
