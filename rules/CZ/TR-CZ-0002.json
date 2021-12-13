@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+      "desc": "The PCR test may ot be older than 72 hours ago",
       "lang": "en"
     },
     {
-      "desc": "Vzorek PCR testu nesmí být starší než 72 hodin.",
+      "desc": "PCR test nesmí být starší více než 72 hodin",
       "lang": "cs"
     }
   ],
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-15T23:00:00Z",
+  "ValidTo": "2031-12-15T23:00:00Z",
+  "Version": "3.0.0"
 }
