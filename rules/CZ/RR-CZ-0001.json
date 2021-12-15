@@ -7,11 +7,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The positive NAA test result (e.g., PCR) must be older than 10 days.",
+      "desc": "The positive PCR test result must be older than 10 days",
       "lang": "en"
     },
     {
-      "desc": "Pozitivní PCR test musí být starší jak 10 dní.",
+      "desc": "Pozitivní PCR test musí být starší více než 10 dní",
       "lang": "cs"
     }
   ],
@@ -50,7 +50,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-15T23:00:00Z",
+  "ValidTo": "2031-12-15T23:00:00Z",
+  "Version": "3.0.0"
 }

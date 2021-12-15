@@ -10,11 +10,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination SPIKEVAX must must be older than 14 days",
+      "desc": "The vaccine SPIKEVAX must have been administered at least more than 14 day ago. Booster dose is valid immediately.",
       "lang": "en"
     },
     {
-      "desc": "Od dokončeného očkování SPIKEVAX musí uplynout alespoň 14 dnů",
+      "desc": "Od dokončeného očkování SPIKEVAX musí uplynout alespoň 14 dnů. Posilovací dávka je platná ihned.",
       "lang": "cs"
     }
   ],
@@ -115,7 +115,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-15T23:00:00Z",
-  "ValidTo": "2031-12-15T23:00:00Z",
-  "Version": "3.0.0"
+  "ValidFrom": "2021-11-21T23:00:00Z",
+  "ValidTo": "2031-11-21T23:00:00Z",
+  "Version": "2.0.0"
 }
