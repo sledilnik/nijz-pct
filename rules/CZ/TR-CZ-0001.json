@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 24 hours ago.",
+      "desc": "The antigen test may not be older than 48 hours ago",
       "lang": "en"
     },
     {
-      "desc": "Vzorek antigenního testu nesmí být starší než 24 hodin.",
+      "desc": "Antigenní test nesmí být starší více než 48 hodin",
       "lang": "cs"
     }
   ],
@@ -50,7 +50,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  24,
+                  48,
                   "hour"
                 ]
               }
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-21T23:00:00Z",
-  "ValidTo": "2031-11-21T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2021-12-15T23:00:00Z",
+  "ValidTo": "2031-12-15T23:00:00Z",
+  "Version": "3.0.0"
 }
