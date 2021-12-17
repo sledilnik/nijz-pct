@@ -37,7 +37,9 @@
                 "Covaxin",
                 "BBIBP-CorV_T",
                 "CoronaVac_T",
-                "Covaxin_T"
+                "Covaxin_T",
+                "R-COVI",
+                "Covid-19-recombinant"
               ]
             ]
           }
@@ -70,7 +72,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:00Z",
+  "ValidFrom": "2021-12-17T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.6"
+  "Version": "1.0.7"
 }
