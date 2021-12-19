@@ -4,7 +4,6 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [GR-FR-0000](GR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/41b2e96f02c9fa8ff2a7f9d10086bd3d3f1cb3a7bf1385897941c4d775551654) | Only test is allowed, and in a EU standard format. |
 | [GR-FR-0000](GR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/39d84bbca7f9c5a54048294374191194d52a49c016c42d5859af34595101c09a) | Only a vaccine or test is allowed, and in a EU standard format. |
 | [GR-FR-0001](GR-FR-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/580686306287356f0dfc876f725fbc4f58343f08bb99ca6aceb8c7c7a3dd336f) | The "disease or agent targeted" must be COVID-19 of the value set list. |
 | [RR-FR-0000](RR-FR-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/FR/58daaa80800edc874e3866f1e9c269670b9fcc6897ba9f5556a49ead806d3477) |  Recovery format is not EU standard. |
