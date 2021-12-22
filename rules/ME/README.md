@@ -1,0 +1,17 @@
+# EU digital green certificate verification rules for Montenegro
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/ME).
+
+| Rule | Source | Description |
+| ---- | ------ | ----------- |
+| [RR-ME-0001](RR-ME-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/b8f4756d670701f917315934230119ec726eb7775a953ced71fc482a98028340) | The positive NAA test result (e.g., PCR) must be older than 10 days. |
+| [RR-ME-0002](RR-ME-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/0b6fd6ffa6d2d4c2d8d3df5a7ea59c7af5bbd94ab0d76d9fa43c8dc1745949c0) | The positive NAA test result (e.g., PCR) must be no older than 180 days. |
+| [TR-ME-0001](TR-ME-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/7ecc383c43c355468261c7f8f8d07f98505699da2e414956f9d6668e2334f7ae) | This must be an antigen test or NAA test (e.g., PCR). |
+| [TR-ME-0002](TR-ME-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/9d65f1c2794fb8b1f3d434a1a90c12d4f46e781f244a1b8c611a1a639cf36816) | The negative antigen test must have been taken no longer than 48 hours ago. |
+| [TR-ME-0003](TR-ME-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/e42300390908830ffc92a02b543e129a2c6160fa9083a8a79dc036f801024a4d) | The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago. |
+| [TR-ME-0004](TR-ME-0004.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/5804d103215cf5a73ad3b655d0d4ea1c06bd38fa44d0830d1d9c396c724783c6) | The test result must be negative. |
+| [VR-ME-0001](VR-ME-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/c82b0109b65ea81c181fd5f89f9395d86761c614e6e73be000d29d4a70177636) | The vaccination schedule must be complete (e.g., 1/1, 2/2). |
+| [VR-ME-0002](VR-ME-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/c750f4bc9225590168a169d7f531800b25c2ccdd4711a56db3add4da8b8c8f02) | For those who have not received the third dose, the second dose of the two-dose vaccine is valid for 6 months from the date of administration. |
+| [VR-ME-0003](VR-ME-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/fd4bdc4396308942b929f22923f2693c8fe5e52523f66f8114e4c0118382f7fa) | For those who received at least one dose of vaccine 180 days after a positive PCR test. |
+| [VR-ME-0004](VR-ME-0004.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/e2428d1ab2738f5106205e299c7dda83c22b4a20039224c356c175aa5705df95) | For those who have not received the second dose, the first dose of the one-dose vaccine is valid for 6 months from the date of administration. |
+| [VR-ME-0005](VR-ME-0005.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/99c663c02a03cb74df2729e2ffff47e4e591a046416b72d429549605491242c5) | The following vaccines are allowed: AstraZeneca, Biontech, Janssen, Moderna, Sputnik-V, Sinopharm, Sinovac, Covishield |
