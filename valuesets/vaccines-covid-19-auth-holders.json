@@ -128,6 +128,13 @@
       "system": "https://spor.ema.europa.eu/v1/organisations",
       "version": ""
     },
+    "ORG-100033914": {
+      "active": true,
+      "display": "Medigen Vaccine Biologics Corporation",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
+    },
     "Sinopharm-WIBP": {
       "active": true,
       "display": "Sinopharm - Wuhan Institute of Biological Products",

@@ -114,6 +114,20 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
     },
+    "MVC-COV1901": {
+      "active": true,
+      "display": "MVC COVID-19 vaccine",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.6"
+    },
+    "NVX-CoV2373": {
+      "active": true,
+      "display": "NVX-CoV2373",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.0"
+    },
     "R-COVI": {
       "active": true,
       "display": "R-COVI",
