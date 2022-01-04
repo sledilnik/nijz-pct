@@ -6,13 +6,13 @@
   "Country": "IE",
   "Description": [
     {
-      "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+      "desc": "Effective dates on vaccine certificate not valid for entry at this time.",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-IE-0005",
+  "Identifier": "VR-IE-0011",
   "Logic": {
     "if": [
       {
@@ -21,22 +21,12 @@
       {
         "if": [
           {
-            "and": [
+            ">": [
               {
-                "===": [
-                  {
-                    "var": "payload.v.0.mp"
-                  },
-                  "EU/1/21/1529"
-                ]
+                "var": "payload.v.0.dn"
               },
               {
-                "<=": [
-                  {
-                    "var": "payload.v.0.dn"
-                  },
-                  2
-                ]
+                "var": "payload.v.0.sd"
               }
             ]
           },
@@ -47,7 +37,7 @@
                   {
                     "var": "payload.v.0.dt"
                   },
-                  15,
+                  0,
                   "day"
                 ]
               },
@@ -79,5 +69,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2022-01-07T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.0"
 }
