@@ -33,13 +33,10 @@
             "EU/1/20/1507",
             "EU/1/21/1529",
             "EU/1/20/1525",
+            "CVnCoV",
+            "NVX-CoV2373",
             "CoronaVac",
-            "Convidecia",
-            "EpiVacCorona",
-            "BBIBP-CorV",
             "Inactivated-SARS-CoV-2-Vero-Cell",
-            "Covaxin",
-            "Convidecia",
             "Covishield"
           ]
         ]
@@ -49,7 +46,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-20T00:00:00Z",
+  "ValidFrom": "2022-01-13T11:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.2.0"
 }

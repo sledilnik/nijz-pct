@@ -6,6 +6,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | ---- | ------ | ----------- |
 | [RR-ME-0001](RR-ME-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/b8f4756d670701f917315934230119ec726eb7775a953ced71fc482a98028340) | The positive NAA test result (e.g., PCR) must be older than 10 days. |
 | [RR-ME-0002](RR-ME-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/0b6fd6ffa6d2d4c2d8d3df5a7ea59c7af5bbd94ab0d76d9fa43c8dc1745949c0) | The positive NAA test result (e.g., PCR) must be no older than 180 days. |
+| [RR-ME-0003](RR-ME-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/24dfda7df24c57524aeaac22a9caa24bbb420f5d2b766ff7043d4a8eb20fc4e2) | The positive NAA test result (e.g., PCR) must be older than 7 days. |
 | [TR-ME-0001](TR-ME-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/7ecc383c43c355468261c7f8f8d07f98505699da2e414956f9d6668e2334f7ae) | This must be an antigen test or NAA test (e.g., PCR). |
 | [TR-ME-0002](TR-ME-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/9d65f1c2794fb8b1f3d434a1a90c12d4f46e781f244a1b8c611a1a639cf36816) | The negative antigen test must have been taken no longer than 48 hours ago. |
 | [TR-ME-0003](TR-ME-0003.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/ME/e42300390908830ffc92a02b543e129a2c6160fa9083a8a79dc036f801024a4d) | The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago. |
