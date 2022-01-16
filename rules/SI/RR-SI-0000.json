@@ -1,32 +1,6 @@
 {
-  "AffectedFields": [
-    "r.1"
-  ],
-  "CertificateType": "Recovery",
-  "Country": "SI",
-  "Description": [
-    {
-      "desc": "At most one r-event.",
-      "lang": "en"
-    },
-    {
-      "desc": "Največ en dogodek prebolelosti.",
-      "lang": "si"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "RR-SI-0000",
-  "Logic": {
-    "!": [
-      {
-        "var": "payload.r.1"
-      }
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x500",
+  "details": "",
+  "problem": "Internal Server Error",
+  "sendValue": ""
 }
