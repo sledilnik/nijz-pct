@@ -4,7 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [GR-IE-0000](GR-IE-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/dcb8baa257b6fedbe1e673dd5d57545da0a63244fd1898492d57a50dd95f9e3a) |  |
+| [GR-IE-0000](GR-IE-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/dcb8baa257b6fedbe1e673dd5d57545da0a63244fd1898492d57a50dd95f9e3a) | Certificate relates to more than one health event |
 | [GR-IE-0001](GR-IE-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/19ec3836bd587753dcb63a1879721b08124950575c5331012050cde000730d2a) | Certificate relates to a disease other than COVID-19. |
 | [RR-IE-0000](RR-IE-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/b3b8e4c9b7476bc45fa344ff564261c8c6275b3f47e190b61b4fa236d758d366) | Recovery Certificate can only relate to a single Recovery from C-19 |
 | [RR-IE-0001](RR-IE-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/f9ca0f4da218a41d8d31f1b7fbc16e0a0f370c449a2ab1dea85d215892fa116c) | Check date is not within recovery certificate validity window |
