@@ -4,9 +4,9 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [GR-SI-0000](GR-SI-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/b3ff5a3133ecee0c2825c6ae00de3583497db2a73030ac21df28f028dbe0f7da) |  |
+| [GR-SI-0000](GR-SI-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/b3ff5a3133ecee0c2825c6ae00de3583497db2a73030ac21df28f028dbe0f7da) | Exactly one type of event. |
 | [GR-SI-0001](GR-SI-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/ecbff2add833c1298eb6da0a710546ad0073acd04552fcaa644ad3107ba2b765) | The "disease or agent targeted" must be COVID-19 of the value set list. |
-| [RR-SI-0000](RR-SI-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/810ba85e620509565756313beba5f4f336e69776892abcab31213ba7e69cc655) |  |
+| [RR-SI-0000](RR-SI-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/810ba85e620509565756313beba5f4f336e69776892abcab31213ba7e69cc655) | At most one r-event. |
 | [RR-SI-0001](RR-SI-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/eebc78294a121d589ddfa72a2ada59ca6ee902b0391764c40510b08c2e2eeb77) | The Verification Datetime must be between "Certificate Valid From" and "Certificate Valid Until". |
 | [TR-SI-0000](TR-SI-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/54e5ded468d73400274cb027cf40f8d1b87b62d9d3b61dcd8f3ba76e0d612cdf) | At most one t-event. |
 | [TR-SI-0001](TR-SI-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/SI/d3b26ec0e81f393d5d0f4b3a93dabe9007b736b303c11c7a64e60539f8a5851a) | The test type must be one of the value set list (RAT OR NAA). |
