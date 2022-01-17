@@ -1,64 +1,6 @@
 {
-  "AffectedFields": [
-    "r",
-    "t",
-    "v"
-  ],
-  "CertificateType": "General",
-  "Country": "UA",
-  "Description": [
-    {
-      "desc": "Exactly one type of event.",
-      "lang": "en"
-    },
-    {
-      "desc": "В сертифікаті лише один тип медичних даних.",
-      "lang": "ua"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "GR-UA-0000",
-  "Logic": {
-    "===": [
-      {
-        "reduce": [
-          [
-            {
-              "var": "payload.r"
-            },
-            {
-              "var": "payload.t"
-            },
-            {
-              "var": "payload.v"
-            }
-          ],
-          {
-            "+": [
-              {
-                "var": "accumulator"
-              },
-              {
-                "if": [
-                  {
-                    "var": "current.0"
-                  },
-                  1,
-                  0
-                ]
-              }
-            ]
-          },
-          0
-        ]
-      },
-      1
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-08-22T10:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: UA, hash: 9ba853e242846f968c7d3404b6e604ea1180f647d86f33763053eb8d2ed0b890"
 }
