@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Nevyhovuje podmienke plnej očkovanosti. Osoba je plne očkovaná najmenej 14 dní po aplikácii prvej dávky očkovacej látky proti ochoreniu COVID-19, ak bola prvá dávka očkovania proti ochoreniu COVID-19 podaná v intervale do 180 dní od prekonania ochorenia COVID-19, avšak nie viac ako jeden rok po aplikácii poslednej dávky.",
+      "desc": "Nevyhovuje podmienke plnej očkovanosti. Osoba je plne očkovaná, ak ubehlo najmenej 14 dní a nie viac než 12 mesiacov po aplikácii prvej dávky očkovacej látky proti ochoreniu COVID-19, ak bola prvá dávka očkovania proti ochoreniu podaná v intervale do 180 dní od prekonania ochorenia COVID-19.",
       "lang": "sk"
     }
   ],
@@ -52,7 +52,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-19T18:09:30Z",
+  "ValidFrom": "2022-01-16T15:24:18Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.0"
 }

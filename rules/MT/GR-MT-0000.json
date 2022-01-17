@@ -1,24 +1,20 @@
 {
   "AffectedFields": [
-    "r",
     "t",
-    "v"
+    "v",
+    "r"
   ],
   "CertificateType": "General",
-  "Country": "SK",
+  "Country": "MT",
   "Description": [
     {
       "desc": "Exactly one type of event.",
       "lang": "en"
-    },
-    {
-      "desc": "QR kód obsahuje staršiu verziu preukazu, ktorú nie je možné vyhodnotiť.",
-      "lang": "sk"
     }
   ],
   "Engine": "CERTLOGIC",
-  "EngineVersion": "0.1.0",
-  "Identifier": "GR-SK-0000",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-MT-0000",
   "Logic": {
     "===": [
       {
@@ -58,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-19T18:09:28Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.1"
+  "ValidFrom": "2022-01-20T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
 }

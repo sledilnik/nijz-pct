@@ -1,54 +1,70 @@
 {
   "AffectedFields": [
-    "v.0",
-    "v.0.dn",
-    "v.0.sd",
-    "v.0.dt"
+    "dob",
+    "v.0.dt",
+    "v.0.dn"
   ],
   "CertificateType": "Vaccination",
-  "Country": "SK",
+  "Country": "MT",
   "Description": [
     {
-      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the second dose of COVID-19 vaccine was administered. For full vaccination, both, vaccination certificate of the first dose administration and digital certificate of recovery need to be considered.",
+      "desc": "Verification Datetime must be less than 270 days after vaccination for Booster dose for age >18",
       "lang": "en"
-    },
-    {
-      "desc": "Nevyhovuje podmienke plnej očkovanosti. Od podania druhej dávky očkovacej látky proti ochoreniu COVID-19 neuplynulo najmenej 14 dní. Pre plnú očkovanosť je nutné posúdiť doklad o podaní prvej dávky v kombinácii s dokladom o prekonaní COVID-19.",
-      "lang": "sk"
     }
   ],
   "Engine": "CERTLOGIC",
-  "EngineVersion": "0.1.0",
-  "Identifier": "VR-SK-0005",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-MT-0009",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.dob"
       },
       {
         "if": [
           {
-            "===": [
+            "after": [
               {
-                "var": "payload.v.0.sd"
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
               },
-              2
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.dob"
+                  },
+                  6570,
+                  "day"
+                ]
+              }
             ]
           },
           {
             "if": [
               {
-                ">=": [
+                "===": [
                   {
                     "var": "payload.v.0.dn"
                   },
-                  {
-                    "var": "payload.v.0.sd"
-                  }
+                  3
                 ]
               },
               {
-                "not-before": [
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
                   {
                     "plusTime": [
                       {
@@ -63,7 +79,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      14,
+                      270,
                       "day"
                     ]
                   }
@@ -80,7 +96,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-16T15:24:18Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
+  "ValidFrom": "2022-01-20T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
   "Version": "1.0.0"
 }
