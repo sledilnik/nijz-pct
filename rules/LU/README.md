@@ -4,7 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
-| [RR-LU-0001](RR-LU-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LU/ee4baf22406df55009cae7b66a8c99b2dd7ad92e216da341e4d50952f609fe84) |  |
+| [RR-LU-0001](RR-LU-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LU/ee4baf22406df55009cae7b66a8c99b2dd7ad92e216da341e4d50952f609fe84) | The positive NAA test result (e.g., PCR) must be older than 11 days. |
 | [RR-LU-0002](RR-LU-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LU/69da8a5b72b5f56618544eda7839b76fc8993963f3e85e2651aa0193bdf88c83) | The positive NAA test result (e.g., PCR) must be no older than 180 days. |
 | [TR-LU-0001](TR-LU-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LU/edba41a1262289d7a0352bc65c49453bbc87c7a8d64afaf73558414d4e0930b5) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |
 | [TR-LU-0002](TR-LU-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LU/b9e08b14076bc4744751302456249a45e7d276be7c53e6417a39e12ef9786d2e) | The sample for an antigen test (e.g., rapid test) must have been taken no longer than 24 hours ago. |
