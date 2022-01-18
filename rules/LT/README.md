@@ -5,7 +5,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 | Rule | Source | Description |
 | ---- | ------ | ----------- |
 | [GR-LT-0001](GR-LT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/db9451507d3ca5f30a0158cc78a055bc4ffcc4faf62b026bb2b2c4a3727a2198) | The disease or agent targeted must be COVID-19 of the value set list. |
-| [RR-LT-0000](RR-LT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/1ede02b3b69197fedfbc46cdbd3dd18e8e44a42e4a16898672efe3b136095221) | At most one recovery event. |
+| [RR-LT-0000](RR-LT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/1ede02b3b69197fedfbc46cdbd3dd18e8e44a42e4a16898672efe3b136095221) |  |
 | [RR-LT-0001](RR-LT-0001.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/ede902e9a721f417ea3e81dd304e1be55f8d9e7e234cbc947d907457aae30813) | The certificate must be valid. |
 | [RR-LT-0002](RR-LT-0002.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/33da5d0fe81d5a0142528f0331a695cbf06f9153ffc0054f1ba1fc390d992188) | The validity start date must be greater than or equal to the first positive test date  +11 days and validity end date must be less than or equal to the first postive test date +180. |
 | [TR-LT-0000](TR-LT-0000.json) | [API](https://dgca-businessrule-service.ezdrav.si/rules/LT/74cb10df7b2dc7c257d6a742cfaf1e259c7ad427963dfc1032cd328365507ab0) | One type of test result event |
