@@ -1,6 +1,32 @@
 {
-  "code": "0x500",
-  "details": "",
-  "problem": "Internal Server Error",
-  "sendValue": ""
+  "AffectedFields": [
+    "r.1"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Vieno tipo persirgimo įvykis",
+      "lang": "lt"
+    },
+    {
+      "desc": "At most one recovery event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "RR-LT-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.r.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-04T15:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.0.0"
 }
