@@ -1,6 +1,32 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: LT, hash: 1ede02b3b69197fedfbc46cdbd3dd18e8e44a42e4a16898672efe3b136095221"
+  "AffectedFields": [
+    "r.1"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Vieno tipo persirgimo įvykis",
+      "lang": "lt"
+    },
+    {
+      "desc": "At most one recovery event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "RR-LT-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.r.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-04T15:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.0.0"
 }

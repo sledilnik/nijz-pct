@@ -1,6 +1,61 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: LT, hash: dee3b7dec982fb9af9320a3769aa37cac4d6e14a339bf154f3a7a2b37dbfb72c"
+  "AffectedFields": [
+    "t.0.tt",
+    "t.0.sc"
+  ],
+  "CertificateType": "Test",
+  "Country": "LT",
+  "Description": [
+    {
+      "desc": "Greitasis antigeno testas turi būti atliktas ne daugiau kaip prieš 48 val.",
+      "lang": "lt"
+    },
+    {
+      "desc": "DateTime of RAT Sample Collection must be less than 48 hours before the Verification Datetime.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "TR-LT-0004",
+  "Logic": {
+    "if": [
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          "LP217198-3"
+        ]
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.t.0.sc"
+              },
+              48,
+              "hour"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-04T15:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.0.0"
 }
