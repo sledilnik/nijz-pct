@@ -1,42 +1,6 @@
 {
-  "AffectedFields": [
-    "t.0",
-    "t.0.tr"
-  ],
-  "CertificateType": "Test",
-  "Country": "FR",
-  "Description": [
-    {
-      "desc": "Test result must be negative.",
-      "lang": "en"
-    },
-    {
-      "desc": "Le resultat du test doit etre negatif.",
-      "lang": "fr"
-    }
-  ],
-  "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-FR-0003",
-  "Logic": {
-    "if": [
-      {
-        "var": "payload.t.0"
-      },
-      {
-        "===": [
-          {
-            "var": "payload.t.0.tr"
-          },
-          "260415000"
-        ]
-      },
-      true
-    ]
-  },
-  "SchemaVersion": "1.0.0",
-  "Type": "Acceptance",
-  "ValidFrom": "2021-10-31T00:00:00Z",
-  "ValidTo": "2030-10-31T00:00:00Z",
-  "Version": "1.0.2"
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: FR, hash: caf2595083fdaede95c4f2508ae1ce26b5a5abb55d327325a7e6a19b85bb1edb"
 }
