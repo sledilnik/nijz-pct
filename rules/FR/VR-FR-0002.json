@@ -1,6 +1,45 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: FR, hash: 2432f155981c2b3d9fd7c45a43768fba735279e9ebbe65170e530dd0974e89c1"
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "Vaccination doses must be equal or greater than expected doses.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le nombre de doses prises doit etre superieur ou égale au nombre de doses attendues.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-FR-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-12-17T18:00:00Z",
+  "ValidTo": "2031-12-17T18:00:00Z",
+  "Version": "1.0.3"
 }

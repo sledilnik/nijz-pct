@@ -1,6 +1,32 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: FR, hash: 0b179dc87d90d593641f03c343f5c75ff950cafeac5d6f3e9ec5f15fa2b719f4"
+  "AffectedFields": [
+    "t.1"
+  ],
+  "CertificateType": "Test",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "Test format is not EU standard.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le format lié au test n'est pas au standard UE.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-FR-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.t.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-10-31T00:00:00Z",
+  "ValidTo": "2030-10-31T00:00:00Z",
+  "Version": "1.0.2"
 }
