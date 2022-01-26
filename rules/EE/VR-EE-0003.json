@@ -1,17 +1,19 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.dt"
+    "v.0.dt",
+    "v.0.sd",
+    "v.0.dn"
   ],
   "CertificateType": "Vaccination",
   "Country": "EE",
   "Description": [
     {
-      "desc": "Verification Datetime must be less than 365 days after the last date of vaccination.",
+      "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Vaktsineerimisest ei tohi olla möödas rohkem kui 365 päeva",
+      "desc": "Täisvaktsineeritusest ei tohi olla möödas rohkem kui 270 päeva.",
       "lang": "ee"
     }
   ],
@@ -24,25 +26,52 @@
         "var": "payload.v.0"
       },
       {
-        "not-after": [
+        "if": [
           {
-            "plusTime": [
+            "and": [
               {
-                "var": "external.validationClock"
+                "===": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
               },
-              0,
-              "day"
+              {
+                "<=": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  2
+                ]
+              }
             ]
           },
           {
-            "plusTime": [
+            "not-after": [
               {
-                "var": "payload.v.0.dt"
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
               },
-              365,
-              "day"
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  270,
+                  "day"
+                ]
+              }
             ]
-          }
+          },
+          true
         ]
       },
       true
@@ -50,7 +79,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-06T00:00:00Z",
-  "ValidTo": "2022-09-01T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidTo": "2023-02-01T00:00:00Z",
+  "Version": "1.0.4"
 }
