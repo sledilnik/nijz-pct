@@ -1,0 +1,83 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "SI",
+  "Description": [
+    {
+      "desc": "A vaccination cycle is finished 270 days after a finished primary vaccination 1/1, unless it's followed by booster vaccinations.",
+      "lang": "en"
+    },
+    {
+      "desc": "Cikel cepljenj se zaključi 270 dni po zaključenem osnovnem cepljenju 1/1, razen če mu sledijo poživitveni odmerki.",
+      "lang": "si"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-SI-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "and": [
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  1
+                ]
+              },
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.sd"
+                  },
+                  1
+                ]
+              }
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  271,
+                  "day"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.3.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}
