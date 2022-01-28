@@ -1,30 +1,31 @@
 {
   "AffectedFields": [
-    "r.0",
-    "r.0.fr"
+    "t.0.tt",
+    "t.0.sc"
   ],
-  "CertificateType": "Recovery",
-  "Country": "CZ",
+  "CertificateType": "Test",
+  "Country": "CH",
   "Description": [
     {
-      "desc": "The positive PCR test result may not be older than 180 days",
+      "desc": "Exemption certificates are valid for 365 days",
       "lang": "en"
-    },
-    {
-      "desc": "Pozitivní PCR test nesmí být starší  více než 180 dní",
-      "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-CZ-0002",
+  "Identifier": "TR-CH-0010",
   "Logic": {
     "if": [
       {
-        "var": "payload.r.0"
+        "===": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          "medical-exemption"
+        ]
       },
       {
-        "not-after": [
+        "before": [
           {
             "plusTime": [
               {
@@ -37,9 +38,9 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.fr"
+                "var": "payload.t.0.sc"
               },
-              180,
+              365,
               "day"
             ]
           }
@@ -50,7 +51,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-31T23:00:00Z",
-  "ValidTo": "2032-01-31T23:00:00Z",
-  "Version": "4.0.0"
+  "ValidFrom": "2022-01-31T00:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.8"
 }

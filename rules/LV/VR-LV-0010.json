@@ -10,11 +10,11 @@
   "Country": "LV",
   "Description": [
     {
-      "desc": "Kopš vakcinācijas pamatkursa pabeigšanas pagājušas vismaz 14 dienas. Balstvakcinācijas sertifikāts ir derīgs sākot ar balstvakcīnas saņemšanas dienu.",
+      "desc": "Kopš vakcinācijas pamatkursa pabeigšanas pagājušas vismaz 14 dienas, bet ne vairāk kā 270 dienas. Balstvakcinācijas sertifikāts ir derīgs sākot ar balstvakcīnas saņemšanas dienu un ir beztermiņa.",
       "lang": "lv"
     },
     {
-      "desc": "At least 14 days must have elapsed since completing the primary course of immunization. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately as long as it is clearly identified as such.",
+      "desc": "At least 14 days must have elapsed since completing the primary course of immunization but not more than 270. A booster shot or vaccination of someone who recovered from COVID-19 is valid immediately as long as it is clearly identified as such.",
       "lang": "en"
     }
   ],
@@ -47,6 +47,28 @@
                         "var": "payload.v.0.dt"
                       },
                       15,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "before": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      270,
                       "day"
                     ]
                   }
@@ -192,7 +214,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-10T00:00:00Z",
+  "ValidFrom": "2022-02-01T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.0"
 }
