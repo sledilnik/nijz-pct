@@ -1,6 +1,5 @@
 {
   "AffectedFields": [
-    "dob",
     "v.0",
     "v.0.dn",
     "v.0.sd",
@@ -10,11 +9,11 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "For a person over 18 years of age, a vaccination cycle is finished 270 days after a finished primary vaccination 1/1, unless it's followed by booster vaccinations.",
+      "desc": "A vaccination cycle is finished 270 days after a finished primary vaccination 1/1, unless it's followed by booster vaccinations.",
       "lang": "en"
     },
     {
-      "desc": "Za osebo, starejšo od 18 let, se cikel cepljenj zaključi 270 dni po zaključenem osnovnem cepljenju 1/1, razen če mu sledijo poživitveni odmerki.",
+      "desc": "Cikel cepljenj se zaključi 270 dni po zaključenem osnovnem cepljenju 1/1, razen če mu sledijo poživitveni odmerki.",
       "lang": "si"
     }
   ],
@@ -45,59 +44,29 @@
                   },
                   1
                 ]
-              },
-              {
-                "after": [
-                  {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
-                  },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      271,
-                      "day"
-                    ]
-                  }
-                ]
               }
             ]
           },
           {
-            "if": [
+            "not-after": [
               {
-                "var": "payload.dob"
-              },
-              {
-                "before": [
+                "plusTime": [
                   {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
+                    "var": "external.validationClock"
                   },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.dob"
-                      },
-                      18,
-                      "year"
-                    ]
-                  }
+                  0,
+                  "day"
                 ]
               },
-              false
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  271,
+                  "day"
+                ]
+              }
             ]
           },
           true
@@ -106,9 +75,9 @@
       true
     ]
   },
-  "SchemaVersion": "1.0.0",
+  "SchemaVersion": "1.3.0",
   "Type": "Acceptance",
   "ValidFrom": "2022-02-01T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }
