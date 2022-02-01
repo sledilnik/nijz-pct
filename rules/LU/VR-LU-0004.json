@@ -38,9 +38,7 @@
                 "EU/1/20/1525",
                 "Covishield",
                 "R-COVI",
-                "Covid-19-recombinant",
-                "NVX-CoV2373",
-                "EU/1/21/1618"
+                "Covid-19-recombinant"
               ]
             ]
           },
@@ -87,7 +85,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-02T15:00:00Z",
+  "ValidFrom": "2022-01-09T15:30:00Z",
   "ValidTo": "2031-01-05T00:00:00Z",
-  "Version": "1.5.1"
+  "Version": "1.4.3"
 }

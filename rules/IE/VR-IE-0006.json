@@ -41,30 +41,49 @@
             ]
           },
           {
-            "not-after": [
+            "and": [
               {
-                "plusTime": [
+                "not-before": [
                   {
-                    "var": "payload.v.0.dt"
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
                   },
-                  14,
-                  "day"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      14,
+                      "day"
+                    ]
+                  }
                 ]
               },
               {
-                "plusTime": [
+                "not-after": [
                   {
-                    "var": "external.validationClock"
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
                   },
-                  0,
-                  "day"
-                ]
-              },
-              {
-                "plusTime": [
-                  "2022-06-30T23:59:59-00:00",
-                  0,
-                  "day"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      270,
+                      "day"
+                    ]
+                  }
                 ]
               }
             ]
@@ -77,7 +96,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-07T00:00:00Z",
+  "ValidFrom": "2022-02-04T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.4"
+  "Version": "1.0.5"
 }
