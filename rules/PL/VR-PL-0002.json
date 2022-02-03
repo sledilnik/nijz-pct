@@ -3,7 +3,7 @@
     "v.0",
     "v.0.dt",
     "v.0.dn",
-    "v.0.mp"
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "PL",
@@ -102,5 +102,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2022-02-03T00:00:00Z",
   "ValidTo": "2030-10-11T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }

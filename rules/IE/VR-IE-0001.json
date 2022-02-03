@@ -32,9 +32,7 @@
             "CoronaVac",
             "BBIBP-CorV",
             "Covishield",
-            "Covaxin",
-            "EU/1/21/1618",
-            "NVX-CoV2373"
+            "Covaxin"
           ]
         ]
       },
@@ -43,7 +41,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-04T00:00:00Z",
+  "ValidFrom": "2021-12-21T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.5"
+  "Version": "1.0.4"
 }
