@@ -1,6 +1,63 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: CH, hash: b6268d60b5cbb8cce467a86eb29e6d79cc809de4bbba313c33bab2113988dad3"
+  "AffectedFields": [
+    "r.0",
+    "t.0",
+    "v.1",
+    "v.0"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "CH",
+  "Description": [
+    {
+      "desc": "At most one v-event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-CH-0000",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "and": [
+              {
+                "!": [
+                  {
+                    "var": "payload.v.1"
+                  }
+                ]
+              },
+              {
+                "!": [
+                  {
+                    "var": "payload.r.0"
+                  }
+                ]
+              },
+              {
+                "!": [
+                  {
+                    "var": "payload.t.0"
+                  }
+                ]
+              }
+            ]
+          },
+          true,
+          false
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-31T00:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.8"
 }
