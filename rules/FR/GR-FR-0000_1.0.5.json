@@ -1,0 +1,60 @@
+{
+  "AffectedFields": [
+    "v",
+    "t"
+  ],
+  "CertificateType": "General",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "Only a vaccine or test is allowed, and in a EU standard format.",
+      "lang": "en"
+    },
+    {
+      "desc": "Seul un vaccin ou un test est autorisé, et dans un format au standard UE.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-FR-0000",
+  "Logic": {
+    "===": [
+      {
+        "reduce": [
+          [
+            {
+              "var": "payload.v"
+            },
+            {
+              "var": "payload.t"
+            }
+          ],
+          {
+            "+": [
+              {
+                "var": "accumulator"
+              },
+              {
+                "if": [
+                  {
+                    "var": "current.0"
+                  },
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      },
+      1
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2032-01-29T10:00:00Z",
+  "Version": "1.0.5"
+}

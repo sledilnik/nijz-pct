@@ -1,0 +1,57 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
+      "lang": "en"
+    },
+    {
+      "desc": "Die Impfreihe muss vollständig sein (z.B. 1/1, 2/2).",
+      "lang": "de"
+    },
+    {
+      "desc": "La série vaccinale doit être complète (p. ex. 1/1, 2/2).",
+      "lang": "fr"
+    },
+    {
+      "desc": "La pauta de vacunación debe estar completa (por ejemplo, 1/1, 2/2).",
+      "lang": "es"
+    },
+    {
+      "desc": "Il ciclo di vaccinazione deve essere stato completato (ad es. 1/1, 2/2).",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-DX-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-22T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.2"
+}

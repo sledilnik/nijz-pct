@@ -1,0 +1,45 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "ME",
+  "Description": [
+    {
+      "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2).",
+      "lang": "en"
+    },
+    {
+      "desc": "Vakcinacija mora biti kompletna (npr. 1/1, 2/2).",
+      "lang": "sr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-ME-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-12-10T00:00:00Z",
+  "ValidTo": "2030-01-01T00:00:00Z",
+  "Version": "1.0.0"
+}

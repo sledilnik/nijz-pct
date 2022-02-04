@@ -1,0 +1,88 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "HR",
+  "Description": [
+    {
+      "desc": "If (sequencenumber < total number of doses)  Verification Datetime must be more than 22 days and less than 90 days after the date of vaccination.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-HR-0041",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "<": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              {
+                "var": "payload.v.0.sd"
+              }
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  22,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  84,
+                  "day"
+                ]
+              }
+            ]
+          },
+          {
+            "in": [
+              {
+                "var": "payload.v.0.mp"
+              },
+              [
+                "EU/1/21/1529"
+              ]
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-08-01T00:00:00Z",
+  "ValidTo": "2030-08-01T00:00:00Z",
+  "Version": "1.0.0"
+}

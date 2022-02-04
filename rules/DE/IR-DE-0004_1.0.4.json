@@ -1,0 +1,62 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.ci"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DE",
+  "Description": [
+    {
+      "desc": "Issuer has been compromised. For security reasons, all certificates of the issuer from whom you have received the certificate must be reissued. You can arrange for a new vaccination certificate to be issued free of charge at your health care provider or pharmacy by showing your yellow vaccination passport and a valid photo ID.",
+      "lang": "en"
+    },
+    {
+      "desc": "Aussteller wurde kompromittiert. Aus Sicherheitsgründen müssen alle Zertifikate des Ausstellers, von dem Sie Ihr Zertifikat erhalten haben neu ausgestellt werden. Unter Vorlage Ihres gelben Impfpasses und eines Lichtbildausweises können Sie sich bei Ihrer Arztpraxis oder Apotheke kostenfrei ein neues Impfzertifikat ausstellen lassen.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "1.0.0",
+  "Identifier": "IR-DE-0004",
+  "Logic": {
+    "!": [
+      {
+        "and": [
+          {
+            "===": [
+              {
+                "extractFromUVCI": [
+                  {
+                    "var": "payload.v.0.ci"
+                  },
+                  0
+                ]
+              },
+              "01DE"
+            ]
+          },
+          {
+            "in": [
+              {
+                "extractFromUVCI": [
+                  {
+                    "var": "payload.v.0.ci"
+                  },
+                  1
+                ]
+              },
+              [
+                "A80013335"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Invalidation",
+  "ValidFrom": "2022-02-01T10:00:00+01:00",
+  "ValidTo": "2031-08-18T00:00:00+02:00",
+  "Version": "1.0.4"
+}

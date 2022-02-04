@@ -1,0 +1,47 @@
+{
+  "AffectedFields": [
+    "t.0.tc"
+  ],
+  "CertificateType": "Test",
+  "Country": "ZZ",
+  "Description": [
+    {
+      "desc": "The test center ILLEGAL TC  is not allowed.",
+      "lang": "en"
+    },
+    {
+      "desc": "Das Test Center \"ILLEGAL TC\" ist nicht zugelassen.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "IR-ZZ-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tc"
+              },
+              "ILLEGAL TC"
+            ]
+          },
+          false,
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Invalidation",
+  "ValidFrom": "2021-08-20T11:20:37+02:00",
+  "ValidTo": "2031-08-18T11:20:37+02:00",
+  "Version": "1.0.2"
+}

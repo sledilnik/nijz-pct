@@ -1,0 +1,88 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.tg",
+    "t.0",
+    "t.0.tg",
+    "v.0",
+    "v.0.tg"
+  ],
+  "CertificateType": "General",
+  "Country": "TG",
+  "Description": [
+    {
+      "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+      "lang": "fr"
+    },
+    {
+      "desc": "The \"disease or agent targeted\" must be COVID-19 of the value set list.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "2.0.1",
+  "Identifier": "GR-TG-0002",
+  "Logic": {
+    "and": [
+      {
+        "if": [
+          {
+            "var": "payload.r.0"
+          },
+          {
+            "in": [
+              {
+                "var": "payload.r.0.tg"
+              },
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
+            ]
+          },
+          true
+        ]
+      },
+      {
+        "if": [
+          {
+            "var": "payload.t.0"
+          },
+          {
+            "in": [
+              {
+                "var": "payload.t.0.tg"
+              },
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
+            ]
+          },
+          true
+        ]
+      },
+      {
+        "if": [
+          {
+            "var": "payload.v.0"
+          },
+          {
+            "in": [
+              {
+                "var": "payload.v.0.tg"
+              },
+              {
+                "var": "external.valueSets.disease-agent-targeted"
+              }
+            ]
+          },
+          true
+        ]
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-04T18:20:18Z",
+  "ValidTo": "2025-11-03T18:20:18Z",
+  "Version": "1.0.0"
+}

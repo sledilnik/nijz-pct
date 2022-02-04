@@ -1,0 +1,93 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.mp",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DE",
+  "Description": [
+    {
+      "desc": "Damaged Badge of Janssen on 2021-05-25.",
+      "lang": "en"
+    },
+    {
+      "desc": "Beschädigte Impfcharge Janssen EU/1/20/1525 am 25.05.2021.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "IR-DE-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "and": [
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.mp"
+                  },
+                  "EU/1/20/1525"
+                ]
+              },
+              {
+                "not-before": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      "2021-05-25",
+                      0,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      "2021-05-25",
+                      0,
+                      "day"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          false,
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Invalidation",
+  "ValidFrom": "2021-08-20T11:45:26+02:00",
+  "ValidTo": "2031-08-18T11:45:26+02:00",
+  "Version": "1.0.4"
+}

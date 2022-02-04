@@ -1,0 +1,32 @@
+{
+  "AffectedFields": [
+    "t.1"
+  ],
+  "CertificateType": "Test",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "Test format is not EU standard.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le format lié au test n'est pas au standard UE.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-FR-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.t.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2032-01-29T10:00:00Z",
+  "Version": "1.0.2"
+}

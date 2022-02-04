@@ -1,0 +1,68 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "DX",
+  "Description": [
+    {
+      "desc": "The vaccine must have been administered at least 7 days ago.",
+      "lang": "en"
+    },
+    {
+      "desc": "Seit der Impfung müssen mindestens 7 Tage vergangen sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "La vaccination doit dater de plus de 7 jours.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Deben haber transcurrido más de 7 días desde la vacuna.",
+      "lang": "es"
+    },
+    {
+      "desc": "La vaccinazione deve risalire a più di 7 giorni fa.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-DX-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              7,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

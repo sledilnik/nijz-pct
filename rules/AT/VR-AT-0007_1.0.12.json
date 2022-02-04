@@ -1,0 +1,49 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.dt"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "AT",
+  "Description": [
+    {
+      "desc": "If (sequencenumber < total number of doses) (AT: 'Erstimpfung') -> not valid anymore",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-AT-0007",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "<": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              {
+                "var": "payload.v.0.sd"
+              }
+            ]
+          },
+          false,
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "Region": "AT",
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-11-29T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.12"
+}

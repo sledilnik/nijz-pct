@@ -1,0 +1,61 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "LU",
+  "Description": [
+    {
+      "desc": "Vaccination doses must be equal or greater than expected doses.",
+      "lang": "en"
+    },
+    {
+      "desc": "Die Impfdosen müssen gleich oder höher sein als die erwarteten Dosen.",
+      "lang": "de"
+    },
+    {
+      "desc": "Les doses de vaccination doivent être égales ou supérieures aux doses prévues.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Las dosis de vacunación deben ser iguales o superiores a las previstas.",
+      "lang": "es"
+    },
+    {
+      "desc": "Le dosi di vaccinazione devono essere uguali o superiori alle dosi previste.",
+      "lang": "it"
+    },
+    {
+      "desc": "Vaccinatiedoses moeten gelijk of groter zijn dan de verwachte doses.",
+      "lang": "nl"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-LU-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-07T12:00:00Z",
+  "ValidTo": "2031-01-05T00:00:00Z",
+  "Version": "1.4.0"
+}

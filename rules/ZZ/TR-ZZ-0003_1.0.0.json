@@ -1,0 +1,66 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.sc",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "ZZ",
+  "Description": [
+    {
+      "desc": "The sample for an NAA test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-ZZ-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP6464-4"
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  72,
+                  "hour"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-16T14:43:21+02:00",
+  "ValidTo": "2031-04-15T14:43:21+02:00",
+  "Version": "1.0.0"
+}

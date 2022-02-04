@@ -1,0 +1,45 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.sd"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "TG",
+  "Description": [
+    {
+      "desc": "The vaccination schedule must be complete (e.g., 1/1, 2/2,3/3).",
+      "lang": "en"
+    },
+    {
+      "desc": "La sÃ©rie vaccinale doit Ãªtre complÃ¨te (p. ex. 1/1, 2/2,3/3).",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "2.0.1",
+  "Identifier": "VR-TG-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        ">=": [
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-29T04:23:52Z",
+  "ValidTo": "2026-01-28T04:23:52Z",
+  "Version": "1.0.0"
+}

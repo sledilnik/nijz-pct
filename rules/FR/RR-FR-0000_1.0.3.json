@@ -1,0 +1,32 @@
+{
+  "AffectedFields": [
+    "r.1"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": " Recovery format is not EU standard.",
+      "lang": "en"
+    },
+    {
+      "desc": "Le format lié au rétablissement n'est pas au standard UE.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-FR-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.r.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2022-02-01T10:00:00Z",
+  "Version": "1.0.3"
+}
