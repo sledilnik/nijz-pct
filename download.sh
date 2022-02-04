@@ -17,8 +17,8 @@ cat << ENDHEADER > "rules/README.md"
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}).
 
-| Country | Rule | Source | Description |
-| ------- | ---- | ------ | ----------- |
+| Country | Rule | Version | Source | Description |
+| ------- | ---- | ------- | ------ | ----------- |
 ENDHEADER
 
 curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
@@ -33,17 +33,19 @@ curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .ha
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}/${COUNTRY}).
 
-| Rule | Source | Description |
-| ---- | ------ | ----------- |
+| Rule | Version | Source | Description |
+| ---- | ------- | ------ | ----------- |
 ENDCOUTRYHEADER
     fi
 
     echo -n "Downloading ${COUNTRY}: ${ID} > "
     curl -s "${RuleBaseURL}/${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
+    VERSION=$(jq -r '.Version' "rules/${COUNTRY}/${ID}.json")
+    cp "rules/${COUNTRY}/${ID}.json" "rules/${COUNTRY}/${ID}_${VERSION}.json"
     DESC=$(jq -r 'select(.Description != null) | [.Description[]|select(.lang == "en").desc][0]' "rules/${COUNTRY}/${ID}.json")
-    echo "${DESC}"
-    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
-    echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
+    echo "${VERSION} ${DESC}"
+    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [${VERSION}](${COUNTRY}/${ID}_${VERSION}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
+    echo "| [${ID}](${ID}.json) | [${VERSION}](${ID}_${VERSION}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 ## /rules
 
