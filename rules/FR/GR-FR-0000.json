@@ -1,7 +1,7 @@
 {
   "AffectedFields": [
-    "t",
-    "v"
+    "v",
+    "t"
   ],
   "CertificateType": "General",
   "Country": "FR",
@@ -24,10 +24,10 @@
         "reduce": [
           [
             {
-              "var": "payload.t"
+              "var": "payload.v"
             },
             {
-              "var": "payload.v"
+              "var": "payload.t"
             }
           ],
           {
@@ -54,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-30T00:00:00Z",
-  "ValidTo": "2030-10-30T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2032-01-29T10:00:00Z",
+  "Version": "1.0.5"
 }

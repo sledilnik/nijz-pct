@@ -9,11 +9,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The uncompleted vaccination by VAXZEVRIA must have been administered at least more than 14 days ago and no more than 0 days ago.",
+      "desc": "The certificate of the first dose of Comirnaty 5-11 is not accepted",
       "lang": "en"
     },
     {
-      "desc": "Nedokončené očkování látkou VAXZEVRIA bylo aplikováno minimálně před 14 dny a maximálne před 0 dny.",
+      "desc": "Certifikát první dávky Comirnaty 5-11 není akceptován",
       "lang": "cs"
     }
   ],
@@ -28,72 +28,20 @@
       {
         "if": [
           {
-            "and": [
+            "===": [
               {
-                ">": [
-                  {
-                    "var": "payload.v.0.sd"
-                  },
-                  {
-                    "var": "payload.v.0.dn"
-                  }
-                ]
+                "var": "payload.v.0.mp"
               },
-              {
-                "===": [
-                  {
-                    "var": "payload.v.0.mp"
-                  },
-                  "EU/1/21/1529"
-                ]
-              }
+              "EU/1/20/1528"
             ]
           },
           {
-            "and": [
+            ">=": [
               {
-                "not-before": [
-                  {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
-                  },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      14,
-                      "day"
-                    ]
-                  }
-                ]
+                "var": "payload.v.0.dn"
               },
               {
-                "not-after": [
-                  {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
-                  },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      0,
-                      "day"
-                    ]
-                  }
-                ]
+                "var": "payload.v.0.sd"
               }
             ]
           },
@@ -105,7 +53,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-12T23:00:00Z",
-  "ValidTo": "2031-11-12T23:00:00Z",
-  "Version": "2.0.0"
+  "ValidFrom": "2022-01-31T23:00:00Z",
+  "ValidTo": "2032-01-31T23:00:00Z",
+  "Version": "4.0.0"
 }

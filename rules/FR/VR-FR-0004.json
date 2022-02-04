@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Avec le vaccin Jansen, un parcours vaccinal terminé est consideré comme protecteur au plus tôt à partir de 28 jours apres la date de la derniere injection.",
+      "desc": "Avec le vaccin Jansen, un parcours vaccinal terminé est consideré comme protecteur au plus tôt à partir de 28 jours après la date de la dernière injection.",
       "lang": "fr"
     }
   ],
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-30T00:00:00Z",
-  "ValidTo": "2030-10-30T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2032-01-29T10:00:00Z",
+  "Version": "1.0.4"
 }

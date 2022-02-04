@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "ME",
+  "Description": [
+    {
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 180 days.",
+      "lang": "en"
+    },
+    {
+      "desc": "Pozitivan rezultat NAA testa (npr. PCR testa) ne smije biti stariji od 180 dana.",
+      "lang": "sr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-ME-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              180,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-12-10T22:00:00Z",
+  "ValidTo": "2030-01-01T00:00:00Z",
+  "Version": "1.0.0"
+}

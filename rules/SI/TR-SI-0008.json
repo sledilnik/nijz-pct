@@ -1,0 +1,56 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "SI",
+  "Description": [
+    {
+      "desc": "Test result must be negative (\"not detected\") for test type PCR.",
+      "lang": "en"
+    },
+    {
+      "desc": "Rezultat testa mora biti negativen (\"not detected\") za PCR test.",
+      "lang": "si"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-SI-0008",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP6464-4"
+            ]
+          },
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tr"
+              },
+              "260415000"
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-02-07T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

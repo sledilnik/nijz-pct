@@ -1,29 +1,31 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.mp"
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.dt"
   ],
   "CertificateType": "Vaccination",
   "Country": "LU",
   "Description": [
     {
-      "desc": "Only the following vaccines are accepted: AstraZeneca, Biontech, Janssen, Moderna, Covishield, R-Covi, Covid-19 (recombinant).",
+      "desc": "The vaccine must have been administered no longer than one year ago.",
       "lang": "en"
     },
     {
-      "desc": "Nur die folgenden Impfstoffe werden akzeptiert: AstraZeneca, Biontech, Janssen, Moderna, Covishield, R-Covi, Covid-19 (recombinant).",
+      "desc": "Seit der Impfung darf maximal ein Jahr vergangen sein.",
       "lang": "de"
     },
     {
-      "desc": "Seuls les vaccins suivants sont acceptés : AstraZeneca, Biontech, Janssen, Moderna, Covishield, R-Covi, Covid-19 (recombinant).",
+      "desc": "La vaccination ne doit pas dater de plus d’un an.",
       "lang": "fr"
     },
     {
-      "desc": "Solo se aceptan las siguientes vacunas: AstraZeneca, Biontech, Janssen, Moderna, Covishield, R-Covi, Covid-19 (recombinant).",
+      "desc": "Debe haber transcurrido como máximo un año desde la vacuna.",
       "lang": "es"
     },
     {
-      "desc": "Saranno accettati solamente i seguenti vaccini: AstraZeneca, Biontech, Janssen, Moderna, Covishield, R-Covi, Covid-19 (recombinant).",
+      "desc": "La vaccinazione non può risalire a più di un anno fa.",
       "lang": "it"
     }
   ],
@@ -36,19 +38,95 @@
         "var": "payload.v.0"
       },
       {
-        "in": [
+        "if": [
           {
-            "var": "payload.v.0.mp"
+            "===": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              {
+                "var": "payload.v.0.sd"
+              }
+            ]
           },
-          [
-            "EU/1/20/1528",
-            "EU/1/20/1507",
-            "EU/1/21/1529",
-            "EU/1/20/1525",
-            "Covishield",
-            "R-COVI",
-            "Covid-19-recombinant"
-          ]
+          {
+            "if": [
+              {
+                "<": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  3
+                ]
+              },
+              {
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      270,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      366,
+                      "day"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  366,
+                  "day"
+                ]
+              }
+            ]
+          }
         ]
       },
       true
@@ -56,7 +134,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-06T12:00:00Z",
+  "ValidFrom": "2022-01-08T15:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.4.6"
 }

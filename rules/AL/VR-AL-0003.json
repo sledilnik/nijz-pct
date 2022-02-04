@@ -15,7 +15,7 @@
       "lang": "de"
     },
     {
-      "desc": "La vaccination ne doit pas dater de plus d’un an.",
+      "desc": "La vaccination ne doit pas dater de plus d'un an.",
       "lang": "fr"
     },
     {
@@ -27,7 +27,7 @@
       "lang": "it"
     },
     {
-      "desc": "Vaksina duhet të jetë bërë jo më shumë se një vit më parë.",
+      "desc": "Vaksina duhet të jetë aplikuar jo më shumë se një vit më parë.",
       "lang": "sq"
     }
   ],
@@ -66,7 +66,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-06T22:00:00Z",
-  "ValidTo": "2022-09-01T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-12-11T17:00:00Z",
+  "ValidTo": "2022-12-11T00:00:00Z",
+  "Version": "2.0.0"
 }

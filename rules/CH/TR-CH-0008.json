@@ -8,7 +8,7 @@
   "Country": "CH",
   "Description": [
     {
-      "desc": "For serum antibody tests, the result must be positive.",
+      "desc": "For serum antibody tests and exemption certificates, the result must be positive.",
       "lang": "en"
     }
   ],
@@ -28,7 +28,8 @@
                 "var": "payload.t.0.tt"
               },
               [
-                "94504-8"
+                "94504-8",
+                "medical-exemption"
               ]
             ]
           }
@@ -47,7 +48,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:00Z",
+  "ValidFrom": "2022-01-31T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.6"
+  "Version": "1.0.8"
 }

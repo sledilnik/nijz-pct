@@ -12,6 +12,22 @@
       "lang": "en"
     },
     {
+      "desc": "Eine Impfung mit dem Janssen-Impfstoff muss mindestens 28 Tage zurückliegen.",
+      "lang": "de"
+    },
+    {
+      "desc": "Une vaccination avec le vaccin Janssen doit être administrée depuis au moins 28 jours.",
+      "lang": "fr"
+    },
+    {
+      "desc": "La vacunación con la vacuna Janssen tiene que ser administrada al menos hace 28 días.",
+      "lang": "es"
+    },
+    {
+      "desc": "Una vaccinazione con il vaccino Janssen deve essere somministrata almeno 28 giorni prima.",
+      "lang": "it"
+    },
+    {
       "desc": "Een eerste vaccinatie met het Janssen-vaccin moet ten minste 28 dagen geleden uitgevoerd zijn.",
       "lang": "nl"
     }
@@ -69,7 +85,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-11-27T00:00:00+01:00",
+  "ValidFrom": "2021-12-19T00:00:00+01:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }

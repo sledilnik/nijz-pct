@@ -7,27 +7,27 @@
   "Country": "AL",
   "Description": [
     {
-      "desc": "The positive NAA test result (e.g., PCR) must be older than 28 days.",
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
       "lang": "en"
     },
     {
-      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 28 Tage zurückliegen.",
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 28 jours.",
+      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 11 jours.",
       "lang": "fr"
     },
     {
-      "desc": "Deben haber transcurrido como mínimo 28 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
+      "desc": "Deben haber transcurrido como mínimo 11 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
       "lang": "es"
     },
     {
-      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 28 giorni fa.",
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
       "lang": "it"
     },
     {
-      "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet të jetë më i vjetër se 28 ditë.",
+      "desc": "Rezultati pozitiv i testit NAA (p.sh., PCR) duhet të jetë më i vjetër se 11 ditë.",
       "lang": "sq"
     }
   ],
@@ -55,7 +55,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              28,
+              11,
               "day"
             ]
           }
@@ -66,7 +66,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-06T22:00:00Z",
-  "ValidTo": "2022-09-01T00:00:00Z",
-  "Version": "1.0.0"
+  "ValidFrom": "2021-12-11T17:00:00Z",
+  "ValidTo": "2022-12-11T00:00:00Z",
+  "Version": "2.0.0"
 }

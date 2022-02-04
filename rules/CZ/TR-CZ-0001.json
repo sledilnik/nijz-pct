@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The certificate of an antigen test is not accepted",
+      "desc": "The antigen test may not be older than 48 hours ago",
       "lang": "en"
     },
     {
-      "desc": "Certifikát antigenního testu není akceptován",
+      "desc": "Antigenní test nesmí být starší více než 48 hodin",
       "lang": "cs"
     }
   ],
@@ -50,7 +50,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  0,
+                  48,
                   "hour"
                 ]
               }
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-04T23:00:00Z",
-  "ValidTo": "2031-12-04T23:00:00Z",
-  "Version": "3.0.0"
+  "ValidFrom": "2022-01-31T23:00:00Z",
+  "ValidTo": "2032-01-31T23:00:00Z",
+  "Version": "4.0.0"
 }

@@ -1,17 +1,17 @@
 {
   "AffectedFields": [
-    "t.0.sc",
-    "t.0.tt"
+    "t.0",
+    "t.0.tr"
   ],
   "CertificateType": "Test",
   "Country": "SI",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 24 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+      "desc": "Test result must be negative (\"not detected\") or positive (\"detected\").",
       "lang": "en"
     },
     {
-      "desc": "Čas odvzema vzorca ne sme biti starejši od 24 ur za HAG test.",
+      "desc": "Rezultat testa je lahko samo negativen (\"not detected\") ali pozitiven (\"detected\").",
       "lang": "si"
     }
   ],
@@ -21,33 +21,17 @@
   "Logic": {
     "if": [
       {
-        "===": [
-          {
-            "var": "payload.t.0.tt"
-          },
-          "LP217198-3"
-        ]
+        "var": "payload.t.0"
       },
       {
-        "before": [
+        "in": [
           {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
+            "var": "payload.t.0.tr"
           },
-          {
-            "plusTime": [
-              {
-                "var": "payload.t.0.sc"
-              },
-              24,
-              "hour"
-            ]
-          }
+          [
+            "260415000",
+            "260373001"
+          ]
         ]
       },
       true
@@ -55,7 +39,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-29T13:00:00Z",
+  "ValidFrom": "2022-02-07T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.1.0"
 }

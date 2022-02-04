@@ -7,11 +7,11 @@
   "Country": "FR",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime.",
+      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime.",
       "lang": "en"
     },
     {
-      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 72 heures avant la date de vérification.",
+      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 48 heures avant la date de vérification.",
       "lang": "fr"
     }
   ],
@@ -39,7 +39,7 @@
               {
                 "var": "payload.t.0.sc"
               },
-              72,
+              48,
               "hour"
             ]
           }
@@ -50,7 +50,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-09-05T00:00:00Z",
-  "ValidTo": "2030-09-05T00:00:00Z",
-  "Version": "1.0.1"
+  "ValidFrom": "2022-01-29T10:00:00Z",
+  "ValidTo": "2032-01-29T10:00:00Z",
+  "Version": "1.0.2"
 }

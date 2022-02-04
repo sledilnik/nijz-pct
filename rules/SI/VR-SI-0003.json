@@ -1,21 +1,20 @@
 {
   "AffectedFields": [
+    "dob",
     "v.0",
-    "v.0.dt",
-    "v.0.mp",
     "v.0.dn",
     "v.0.sd",
-    "r.0"
+    "v.0.dt"
   ],
   "CertificateType": "Vaccination",
   "Country": "SI",
   "Description": [
     {
-      "desc": "With Jansen vaccine, a finished vaccination course is considered protective earliest from 14 days after the date of the last vaccination.",
+      "desc": "For a person over 18 years of age, a vaccination cycle is finished 270 days after a finished primary vaccination 1/1, unless it's followed by booster vaccinations.",
       "lang": "en"
     },
     {
-      "desc": "Zaščita s cepivom Janssen je vzpostavljena štirinajst dni po zadnjem prejetem odmerku.",
+      "desc": "Za osebo, starejšo od 18 let, se cikel cepljenj zaključi 270 dni po zaključenem osnovnem cepljenju 1/1, razen če mu sledijo poživitveni odmerki.",
       "lang": "si"
     }
   ],
@@ -25,18 +24,7 @@
   "Logic": {
     "if": [
       {
-        "and": [
-          {
-            "var": "payload.v.0"
-          },
-          {
-            "!": [
-              {
-                "var": "payload.r.0"
-              }
-            ]
-          }
-        ]
+        "var": "payload.v.0"
       },
       {
         "if": [
@@ -45,54 +33,82 @@
               {
                 "===": [
                   {
-                    "var": "payload.v.0.mp"
+                    "var": "payload.v.0.dn"
                   },
-                  "EU/1/20/1525"
+                  1
                 ]
               },
               {
-                ">=": [
-                  {
-                    "var": "payload.v.0.dn"
-                  },
+                "===": [
                   {
                     "var": "payload.v.0.sd"
+                  },
+                  1
+                ]
+              },
+              {
+                "after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      271,
+                      "day"
+                    ]
                   }
                 ]
               }
             ]
           },
           {
-            "not-before": [
+            "if": [
               {
-                "plusTime": [
-                  {
-                    "var": "external.validationClock"
-                  },
-                  0,
-                  "day"
-                ]
+                "var": "payload.dob"
               },
               {
-                "plusTime": [
+                "before": [
                   {
-                    "var": "payload.v.0.dt"
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
                   },
-                  14,
-                  "day"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.dob"
+                      },
+                      18,
+                      "year"
+                    ]
+                  }
                 ]
-              }
+              },
+              false
             ]
           },
           true
         ]
       },
-      false
+      true
     ]
   },
-  "SchemaVersion": "1.3.0",
+  "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-08-29T13:00:00Z",
-  "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.1.0"
 }

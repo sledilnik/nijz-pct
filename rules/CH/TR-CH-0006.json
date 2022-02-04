@@ -1,5 +1,6 @@
 {
   "AffectedFields": [
+    "t.0.tr",
     "t.0.tt",
     "t.0.sc"
   ],
@@ -7,7 +8,7 @@
   "Country": "CH",
   "Description": [
     {
-      "desc": "If the test type is \\\"RAT\\\" then the validation date must be before the date of sample collection plus 24 hours",
+      "desc": "If the test is a negative \\\"RAT\\\" then the validation date must be before the date of sample collection plus 24 hoursFor positive, see TR-CH-0011 and 0012",
       "lang": "en"
     }
   ],
@@ -17,11 +18,23 @@
   "Logic": {
     "if": [
       {
-        "===": [
+        "and": [
           {
-            "var": "payload.t.0.tt"
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP217198-3"
+            ]
           },
-          "LP217198-3"
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tr"
+              },
+              "260415000"
+            ]
+          }
         ]
       },
       {
@@ -51,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-06T00:00:00Z",
+  "ValidFrom": "2022-01-31T00:00:00Z",
   "ValidTo": "2031-01-01T00:00:00Z",
-  "Version": "1.0.6"
+  "Version": "1.0.8"
 }

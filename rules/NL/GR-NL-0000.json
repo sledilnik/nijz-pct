@@ -10,6 +10,26 @@
     {
       "desc": "Exactly one type of event.",
       "lang": "en"
+    },
+    {
+      "desc": "Genau eine Art von Ereignis.",
+      "lang": "de"
+    },
+    {
+      "desc": "Un seul type d'événement.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Exactamente un tipo de evento.",
+      "lang": "es"
+    },
+    {
+      "desc": "Un solo tipo di evento.",
+      "lang": "it"
+    },
+    {
+      "desc": "Precies één soort gebeurtenis.",
+      "lang": "nl"
     }
   ],
   "Engine": "CERTLOGIC",
@@ -52,9 +72,9 @@
       1
     ]
   },
-  "SchemaVersion": "1.3.0",
+  "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-17T00:00:00Z",
+  "ValidFrom": "2021-12-19T00:00:00+01:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.1"
 }

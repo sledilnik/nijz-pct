@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-11-09",
+  "valueSetDate": "2022-01-26",
   "valueSetId": "vaccines-covid-19-auth-holders",
   "valueSetValues": {
     "Bharat-Biotech": {
@@ -36,6 +36,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
       "version": "1.0"
+    },
+    "ORG-100000788": {
+      "active": true,
+      "display": "Sanofi Pasteur",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
     },
     "ORG-100001417": {
       "active": true,
@@ -123,7 +130,21 @@
     },
     "ORG-100032020": {
       "active": true,
-      "display": "Novavax CZ AS",
+      "display": "Novavax CZ a.s.",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
+    },
+    "ORG-100033914": {
+      "active": true,
+      "display": "Medigen Vaccine Biologics Corporation",
+      "lang": "en",
+      "system": "https://spor.ema.europa.eu/v1/organisations",
+      "version": ""
+    },
+    "ORG-100036422": {
+      "active": true,
+      "display": "Valneva France",
       "lang": "en",
       "system": "https://spor.ema.europa.eu/v1/organisations",
       "version": ""
