@@ -1,0 +1,57 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.is",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "CZ",
+  "Description": [
+    {
+      "desc": "The Antigen test must have a certificate issuer. ",
+      "lang": "en"
+    },
+    {
+      "desc": "Antigenní test musí mít vydavatele certifikátu",
+      "lang": "cs"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CZ-0005",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP217198-3"
+            ]
+          },
+          {
+            "if": [
+              {
+                "var": "payload.t.0.is"
+              },
+              true,
+              false
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-31T23:00:00Z",
+  "ValidTo": "2032-01-31T23:00:00Z",
+  "Version": "4.0.0"
+}
