@@ -9,11 +9,11 @@
   "Country": "SK",
   "Description": [
     {
-      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days and not more than 365 days must have elapsed since the first dose of COVID-19 vaccine was administered.",
+      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the first dose of COVID-19 vaccine was administered.",
       "lang": "en"
     },
     {
-      "desc": "Nevyhovuje podmienke plnej očkovanosti. V čase kontroly musí uplynúť najmenej 14 dní a nie viac ako jeden rok po aplikácii poslednej dávky.",
+      "desc": "Nevyhovuje podmienke plnej očkovanosti. V čase kontroly musí uplynúť najmenej 14 dní od podania očkovacej látky.",
       "lang": "sk"
     }
   ],
@@ -46,16 +46,7 @@
                 ]
               },
               {
-                "not-after": [
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      14,
-                      "day"
-                    ]
-                  },
+                "not-before": [
                   {
                     "plusTime": [
                       {
@@ -70,7 +61,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      365,
+                      14,
                       "day"
                     ]
                   }
@@ -87,7 +78,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-19T18:09:30Z",
+  "ValidFrom": "2022-02-06T13:42:13Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
