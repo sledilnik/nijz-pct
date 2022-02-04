@@ -17,8 +17,8 @@ cat << ENDHEADER > "rules/README.md"
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}).
 
-| Country | Rule | Version | Source | Description |
-| ------- | ---- | ------- | ------ | ----------- |
+| Country | Rule | Version | Valid from | Valid to | Source | Description |
+| ------- | ---- | ------- | ---------- | -------- | ------ | ----------- |
 ENDHEADER
 
 curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
@@ -33,8 +33,8 @@ curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .ha
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}/${COUNTRY}).
 
-| Rule | Version | Source | Description |
-| ---- | ------- | ------ | ----------- |
+| Rule | Version | Valid from | Valid to | Source | Description |
+| ---- | ------- | ---------- | -------- | ------ | ----------- |
 ENDCOUTRYHEADER
     fi
 
@@ -43,9 +43,11 @@ ENDCOUTRYHEADER
     VERSION=$(jq -r '.Version' "rules/${COUNTRY}/${ID}.json")
     cp "rules/${COUNTRY}/${ID}.json" "rules/${COUNTRY}/${ID}_${VERSION}.json"
     DESC=$(jq -r 'select(.Description != null) | [.Description[]|select(.lang == "en").desc][0]' "rules/${COUNTRY}/${ID}.json")
+    ValidFrom=$(jq -r '.ValidFrom' "rules/${COUNTRY}/${ID}.json")
+    ValidTo=$(jq -r '.ValidTo' "rules/${COUNTRY}/${ID}.json")
     echo "${VERSION} ${DESC}"
-    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [${VERSION}](${COUNTRY}/${ID}_${VERSION}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
-    echo "| [${ID}](${ID}.json) | [${VERSION}](${ID}_${VERSION}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
+    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [${VERSION}](${COUNTRY}/${ID}_${VERSION}.json) | ${ValidFrom} | ${ValidTo} | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
+    echo "| [${ID}](${ID}.json) | [${VERSION}](${ID}_${VERSION}.json) | ${ValidFrom} | ${ValidTo} | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 ## /rules
 
