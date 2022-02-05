@@ -1,17 +1,18 @@
 {
   "AffectedFields": [
     "t.0.sc",
-    "t.0.tt"
+    "t.0.tt",
+    "t.0.tr"
   ],
   "CertificateType": "Test",
   "Country": "SI",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 24 hours before the Verification Datetime for a test of type RAT (rapid antigen test).",
+      "desc": "DateTime of Sample Collection must be less than 24 hours before the Verification Datetime for a negative (\"not detected\") test of type RAT (rapid antigen test).",
       "lang": "en"
     },
     {
-      "desc": "Čas odvzema vzorca ne sme biti starejši od 24 ur za HAG test.",
+      "desc": "Čas odvzema vzorca ne sme biti starejši od 24 ur za negativen (\"not detected\") HAG test.",
       "lang": "si"
     }
   ],
@@ -21,11 +22,23 @@
   "Logic": {
     "if": [
       {
-        "===": [
+        "and": [
           {
-            "var": "payload.t.0.tt"
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP217198-3"
+            ]
           },
-          "LP217198-3"
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tr"
+              },
+              "260415000"
+            ]
+          }
         ]
       },
       {
@@ -55,7 +68,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidFrom": "2022-02-07T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.1"
+  "Version": "1.2.0"
 }
