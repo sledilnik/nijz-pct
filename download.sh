@@ -17,8 +17,8 @@ cat << ENDHEADER > "rules/README.md"
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}).
 
-| Country | Rule | Source | Description |
-| ------- | ---- | ------ | ----------- |
+| Country | Rule | Version | Valid from | Valid to | Source | Description |
+| ------- | ---- | ------- | ---------- | -------- | ------ | ----------- |
 ENDHEADER
 
 curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .hash ' \
@@ -33,17 +33,21 @@ curl -s "${RuleBaseURL}" | jq -r '.[] | .country + " " + .identifier + " " + .ha
 
 Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](${RuleBaseURL}/${COUNTRY}).
 
-| Rule | Source | Description |
-| ---- | ------ | ----------- |
+| Rule | Version | Valid from | Valid to | Source | Description |
+| ---- | ------- | ---------- | -------- | ------ | ----------- |
 ENDCOUTRYHEADER
     fi
 
     echo -n "Downloading ${COUNTRY}: ${ID} > "
     curl -s "${RuleBaseURL}/${COUNTRY}/${HASH}" | jq --sort-keys > "rules/${COUNTRY}/${ID}.json"
+    VERSION=$(jq -r '.Version' "rules/${COUNTRY}/${ID}.json")
+    cp "rules/${COUNTRY}/${ID}.json" "rules/${COUNTRY}/${ID}_${VERSION}.json"
     DESC=$(jq -r 'select(.Description != null) | [.Description[]|select(.lang == "en").desc][0]' "rules/${COUNTRY}/${ID}.json")
-    echo "${DESC}"
-    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
-    echo "| [${ID}](${ID}.json) | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
+    ValidFrom=$(jq -r '.ValidFrom' "rules/${COUNTRY}/${ID}.json")
+    ValidTo=$(jq -r '.ValidTo' "rules/${COUNTRY}/${ID}.json")
+    echo "${VERSION} ${DESC}"
+    echo "| [${COUNTRY}](${COUNTRY}/README.md) | [${ID}](${COUNTRY}/${ID}.json) | [${VERSION}](${COUNTRY}/${ID}_${VERSION}.json) | ${ValidFrom} | ${ValidTo} | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/README.md"
+    echo "| [${ID}](${ID}.json) | [${VERSION}](${ID}_${VERSION}.json) | ${ValidFrom} | ${ValidTo} | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 ## /rules
 
@@ -72,7 +76,7 @@ done
 ## countryList
 CountrylistBaseURL=$(jq -r '.versions.default.endpoints.countryList.url' "context.json")
 echo "countryList URL: ${CountrylistBaseURL}"
-curl -s "${CountrylistBaseURL}" | jq --sort-keys > "countrylist.json"
+curl -s "${CountrylistBaseURL}" | jq --sort-keys 'sort'> "countrylist.json"
 ## /countryList
 
 ## signercertificateStatus

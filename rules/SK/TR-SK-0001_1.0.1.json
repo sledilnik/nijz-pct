@@ -1,0 +1,45 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "SK",
+  "Description": [
+    {
+      "desc": "The test type must be one of the value set list (RAT OR NAA).",
+      "lang": "en"
+    },
+    {
+      "desc": "Nepovolený typ testu.",
+      "lang": "sk"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.1.0",
+  "Identifier": "TR-SK-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "in": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          [
+            "LP217198-3",
+            "LP6464-4"
+          ]
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-19T18:09:29Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
+}
