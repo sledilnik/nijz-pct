@@ -3,17 +3,18 @@
     "v.0",
     "v.0.dn",
     "v.0.sd",
-    "v.0.dt"
+    "v.0.dt",
+    "v.0.mp"
   ],
   "CertificateType": "Vaccination",
   "Country": "SK",
   "Description": [
     {
-      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 21 must have elapsed since a single-shot of COVID-19 vaccine was administered. For full vaccination the digital certificate of recovery needs to be considered.",
+      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 21 and not more than 270 days must have elapsed since a single-shot of COVID-19 vaccine was administered.",
       "lang": "en"
     },
     {
-      "desc": "Nevyhovuje podmienke plnej očkovanosti. Od podania prvej dávky očkovacej látky proti ochoreniu COVID-19 s jednodávkovou schémou neuplynulo najmenej 21 dní. Pre plnú očkovanosť je nutné posúdiť doklad o prekonaní COVID-19.",
+      "desc": "Nevyhovuje podmienke plnej očkovanosti.  V čase kontroly musí uplynúť najmenej 14 dní, ak bola dávka podaná do 180 dní od prekonania ochorenia COVID-19, alebo najmenej 21 dní a nie viac ako 270 dní od podania prvej dávky očkovacej látky proti ochoreniu COVID-19 s jednodávkovou schémou.",
       "lang": "sk"
     }
   ],
@@ -30,25 +31,32 @@
           {
             "===": [
               {
-                "var": "payload.v.0.sd"
+                "var": "payload.v.0.mp"
               },
-              1
+              "EU/1/20/1525"
             ]
           },
           {
             "if": [
               {
-                ">=": [
+                "===": [
                   {
                     "var": "payload.v.0.dn"
                   },
-                  {
-                    "var": "payload.v.0.sd"
-                  }
+                  1
                 ]
               },
               {
-                "not-before": [
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      21,
+                      "day"
+                    ]
+                  },
                   {
                     "plusTime": [
                       {
@@ -63,7 +71,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      21,
+                      270,
                       "day"
                     ]
                   }
@@ -80,7 +88,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-19T18:09:30Z",
+  "ValidFrom": "2022-02-06T13:42:13Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }

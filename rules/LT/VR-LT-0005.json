@@ -29,16 +29,7 @@
       {
         "if": [
           {
-            "before": [
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.dob"
-                  },
-                  18,
-                  "year"
-                ]
-              },
+            "after": [
               {
                 "plusTime": [
                   {
@@ -47,150 +38,106 @@
                   0,
                   "day"
                 ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  270,
+                  "day"
+                ]
               }
             ]
           },
           {
             "if": [
               {
-                "after": [
+                "and": [
                   {
-                    "plusTime": [
+                    "===": [
                       {
-                        "var": "external.validationClock"
+                        "var": "payload.v.0.dn"
                       },
-                      0,
-                      "day"
+                      2
                     ]
                   },
                   {
-                    "plusTime": [
+                    "===": [
                       {
-                        "var": "payload.v.0.dt"
+                        "var": "payload.v.0.sd"
                       },
-                      270,
-                      "day"
+                      1
                     ]
                   }
                 ]
               },
+              true,
               {
                 "if": [
                   {
-                    "and": [
+                    "===": [
                       {
-                        ">=": [
-                          {
-                            "var": "payload.v.0.dn"
-                          },
-                          2
-                        ]
+                        "var": "payload.v.0.mp"
                       },
-                      {
-                        "===": [
-                          {
-                            "var": "payload.v.0.sd"
-                          },
-                          1
-                        ]
-                      }
+                      "EU/1/20/1525"
                     ]
                   },
-                  true,
                   {
                     "if": [
                       {
-                        "===": [
+                        "and": [
                           {
-                            "var": "payload.v.0.mp"
-                          },
-                          "EU/1/20/1525"
-                        ]
-                      },
-                      {
-                        "if": [
-                          {
-                            "and": [
+                            "===": [
                               {
-                                "===": [
-                                  {
-                                    "var": "payload.v.0.dn"
-                                  },
-                                  2
-                                ]
+                                "var": "payload.v.0.dn"
                               },
-                              {
-                                "===": [
-                                  {
-                                    "var": "payload.v.0.sd"
-                                  },
-                                  2
-                                ]
-                              }
+                              2
                             ]
                           },
-                          true,
-                          false
-                        ]
-                      },
-                      {
-                        "if": [
                           {
-                            "and": [
+                            "===": [
                               {
-                                ">=": [
-                                  {
-                                    "var": "payload.v.0.dn"
-                                  },
-                                  3
-                                ]
+                                "var": "payload.v.0.sd"
                               },
-                              {
-                                "===": [
-                                  {
-                                    "var": "payload.v.0.sd"
-                                  },
-                                  2
-                                ]
-                              }
-                            ]
-                          },
-                          true,
-                          {
-                            "if": [
-                              {
-                                "and": [
-                                  {
-                                    ">": [
-                                      {
-                                        "var": "payload.v.0.sd"
-                                      },
-                                      2
-                                    ]
-                                  },
-                                  {
-                                    "===": [
-                                      {
-                                        "var": "payload.v.0.sd"
-                                      },
-                                      {
-                                        "var": "payload.v.0.dn"
-                                      }
-                                    ]
-                                  }
-                                ]
-                              },
-                              true,
-                              false
+                              2
                             ]
                           }
                         ]
-                      }
+                      },
+                      true,
+                      false
+                    ]
+                  },
+                  {
+                    "if": [
+                      {
+                        "and": [
+                          {
+                            "===": [
+                              {
+                                "var": "payload.v.0.dn"
+                              },
+                              3
+                            ]
+                          },
+                          {
+                            "<=": [
+                              2,
+                              {
+                                "var": "payload.v.0.sd"
+                              },
+                              3
+                            ]
+                          }
+                        ]
+                      },
+                      true,
+                      false
                     ]
                   }
                 ]
-              },
-              true
+              }
             ]
           },
           true
@@ -201,7 +148,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-07T06:00:00Z",
+  "ValidFrom": "2022-02-01T06:00:00Z",
   "ValidTo": "2024-11-29T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.0.0"
 }
