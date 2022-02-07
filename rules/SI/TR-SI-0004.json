@@ -7,11 +7,11 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "Test result must be negative (\"not detected\").",
+      "desc": "Test result must be negative (\"not detected\") or positive (\"detected\").",
       "lang": "en"
     },
     {
-      "desc": "Rezultata testa mora biti negativen (\"not detected\").",
+      "desc": "Rezultat testa je lahko samo negativen (\"not detected\") ali pozitiven (\"detected\").",
       "lang": "si"
     }
   ],
@@ -24,11 +24,14 @@
         "var": "payload.t.0"
       },
       {
-        "===": [
+        "in": [
           {
             "var": "payload.t.0.tr"
           },
-          "260415000"
+          [
+            "260415000",
+            "260373001"
+          ]
         ]
       },
       true
@@ -36,7 +39,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-30T00:00:00Z",
+  "ValidFrom": "2022-02-07T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.1.0"
 }
