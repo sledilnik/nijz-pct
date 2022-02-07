@@ -6,8 +6,8 @@ Archive of apps published on [NIJZ's ezdrav.si web page](https://ezdrav.si/stori
 
 NIJZ's mobile app is based on [EU DGCA verifier app](https://github.com/eu-digital-green-certificates/dgca-verifier-app-android), currently only for Android, with no public source code.
 
-App isn't yet published in [Google Play Store](https://play.google.com/store/apps/developer?id=NIJZ),
-but is [available in Apple App Store](https://apps.apple.com/si/app/preverjanje-eu-dcp/id1584012481).
+App is published in [Google Play Store](https://play.google.com/store/apps/details?id=si.nijz.covid) (since deecember 2022),
+and [Apple App Store](https://apps.apple.com/si/app/preverjanje-eu-dcp/id1584012481).
 
 NIJZ [home page](https://nijz.si) ([virustotal](https://www.virustotal.com/gui/domain/nijz.si))
 
@@ -43,6 +43,17 @@ It also has added counters of valid and invalid certificates scanned by the app.
 * [virustotal](https://www.virustotal.com/gui/file/fdb7e0ca601006dc3bba95c9f339a1ce1170d42fd9c91f19a9995f15af863eba)
 * [origin](https://www.nijz.si/sites/www.nijz.si/files/uploaded/preverjanje_eu_dcp_semi_anon.apk)
 * :book: [Manual 2021-08-06](KRATKA-NAVODILA-ZA-PREVERJANJE-DCP-POTRDIL_06.08.2021.pdf)
+
+### 4th version, Google Play
+
+2021-01-21: First release on Google Play Store, with 2 modes: PCT and PC, shereable debug information.
+[Announcement](https://www.nijz.si/sl/objava-nove-aplikacije-za-preverjanje-eu-digitalnih-covid-potrdil-za-mobilne-naprave)
+
+* :floppy_disk: [Preverjanje_EU_DCP_1.3.0-accAnon.apk](https://raw.githubusercontent.com/sledilnik/nijz-pct/main/app/Preverjanje_EU_DCP_1.3.0-accAnon.apk)
+* sha256 hash: `fa8c68acefe8dcc03d973b787448e049ab15ad8a12d3843f43410bf4edd0a943`
+* [virustotal](https://www.virustotal.com/gui/file/fa8c68acefe8dcc03d973b787448e049ab15ad8a12d3843f43410bf4edd0a943)
+* [origin](https://play.google.com/store/apps/details?id=si.nijz.covid)
+* :book: [Manual 2022-01-20](20220120-KRATKA_NAVODILA_ZA_PREVERJANJE_DCP_POTRDIL_ZA_KONTROLORJE.pdf)
 
 ## zVem
 
