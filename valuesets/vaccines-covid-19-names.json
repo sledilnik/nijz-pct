@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-11-09",
+  "valueSetDate": "2022-01-26",
   "valueSetId": "vaccines-covid-19-names",
   "valueSetValues": {
     "Abdala": {
@@ -65,6 +65,13 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.2"
     },
+    "Covovax": {
+      "active": true,
+      "display": "Covovax",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.8"
+    },
     "EU/1/20/1507": {
       "active": true,
       "display": "Spikevax",
@@ -106,6 +113,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "EpiVacCorona-N": {
+      "active": true,
+      "display": "EpiVacCorona-N",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.8"
     },
     "Hayat-Vax": {
       "active": true,
@@ -149,12 +163,33 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.4"
     },
+    "Sputnik-M": {
+      "active": true,
+      "display": "Sputnik M",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.8"
+    },
     "Sputnik-V": {
       "active": true,
       "display": "Sputnik-V",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
+    },
+    "VLA2001": {
+      "active": true,
+      "display": "VLA2001",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.8"
+    },
+    "Vidprevtyn": {
+      "active": true,
+      "display": "Vidprevtyn",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.8"
     },
     "WIBP-CorV": {
       "active": true,
