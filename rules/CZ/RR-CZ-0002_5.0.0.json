@@ -7,24 +7,24 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The positive PCR test result must be older than 10 days",
+      "desc": "The positive PCR test result may not be older than 180 days",
       "lang": "en"
     },
     {
-      "desc": "Pozitivní PCR test musí být starší více než 10 dní",
+      "desc": "Pozitivní PCR test nesmí být starší  více než 180 dní",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-CZ-0001",
+  "Identifier": "RR-CZ-0002",
   "Logic": {
     "if": [
       {
         "var": "payload.r.0"
       },
       {
-        "not-before": [
+        "not-after": [
           {
             "plusTime": [
               {
@@ -39,7 +39,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              10,
+              180,
               "day"
             ]
           }

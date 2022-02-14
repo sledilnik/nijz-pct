@@ -1,24 +1,24 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.sc",
+    "t.0.ma",
     "t.0.tt"
   ],
   "CertificateType": "Test",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The antigen test may not be older than 24 hours ago",
+      "desc": "The antigen test  must be included in the EU’s Common list of COVID-19 rapid antigen tests",
       "lang": "en"
     },
     {
-      "desc": "Antigenní test nesmí být starší více než 24 hodin",
+      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0001",
+  "Identifier": "TR-CZ-0003",
   "Logic": {
     "if": [
       {
@@ -35,24 +35,12 @@
             ]
           },
           {
-            "not-after": [
+            "in": [
               {
-                "plusTime": [
-                  {
-                    "var": "external.validationClock"
-                  },
-                  0,
-                  "day"
-                ]
+                "var": "payload.t.0.ma"
               },
               {
-                "plusTime": [
-                  {
-                    "var": "payload.t.0.sc"
-                  },
-                  24,
-                  "hour"
-                ]
+                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
               }
             ]
           },
