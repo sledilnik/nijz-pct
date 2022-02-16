@@ -1,31 +1,29 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.dt",
-    "v.0.dn",
-    "v.0.sd"
+    "v.0.dt"
   ],
   "CertificateType": "Vaccination",
   "Country": "ES",
   "Description": [
     {
-      "desc": "Verification Datetime must be more than 14 days and less than 270 days after the last date of vaccination. No Booster",
+      "desc": "Verification Datetime must be more than 14 days and less than 365 days after the last date of vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Der Zeitpunkt der Verifizierung muss mehr als 14 Tage und weniger als 270 Tage nach dem letzten Impfdatum liegen. No Booster",
+      "desc": "Der Zeitpunkt der Verifizierung muss mehr als 14 Tage und weniger als 365 Tage nach dem letzten Impfdatum liegen.",
       "lang": "de"
     },
     {
-      "desc": "La date de vérification doit être supérieure à 14 jours et inférieure à 270 jours après la dernière date de vaccination. No Booster",
+      "desc": "La date de vérification doit être supérieure à 14 jours et inférieure à 365 jours après la dernière date de vaccination.",
       "lang": "fr"
     },
     {
-      "desc": "La fecha de verificación debe ser superior a 14 días e inferior a 270 días después de la última fecha de vacunación en caso de no ser booster.",
+      "desc": "La fecha de verificación debe ser superior a 14 días e inferior a 365 días después de la última fecha de vacunación.",
       "lang": "es"
     },
     {
-      "desc": "La data di verifica deve essere più di 14 giorni e meno di 270 giorni dopo l'ultima data di vaccinazione. No Booster",
+      "desc": "La data di verifica deve essere più di 14 giorni e meno di 365 giorni dopo l'ultima data di vaccinazione.",
       "lang": "it"
     }
   ],
@@ -38,61 +36,34 @@
         "var": "payload.v.0"
       },
       {
-        "if": [
+        "not-after": [
           {
-            "and": [
+            "plusTime": [
               {
-                "<": [
-                  {
-                    "var": "payload.v.0.sd"
-                  },
-                  3
-                ]
+                "var": "payload.v.0.dt"
               },
-              {
-                "===": [
-                  {
-                    "var": "payload.v.0.dn"
-                  },
-                  {
-                    "var": "payload.v.0.sd"
-                  }
-                ]
-              }
+              14,
+              "day"
             ]
           },
           {
-            "not-after": [
+            "plusTime": [
               {
-                "plusTime": [
-                  {
-                    "var": "payload.v.0.dt"
-                  },
-                  14,
-                  "day"
-                ]
+                "var": "external.validationClock"
               },
-              {
-                "plusTime": [
-                  {
-                    "var": "external.validationClock"
-                  },
-                  0,
-                  "day"
-                ]
-              },
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.v.0.dt"
-                  },
-                  271,
-                  "day"
-                ]
-              }
+              0,
+              "day"
             ]
           },
-          true
+          {
+            "plusTime": [
+              {
+                "var": "payload.v.0.dt"
+              },
+              365,
+              "day"
+            ]
+          }
         ]
       },
       true
@@ -100,7 +71,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-18T12:00:00Z",
+  "ValidFrom": "2021-07-05T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.0"
 }
