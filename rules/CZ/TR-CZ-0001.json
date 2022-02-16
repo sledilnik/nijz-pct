@@ -8,11 +8,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The antigen test may not be older than 24 hours ago",
+      "desc": "The antigen test may not be older than 48 hours ago",
       "lang": "en"
     },
     {
-      "desc": "Antigenní test nesmí být starší více než 24 hodin",
+      "desc": "Antigenní test nesmí být starší více než 48 hodin",
       "lang": "cs"
     }
   ],
@@ -50,7 +50,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  24,
+                  48,
                   "hour"
                 ]
               }
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-16T23:00:00Z",
-  "ValidTo": "2032-02-16T23:00:00Z",
-  "Version": "5.0.0"
+  "ValidFrom": "2022-01-31T23:00:00Z",
+  "ValidTo": "2032-01-31T23:00:00Z",
+  "Version": "4.0.0"
 }

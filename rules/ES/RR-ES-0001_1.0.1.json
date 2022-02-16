@@ -7,36 +7,36 @@
   "Country": "ES",
   "Description": [
     {
-      "desc": "The positive NAA test result (e.g., PCR) must be no older than 6 months.",
+      "desc": "The positive NAA test result (e.g., PCR) must be older than 11 days.",
       "lang": "en"
     },
     {
-      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 6 Monate zurückliegen.",
+      "desc": "Der positive NAA-Test (z.B. PCR) muss mindestens 11 Tage zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le test TAN positif (p. ex. PCR) ne doit pas dater de plus de 180 jours.",
+      "desc": "Le test TAN positif (p. ex. PCR) doit dater d‘au moins 11 jours.",
       "lang": "fr"
     },
     {
-      "desc": "Deben haber transcurrido 180 días como máximo desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
+      "desc": "Deben haber transcurrido como mínimo 11 días desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
       "lang": "es"
     },
     {
-      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire massimo a 180 giorni fa.",
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire minimo a 11 giorni fa.",
       "lang": "it"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-ES-0002",
+  "Identifier": "RR-ES-0001",
   "Logic": {
     "if": [
       {
         "var": "payload.r.0"
       },
       {
-        "not-after": [
+        "not-before": [
           {
             "plusTime": [
               {
@@ -51,7 +51,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              181,
+              11,
               "day"
             ]
           }
