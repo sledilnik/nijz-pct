@@ -8,7 +8,7 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The PCR test may not be older than 72 hours ago",
+      "desc": "The PCR test may ot be older than 72 hours ago",
       "lang": "en"
     },
     {
@@ -64,7 +64,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-16T23:00:00Z",
-  "ValidTo": "2032-02-16T23:00:00Z",
-  "Version": "5.0.0"
+  "ValidFrom": "2022-01-31T23:00:00Z",
+  "ValidTo": "2032-01-31T23:00:00Z",
+  "Version": "4.0.0"
 }

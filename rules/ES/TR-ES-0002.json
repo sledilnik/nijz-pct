@@ -8,23 +8,23 @@
   "Country": "ES",
   "Description": [
     {
-      "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago.",
+      "desc": "The sample for an antigen test (e.g., rapid test) must have been taken no longer than 24 hours ago.",
       "lang": "en"
     },
     {
-      "desc": "Die Probenahme für einen Antigen-Test (z.B. Schnelltest) darf maximal 48 Stunden zurückliegen.",
+      "desc": "Die Probenahme für einen Antigen-Test (z.B. Schnelltest) darf maximal 24 Stunden zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le prélèvement pour un test antigénique (p. ex. test rapide) ne doit pas dater de plus de 48 heures.",
+      "desc": "Le prélèvement pour un test antigénique (p. ex. test rapide) ne doit pas dater de plus de 24 heures.",
       "lang": "fr"
     },
     {
-      "desc": "Deben haber transcurrido 48 horas como máximo desde la extracción para una prueba de antígenos (por ejemplo, un autotest rápido).",
+      "desc": "Deben haber transcurrido 24 horas como máximo desde la extracción para una prueba de antígenos (por ejemplo, un autotest rápido).",
       "lang": "es"
     },
     {
-      "desc": "Il campione per il test antigenico (test rapido) deve essere stato rilevato nelle ultime 48 ore.",
+      "desc": "Il campione per il test antigenico (test rapido) deve essere stato rilevato nelle ultime 24 ore.",
       "lang": "it"
     }
   ],
@@ -62,7 +62,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  48,
+                  24,
                   "hour"
                 ]
               }
@@ -76,7 +76,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-07-05T00:00:00Z",
+  "ValidFrom": "2022-02-18T12:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.0"
+  "Version": "1.0.1"
 }
