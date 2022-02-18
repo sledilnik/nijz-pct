@@ -7,11 +7,11 @@
   "Country": "SI",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for a test of type NAA (PCR test).",
+      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime for a test of type NAA (PCR test).",
       "lang": "en"
     },
     {
-      "desc": "Čas odvzema vzorca ne sme biti starejši od 72 ur za PCR test.",
+      "desc": "Čas odvzema vzorca ne sme biti starejši od 48 ur za PCR test.",
       "lang": "si"
     }
   ],
@@ -44,7 +44,7 @@
               {
                 "var": "payload.t.0.sc"
               },
-              72,
+              48,
               "hour"
             ]
           }
@@ -55,7 +55,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-19T00:00:00Z",
+  "ValidFrom": "2022-02-01T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.2.0"
+  "Version": "1.1.1"
 }
