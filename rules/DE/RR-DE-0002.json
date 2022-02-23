@@ -7,23 +7,23 @@
   "Country": "DE",
   "Description": [
     {
-      "desc": "The positive NAA test result (e.g., PCR) must be no older than 90 days.",
+      "desc": "The positive NAA test result (e.g., PCR) must be no older than 6 months.",
       "lang": "en"
     },
     {
-      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 90 Tage zurückliegen.",
+      "desc": "Der positive NAA-Test (z.B. PCR) darf maximal 6 Monate zurückliegen.",
       "lang": "de"
     },
     {
-      "desc": "Le test TAN positif (p. ex. PCR) ne doit pas dater de plus de 90 jours.",
+      "desc": "Le test TAN positif (p. ex. PCR) ne doit pas dater de plus de 180 jours.",
       "lang": "fr"
     },
     {
-      "desc": "Deben haber transcurrido 90 días como máximo desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
+      "desc": "Deben haber transcurrido 180 días como máximo desde que una prueba de amplificación de ácidos nucleicos (por ejemplo, una PCR) diese positivo.",
       "lang": "es"
     },
     {
-      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire massimo a 90 giorni fa.",
+      "desc": "Il NAAT positivo (ad es. test PRC) deve risalire massimo a 180 giorni fa.",
       "lang": "it"
     }
   ],
@@ -51,7 +51,7 @@
               {
                 "var": "payload.r.0.fr"
               },
-              90,
+              180,
               "day"
             ]
           }
@@ -62,7 +62,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-24T17:00:00Z",
+  "ValidFrom": "2021-07-17T08:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.1"
 }
