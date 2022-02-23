@@ -7,7 +7,7 @@
   "Country": "PL",
   "Description": [
     {
-      "desc": "Akceptowane są tylko szczepionki z zestawu wartości, które zostały zatwierdzone przez EMA: Comirnaty, Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
+      "desc": "Akceptowane są tylko szczepionki z zestawu wartości, które zostały zatwierdzone przez EMA: Comirnaty (Pfizer), Moderna (Spikevax), Vaxzevria (AstraZeneca), Jannsen, Nuvaxovid.",
       "lang": "pl"
     },
     {
@@ -15,7 +15,7 @@
       "lang": "en"
     },
     {
-      "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty, Janssen, Moderna (Spikevax), Nuvaxovid.",
+      "desc": "Nur die folgenden Impfstoffe werden akzeptiert: Vaxzevria (AstraZeneca), Comirnaty (Pfizer), Janssen, Moderna (Spikevax), Nuvaxovid.",
       "lang": "de"
     }
   ],
@@ -48,5 +48,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2022-02-26T00:00:00Z",
   "ValidTo": "2030-10-11T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }
