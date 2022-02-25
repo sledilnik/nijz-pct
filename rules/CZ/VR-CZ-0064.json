@@ -10,17 +10,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Booster dose of vaccination Comirnaty may not be older than 48 months",
+      "desc": "Booster dose of vaccination Nuvaxovid may not be older than 48 months",
       "lang": "en"
     },
     {
-      "desc": "Posilovací dávka očkování Comirnaty nesmí být starší než 48 měsíců",
+      "desc": "Posilovací dávka očkování Nuvaxovid nesmí být starší než 48 měsíců",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0034",
+  "Identifier": "VR-CZ-0064",
   "Logic": {
     "if": [
       {
@@ -35,7 +35,7 @@
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "EU/1/20/1528"
+                  "EU/1/21/1618"
                 ]
               },
               {

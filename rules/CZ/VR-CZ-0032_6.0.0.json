@@ -10,17 +10,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination Comirnaty 5-11 must must be older than 14 days",
+      "desc": "Vaccination Comirnaty must must be older than 14 days",
       "lang": "en"
     },
     {
-      "desc": "Od dokončeného očkování Comirnaty 5-11 musí uplynout alespoň 14 dnů",
+      "desc": "Od dokončeného očkování Comirnaty musí uplynout alespoň 14 dnů",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0042",
+  "Identifier": "VR-CZ-0032",
   "Logic": {
     "if": [
       {

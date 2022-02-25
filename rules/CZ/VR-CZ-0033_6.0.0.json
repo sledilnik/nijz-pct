@@ -9,17 +9,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The certificate of the first dose of Comirnaty 5-11 is not accepted",
+      "desc": "The certificate of the first dose of Comirnaty is not accepted",
       "lang": "en"
     },
     {
-      "desc": "Certifikát první dávky Comirnaty 5-11 není akceptován",
+      "desc": "Certifikát první dávky Comirnaty není akceptován",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0043",
+  "Identifier": "VR-CZ-0033",
   "Logic": {
     "if": [
       {
