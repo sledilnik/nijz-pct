@@ -197,7 +197,8 @@
                             "BBIBP-CorV",
                             "CoronaVac",
                             "Covaxin",
-                            "NVX-CoV2373"
+                            "NVX-CoV2373",
+                            "EU/1/21/1618"
                           ]
                         ]
                       }
@@ -214,7 +215,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidFrom": "2022-02-28T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.0"
+  "Version": "1.1.1"
 }
