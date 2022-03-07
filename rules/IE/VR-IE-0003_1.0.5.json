@@ -1,18 +1,22 @@
 {
   "AffectedFields": [
-    "v.0"
+    "v.0",
+    "v.0.dn",
+    "v.0.dt",
+    "v.0.mp",
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "IE",
   "Description": [
     {
-      "desc": "Vaccine certificate is invalid for entry at this time as the date is outside the window.",
+      "desc": "Effective dates on vaccine certificate not valid for entry at this time.",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-IE-0006",
+  "Identifier": "VR-IE-0003",
   "Logic": {
     "if": [
       {
@@ -23,11 +27,22 @@
           {
             "and": [
               {
-                "===": [
+                "in": [
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "EU/1/20/1525"
+                  [
+                    "EU/1/20/1528",
+                    "EU/1/20/1507",
+                    "EU/1/21/1529",
+                    "CoronaVac",
+                    "BBIBP-CorV",
+                    "Covishield",
+                    "Covaxin",
+                    "EU/1/21/1618",
+                    "NVX-CoV2373",
+                    "EU/1/20/1525"
+                  ]
                 ]
               },
               {
@@ -35,7 +50,17 @@
                   {
                     "var": "payload.v.0.dn"
                   },
-                  1
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
+              },
+              {
+                "<=": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  2
                 ]
               }
             ]
@@ -96,7 +121,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-04T00:00:00Z",
+  "ValidFrom": "2022-03-10T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
   "Version": "1.0.5"
 }

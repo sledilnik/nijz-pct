@@ -1,6 +1,10 @@
 {
   "AffectedFields": [
-    "v.0"
+    "v.0",
+    "v.0.dn",
+    "v.0.dt",
+    "v.0.mp",
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "IE",
@@ -36,8 +40,19 @@
                     "Covishield",
                     "Covaxin",
                     "EU/1/21/1618",
-                    "NVX-CoV2373"
+                    "NVX-CoV2373",
+                    "EU/1/20/1525"
                   ]
+                ]
+              },
+              {
+                "<=": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  {
+                    "var": "payload.v.0.sd"
+                  }
                 ]
               },
               {
@@ -106,7 +121,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-04T00:00:00Z",
+  "ValidFrom": "2022-03-10T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.4"
+  "Version": "1.0.5"
 }

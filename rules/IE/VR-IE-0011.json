@@ -1,6 +1,9 @@
 {
   "AffectedFields": [
-    "v.0"
+    "v.0",
+    "v.0.dn",
+    "v.0.sd",
+    "v.0.dt"
   ],
   "CertificateType": "Vaccination",
   "Country": "IE",
@@ -49,13 +52,6 @@
                   0,
                   "day"
                 ]
-              },
-              {
-                "plusTime": [
-                  "2030-06-30T23:59:59-00:00",
-                  0,
-                  "day"
-                ]
               }
             ]
           },
@@ -67,7 +63,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-04T00:00:00Z",
+  "ValidFrom": "2022-03-10T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.1"
+  "Version": "1.0.2"
 }
