@@ -1,0 +1,70 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.sc",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "LV",
+  "Description": [
+    {
+      "desc": "Kopš NAAT testa veikšanas nav pagājis vairāk kā 72 stundas",
+      "lang": "lv"
+    },
+    {
+      "desc": "The sample for an NAAT test (e.g., PCR) must have been taken no longer than 72 hours ago.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-LV-0018",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tt"
+              },
+              "LP6464-4"
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  72,
+                  "hour"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-10T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

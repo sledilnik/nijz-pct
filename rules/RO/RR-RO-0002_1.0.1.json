@@ -1,0 +1,68 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "RO",
+  "Description": [
+    {
+      "desc": "The positive test result must be older than 10 days.",
+      "lang": "en"
+    },
+    {
+      "desc": "Das positive Testergebnis muss älter als 10 Tage sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat positif du test doit dater de plus de 10 jours.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado positivo de la prueba debe tener más de 10 días.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato positivo del test deve essere più vecchio di 10 giorni.",
+      "lang": "it"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-RO-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-before": [
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.fr"
+              },
+              10,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-14T14:00:00Z",
+  "ValidTo": "2031-01-01T00:00:00Z",
+  "Version": "1.0.1"
+}

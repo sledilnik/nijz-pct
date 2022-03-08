@@ -1,0 +1,60 @@
+{
+  "AffectedFields": [
+    "r",
+    "t",
+    "v"
+  ],
+  "CertificateType": "General",
+  "Country": "IE",
+  "Description": [
+    {
+      "desc": "Certificate relates to more than one health event",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "GR-IE-0000",
+  "Logic": {
+    "===": [
+      {
+        "reduce": [
+          [
+            {
+              "var": "payload.r"
+            },
+            {
+              "var": "payload.t"
+            },
+            {
+              "var": "payload.v"
+            }
+          ],
+          {
+            "+": [
+              {
+                "var": "accumulator"
+              },
+              {
+                "if": [
+                  {
+                    "var": "current.0"
+                  },
+                  1,
+                  0
+                ]
+              }
+            ]
+          },
+          0
+        ]
+      },
+      1
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-07-12T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
+}
