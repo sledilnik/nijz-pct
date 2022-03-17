@@ -12,7 +12,7 @@
       "lang": "en"
     },
     {
-      "desc": "Die Impfreihe muss vollzählig sein (z.B. 1/1, 2/2).",
+      "desc": "Die Impfreihe muss vollständig sein (z.B. 1/1, 2/2).",
       "lang": "de"
     },
     {
@@ -51,7 +51,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-03-18T00:00:00Z",
+  "ValidFrom": "2021-07-03T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.2"
+  "Version": "1.0.0"
 }
