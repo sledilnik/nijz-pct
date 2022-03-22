@@ -91,12 +91,12 @@
       "version": "2021-07-07 05:23:41 CEST"
     },
     "1200": {
-      "active": true,
+      "active": false,
       "display": "Ortho Clinical Diagnostics, VITROS Immunodiagnostic Products SARS-CoV-2 Antigen",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
-      "version": "2022-02-10 00:00:00 CET"
+      "version": "2022-03-22 00:00:00 CET"
     },
     "1201": {
       "active": true,
@@ -299,12 +299,12 @@
       "version": "2021-07-07 05:24:45 CEST"
     },
     "1324": {
-      "active": false,
+      "active": true,
       "display": "Guangzhou Decheng Biotechnology Co., LTD, V-CHEK, 2019-nCoV Ag Rapid Test Kit (Immunochromatography)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
-      "version": "2022-02-16 00:00:00 CET"
+      "version": "2022-03-22 00:00:00 CET"
     },
     "1331": {
       "active": true,
@@ -931,12 +931,12 @@
       "version": "2021-07-13 06:03:58 CEST"
     },
     "1960": {
-      "active": true,
+      "active": false,
       "display": "DiaSorin S.p.A, LIAISON® SARS-CoV-2 Ag",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
-      "version": "2021-10-20 00:00:00 CEST"
+      "version": "2022-03-22 00:00:00 CET"
     },
     "1967": {
       "active": true,
