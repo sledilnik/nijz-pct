@@ -112,7 +112,7 @@
                           {
                             "and": [
                               {
-                                ">=": [
+                                "===": [
                                   {
                                     "var": "payload.v.0.dn"
                                   },
@@ -120,7 +120,7 @@
                                 ]
                               },
                               {
-                                ">=": [
+                                "===": [
                                   {
                                     "var": "payload.v.0.sd"
                                   },
@@ -201,7 +201,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-03-26T06:00:00Z",
+  "ValidFrom": "2022-02-07T06:00:00Z",
   "ValidTo": "2024-11-29T00:00:00Z",
-  "Version": "1.2.0"
+  "Version": "1.1.0"
 }
