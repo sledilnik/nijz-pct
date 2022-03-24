@@ -1,23 +1,24 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.tr"
+    "t.0.sc",
+    "t.0.tt"
   ],
   "CertificateType": "Test",
   "Country": "FR",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime and must be negative.",
+      "desc": "DateTime of Sample Collection must be less than 72 hours before the Verification Datetime for Nucleic acid amplification with probe detection and must be negative.",
       "lang": "en"
     },
     {
-      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 48 heures avant la date de vérification et doit-être négatif.",
+      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 72 heures avant la date de vérification et doit-être négatif",
       "lang": "fr"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FR-0003",
+  "Identifier": "TR-FR-0002",
   "Logic": {
     "if": [
       {
@@ -32,7 +33,7 @@
                   {
                     "var": "payload.t.0.tt"
                   },
-                  "LP217198-3"
+                  "LP6464-4"
                 ]
               },
               {
@@ -53,7 +54,7 @@
                     "var": "external.validationClock"
                   },
                   0,
-                  "hour"
+                  "day"
                 ]
               },
               {
@@ -61,7 +62,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  48,
+                  72,
                   "hour"
                 ]
               }
@@ -77,5 +78,5 @@
   "Type": "Acceptance",
   "ValidFrom": "2022-03-28T08:00:00Z",
   "ValidTo": "2032-01-28T08:00:00Z",
-  "Version": "1.0.3"
+  "Version": "1.0.4"
 }
