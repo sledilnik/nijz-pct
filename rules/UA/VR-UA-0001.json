@@ -1,0 +1,48 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.mp"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "UA",
+  "Description": [
+    {
+      "desc": "Only vaccines in the allowed valueset that have been approved by the WHO are allowed.",
+      "lang": "en"
+    },
+    {
+      "desc": "Дозволені лише вакцини з дозволеного набору значень, затверджені WHO.",
+      "lang": "ua"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-UA-0001",
+  "Logic": {
+    "if": [
+      {
+        "in": [
+          {
+            "var": "payload.v.0.mp"
+          },
+          [
+            "Sputnik-V",
+            "Sputnik-Light",
+            "EpiVacCorona",
+            "R-COVI",
+            "CoviVac",
+            "EpiVacCorona-N",
+            "Sputnik-M"
+          ]
+        ]
+      },
+      false,
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-03-12T14:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.2.1"
+}

@@ -1,0 +1,6 @@
+{
+  "code": "0x006",
+  "details": "",
+  "problem": "Possible reasons: The provided hash or country may not be correct.",
+  "sendValue": "country: IE, hash: 52bed8fc0f72f9afd4f109b72544ba369fe92b5834175398f5e39844df0dc689"
+}

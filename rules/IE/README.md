@@ -1,0 +1,20 @@
+# EU digital green certificate verification rules for Ireland
+
+Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served via [API](https://dgca-businessrule-service.ezdrav.si/rules/IE).
+
+| Rule | Version | Valid from | Valid to | Source | Description |
+| ---- | ------- | ---------- | -------- | ------ | ----------- |
+| [GR-IE-0000](GR-IE-0000.json) | [1.0.1](GR-IE-0000_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/dcb8baa257b6fedbe1e673dd5d57545da0a63244fd1898492d57a50dd95f9e3a) | Certificate relates to more than one health event |
+| [GR-IE-0001](GR-IE-0001.json) | [1.0.1](GR-IE-0001_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/19ec3836bd587753dcb63a1879721b08124950575c5331012050cde000730d2a) | Certificate relates to a disease other than COVID-19. |
+| [RR-IE-0000](RR-IE-0000.json) | [null](RR-IE-0000_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/b3b8e4c9b7476bc45fa344ff564261c8c6275b3f47e190b61b4fa236d758d366) |  |
+| [RR-IE-0001](RR-IE-0001.json) | [1.0.1](RR-IE-0001_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/f9ca0f4da218a41d8d31f1b7fbc16e0a0f370c449a2ab1dea85d215892fa116c) | Check date is not within recovery certificate validity window |
+| [TR-IE-0000](TR-IE-0000.json) | [1.0.1](TR-IE-0000_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/84f13a846c63b7b07e1e31462f7ff8b463889fe318ffdabfba16ddd643a267d5) | Test Certificate can only relate to a single Test for C-19 |
+| [TR-IE-0001](TR-IE-0001.json) | [1.0.1](TR-IE-0001_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/4e36f159694a3325aa5f0afec8b9394f15ef5b44f9e929f9e380c350762c8288) | Test Certificate must be for a NAA Test performed via PCR |
+| [TR-IE-0004](TR-IE-0004.json) | [1.0.1](TR-IE-0004_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/da2a34f1ac4856ab6779c5510fa15049913a178fd5d19fedce147cc6ebd65963) | Test Certificate result must indicate a negative test COVID-19 not detected |
+| [TR-IE-0006](TR-IE-0006.json) | [1.0.1](TR-IE-0006_1.0.1.json) | 2021-07-12T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/b77b5f97085018df70156291a3f0ec990ee69f80c5ba11d99ac73116ab79d7ce) | Test Certificate has expired for entry |
+| [VR-IE-0000](VR-IE-0000.json) | [null](VR-IE-0000_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/52bed8fc0f72f9afd4f109b72544ba369fe92b5834175398f5e39844df0dc689) |  |
+| [VR-IE-0001](VR-IE-0001.json) | [null](VR-IE-0001_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/8f447354905e7efda1e875d3e1a80fd2da80d67fec1c9da59695854ca7a759f0) |  |
+| [VR-IE-0002](VR-IE-0002.json) | [null](VR-IE-0002_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/3433d93a7ad4abbeda99718c19cb0d8e7270769b72828b0d93fde5a1248eb7ef) |  |
+| [VR-IE-0003](VR-IE-0003.json) | [null](VR-IE-0003_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/3fa4b4f0fc10426b906d9b17ec5d5c87e45d259a823be878880cdd9923e8955b) |  |
+| [VR-IE-0011](VR-IE-0011.json) | [1.0.2](VR-IE-0011_1.0.2.json) | 2022-03-10T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/cc57731f085c055a7638142fe3bb63e5e52613b3451f74e88cc5b935828fa45b) | Effective dates on vaccine certificate not valid for entry at this time. |
+| [VR-IE-0012](VR-IE-0012.json) | [1.0.2](VR-IE-0012_1.0.2.json) | 2022-03-10T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/IE/5e5a95bff55ab94426bbe8c2283ebe377f95bfabe45178950f53b75353131c93) | Effective dates on vaccine certificate not valid for entry at this time. |
