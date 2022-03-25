@@ -1,28 +1,28 @@
 {
   "AffectedFields": [
-    "r.1"
+    "v.1"
   ],
-  "CertificateType": "Recovery",
+  "CertificateType": "Vaccination",
   "Country": "NL",
   "Description": [
     {
-      "desc": "At most one recovery-event.",
+      "desc": "At most one vaccination-event.",
       "lang": "en"
     },
     {
-      "desc": "Höchstens ein Wiederherstellungsereignis.",
+      "desc": "Höchstens ein impfung-Ereignis.",
       "lang": "de"
     },
     {
-      "desc": "Le certificat ne contient au plus qu'un évènement de rétablissement.",
+      "desc": "Au maximum un événement de vaccination.",
       "lang": "fr"
     },
     {
-      "desc": "Como máximo un evento de recuperación.",
+      "desc": "Como máximo un evento de vacunación.",
       "lang": "es"
     },
     {
-      "desc": "Al massimo un evento di recupero.",
+      "desc": "Al massimo una vaccinazione-evento.",
       "lang": "it"
     },
     {
@@ -32,11 +32,11 @@
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-NL-0000",
+  "Identifier": "VR-NL-0000",
   "Logic": {
     "!": [
       {
-        "var": "payload.r.1"
+        "var": "payload.v.1"
       }
     ]
   },
