@@ -7,11 +7,11 @@
   "Country": "FR",
   "Description": [
     {
-      "desc": "DateTime of Sample Collection must be less than 48 hours before the Verification Datetime and must be negative.",
+      "desc": "Test result must be negative.",
       "lang": "en"
     },
     {
-      "desc": "La date du prélèvement de l'échantillon doit avoir été réalisée moins de 48 heures avant la date de vérification et doit-être négatif.",
+      "desc": "Le resultat du test doit etre negatif.",
       "lang": "fr"
     }
   ],
@@ -24,50 +24,11 @@
         "var": "payload.t.0"
       },
       {
-        "if": [
+        "===": [
           {
-            "and": [
-              {
-                "===": [
-                  {
-                    "var": "payload.t.0.tt"
-                  },
-                  "LP217198-3"
-                ]
-              },
-              {
-                "===": [
-                  {
-                    "var": "payload.t.0.tr"
-                  },
-                  "260415000"
-                ]
-              }
-            ]
+            "var": "payload.t.0.tr"
           },
-          {
-            "before": [
-              {
-                "plusTime": [
-                  {
-                    "var": "external.validationClock"
-                  },
-                  0,
-                  "hour"
-                ]
-              },
-              {
-                "plusTime": [
-                  {
-                    "var": "payload.t.0.sc"
-                  },
-                  48,
-                  "hour"
-                ]
-              }
-            ]
-          },
-          true
+          "260415000"
         ]
       },
       true
@@ -75,7 +36,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-03-28T08:00:00Z",
-  "ValidTo": "2032-01-28T08:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2021-10-31T00:00:00Z",
+  "ValidTo": "2030-10-31T00:00:00Z",
+  "Version": "1.0.2"
 }
