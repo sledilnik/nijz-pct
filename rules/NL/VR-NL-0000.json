@@ -1,0 +1,48 @@
+{
+  "AffectedFields": [
+    "v.1"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "NL",
+  "Description": [
+    {
+      "desc": "At most one vaccination-event.",
+      "lang": "en"
+    },
+    {
+      "desc": "Höchstens ein impfung-Ereignis.",
+      "lang": "de"
+    },
+    {
+      "desc": "Au maximum un événement de vaccination.",
+      "lang": "fr"
+    },
+    {
+      "desc": "Como máximo un evento de vacunación.",
+      "lang": "es"
+    },
+    {
+      "desc": "Al massimo una vaccinazione-evento.",
+      "lang": "it"
+    },
+    {
+      "desc": "Ten hoogste één vaccinatie-gebeurtenis.",
+      "lang": "nl"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-NL-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.v.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-03-28T00:00:00+01:00",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.1.2"
+}
