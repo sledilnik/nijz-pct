@@ -7,7 +7,7 @@
   "Country": "FR",
   "Description": [
     {
-      "desc": "The Verification Datetime must be between +11 days and +180 days after the test date.",
+      "desc": "The Verification Datetime must be between +11 days and +183 days after the test date.",
       "lang": "en"
     },
     {
@@ -59,7 +59,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-11T12:00:00Z",
-  "ValidTo": "2021-12-14T12:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2022-03-28T08:00:00Z",
+  "ValidTo": "2032-01-28T08:00:00Z",
+  "Version": "1.0.4"
 }
