@@ -1,17 +1,18 @@
 {
   "AffectedFields": [
     "v",
-    "t"
+    "t",
+    "r"
   ],
   "CertificateType": "General",
   "Country": "FR",
   "Description": [
     {
-      "desc": "Only a vaccine or test is allowed, and in a EU standard format.",
+      "desc": "Only a vaccine, a test or recovery is allowed, and in a EU standard format.",
       "lang": "en"
     },
     {
-      "desc": "Seul un vaccin ou un test est autorisé, et dans un format au standard UE.",
+      "desc": "Seul un vaccin, un test ou une recouvrance sont autorisé, et dans un format au standard UE.",
       "lang": "fr"
     }
   ],
@@ -28,6 +29,9 @@
             },
             {
               "var": "payload.t"
+            },
+            {
+              "var": "payload.r"
             }
           ],
           {
@@ -54,7 +58,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-19T13:00:00Z",
-  "ValidTo": "2031-12-19T13:00:00Z",
-  "Version": "1.0.5"
+  "ValidFrom": "2022-03-28T08:00:00Z",
+  "ValidTo": "2032-01-28T08:00:00Z",
+  "Version": "1.0.6"
 }
