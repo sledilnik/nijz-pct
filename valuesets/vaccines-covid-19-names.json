@@ -2,6 +2,13 @@
   "valueSetDate": "2022-01-26",
   "valueSetId": "vaccines-covid-19-names",
   "valueSetValues": {
+    "AZD2816": {
+      "active": true,
+      "display": "AZD2816",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
+    },
     "Abdala": {
       "active": true,
       "display": "Abdala",
@@ -39,7 +46,7 @@
     },
     "Covaxin": {
       "active": true,
-      "display": "Covaxin (also known as BBV152 A, B, C)",
+      "display": "Covaxin",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.0"
@@ -51,6 +58,13 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.4"
     },
+    "Covid-19-adsorvida-inativada": {
+      "active": true,
+      "display": "Vacina adsorvida covid-19 (inativada)",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
+    },
     "Covid-19-recombinant": {
       "active": true,
       "display": "Covid-19 (recombinant)",
@@ -58,9 +72,16 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.3"
     },
+    "Covifenz": {
+      "active": true,
+      "display": "Covifenz",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
+    },
     "Covishield": {
       "active": true,
-      "display": "Covishield (ChAdOx1_nCoV-19)",
+      "display": "Covishield",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.2"
@@ -142,6 +163,13 @@
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.6"
     },
+    "NVSI-06-08": {
+      "active": true,
+      "display": "NVSI-06-08",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
+    },
     "NVX-CoV2373": {
       "active": false,
       "display": "NVX-CoV2373 (deprecated)",
@@ -155,6 +183,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.3"
+    },
+    "SCTV01C": {
+      "active": true,
+      "display": "SCTV01C",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
     },
     "Sputnik-Light": {
       "active": true,
@@ -197,6 +232,13 @@
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.5"
+    },
+    "YS-SC2-010": {
+      "active": true,
+      "display": "YS-SC2-010",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccineproductname",
+      "version": "1.9"
     }
   }
 }
