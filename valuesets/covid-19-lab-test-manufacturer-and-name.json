@@ -44,7 +44,7 @@
     },
     "1173": {
       "active": true,
-      "display": "CerTest Biotec, CerTest SARS-CoV-2 Card test",
+      "display": "CerTest Biotec, CerTest SARS-CoV-2",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
