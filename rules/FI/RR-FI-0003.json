@@ -1,0 +1,141 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.df",
+    "r.0.du",
+    "r.0.fr"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "FI",
+  "Description": [
+    {
+      "desc": "Recovery certificate is not valid",
+      "lang": "en"
+    },
+    {
+      "desc": "Sairastamistodistus ei ole voimassa",
+      "lang": "fi"
+    },
+    {
+      "desc": "Intyget om tillfrisknande från covid-19 är inte giltigt",
+      "lang": "sv"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-FI-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "if": [
+              {
+                "after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.r.0.df"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.r.0.fr"
+                      },
+                      11,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.df"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  11,
+                  "day"
+                ]
+              }
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "if": [
+              {
+                "before": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.r.0.du"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.r.0.fr"
+                      },
+                      180,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.du"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.r.0.fr"
+                  },
+                  180,
+                  "day"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-04-04T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.1"
+}
