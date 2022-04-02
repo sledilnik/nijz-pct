@@ -13,13 +13,13 @@
       "lang": "en"
     },
     {
-      "desc": "Tõhustusdoosist ei tohi olla möödas rohkem kui 365 päeva.",
+      "desc": "Tõhustusdoosist ei tohi olla möödas rohkem kui 365 päeva",
       "lang": "ee"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-EE-0006",
+  "Identifier": "VR-EE-0007",
   "Logic": {
     "if": [
       {
@@ -28,13 +28,11 @@
       {
         "if": [
           {
-            ">": [
+            ">=": [
               {
                 "var": "payload.v.0.dn"
               },
-              {
-                "var": "payload.v.0.sd"
-              }
+              3
             ]
           },
           {
