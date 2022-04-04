@@ -1,66 +1,62 @@
 {
   "AffectedFields": [
     "v.0",
+    "v.0.dn",
     "v.0.dt",
-    "v.0.sd",
-    "v.0.dn"
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
-  "Country": "EE",
+  "Country": "CY",
   "Description": [
     {
-      "desc": "Verification Datetime must be less than 365 days after the date of booster dose.",
+      "desc": "365 days for booster shot for 2/1 3/1 etc",
       "lang": "en"
-    },
-    {
-      "desc": "Tõhustusdoosist ei tohi olla möödas rohkem kui 365 päeva",
-      "lang": "ee"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-EE-0007",
+  "Identifier": "VR-CY-0008",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "and": [
+          {
+            "var": "payload.v.0"
+          },
+          {
+            "var": "payload.v.0.dn"
+          },
+          {
+            "var": "payload.v.0.sd"
+          }
+        ]
       },
       {
         "if": [
           {
-            ">=": [
+            "and": [
               {
-                "var": "payload.v.0.dn"
+                ">": [
+                  1,
+                  {
+                    "var": "payload.v.0.dn"
+                  }
+                ]
               },
-              3
+              {
+                "===": [
+                  1,
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
+              }
             ]
           },
           {
             "if": [
               {
                 "before": [
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.dob"
-                      },
-                      18,
-                      "year"
-                    ]
-                  },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
-                  }
-                ]
-              },
-              {
-                "not-after": [
                   {
                     "plusTime": [
                       {
@@ -81,7 +77,8 @@
                   }
                 ]
               },
-              true
+              true,
+              false
             ]
           },
           true
@@ -92,7 +89,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-04-06T00:00:00Z",
-  "ValidTo": "2023-04-06T00:00:00Z",
-  "Version": "1.0.5"
+  "ValidFrom": "2022-04-07T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "2.1.4"
 }
