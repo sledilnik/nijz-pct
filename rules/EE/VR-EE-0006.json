@@ -38,52 +38,25 @@
             ]
           },
           {
-            "if": [
+            "not-after": [
               {
-                "before": [
+                "plusTime": [
                   {
-                    "plusTime": [
-                      {
-                        "var": "payload.dob"
-                      },
-                      18,
-                      "year"
-                    ]
+                    "var": "external.validationClock"
                   },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
-                  }
+                  0,
+                  "day"
                 ]
               },
               {
-                "not-after": [
+                "plusTime": [
                   {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
+                    "var": "payload.v.0.dt"
                   },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      365,
-                      "day"
-                    ]
-                  }
+                  365,
+                  "day"
                 ]
-              },
-              true
+              }
             ]
           },
           true
@@ -94,7 +67,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-04-06T00:00:00Z",
-  "ValidTo": "2023-04-06T00:00:00Z",
-  "Version": "1.0.5"
+  "ValidFrom": "2022-02-01T00:00:00Z",
+  "ValidTo": "2023-02-01T00:00:00Z",
+  "Version": "1.0.4"
 }
