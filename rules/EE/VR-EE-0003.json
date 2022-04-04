@@ -9,11 +9,11 @@
   "Country": "EE",
   "Description": [
     {
-      "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination. Check the age! The certificate is valid if the owner is under 18 years of age.",
+      "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination.",
       "lang": "en"
     },
     {
-      "desc": "Vaktsineerimisest on möödas üle 270 päeva. Kontrolli vanust! Tõend kehtib, kui omanik on alla 18-aastane.",
+      "desc": "Vaktsineerimisest on möödas üle 270 päeva.",
       "lang": "ee"
     }
   ],
@@ -50,25 +50,52 @@
             ]
           },
           {
-            "not-after": [
+            "if": [
               {
-                "plusTime": [
+                "before": [
                   {
-                    "var": "external.validationClock"
+                    "plusTime": [
+                      {
+                        "var": "payload.dob"
+                      },
+                      18,
+                      "year"
+                    ]
                   },
-                  0,
-                  "day"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  }
                 ]
               },
               {
-                "plusTime": [
+                "not-after": [
                   {
-                    "var": "payload.v.0.dt"
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
                   },
-                  270,
-                  "day"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      270,
+                      "day"
+                    ]
+                  }
                 ]
-              }
+              },
+              true
             ]
           },
           true
@@ -79,7 +106,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-20T00:00:00Z",
-  "ValidTo": "2023-02-01T00:00:00Z",
-  "Version": "1.0.5"
+  "ValidFrom": "2022-04-06T00:00:00Z",
+  "ValidTo": "2023-04-06T00:00:00Z",
+  "Version": "1.0.6"
 }
