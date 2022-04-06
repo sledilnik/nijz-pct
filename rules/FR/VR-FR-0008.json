@@ -39,6 +39,7 @@
                 "CT_NCT05124171",
                 "CT_NCT04614948",
                 "CT_NCT05037266",
+                "CT_NCT04762680",
                 "CT_PEI_21-154",
                 "Covishield",
                 "R-Covi",
@@ -77,7 +78,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-04-01T10:00:00Z",
-  "ValidTo": "2032-04-01T10:00:00Z",
-  "Version": "1.0.3"
+  "ValidFrom": "2022-04-06T10:00:00Z",
+  "ValidTo": "2032-04-06T10:00:00Z",
+  "Version": "1.0.4"
 }
