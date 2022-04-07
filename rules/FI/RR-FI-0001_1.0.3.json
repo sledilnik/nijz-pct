@@ -1,34 +1,44 @@
 {
   "AffectedFields": [
-    "t.0",
-    "t.0.sc"
+    "r.0",
+    "r.0.df",
+    "r.0.du"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Recovery",
   "Country": "FI",
   "Description": [
     {
-      "desc": "Test has expired (72 h)",
+      "desc": "Recovery certificate is not valid yet or has expired",
       "lang": "en"
     },
     {
-      "desc": "Testi on vanhentunut (72 tuntia)",
+      "desc": "Sairastamistodistus ei ole voimassa",
       "lang": "fi"
     },
     {
-      "desc": "Testet är föråldrat (72 timmar)",
+      "desc": "Intyget om tillfrisknande från covid-19 är inte giltigt",
       "lang": "sv"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FI-0002",
+  "Identifier": "RR-FI-0001",
   "Logic": {
     "if": [
       {
-        "var": "payload.t.0"
+        "var": "payload.r.0"
       },
       {
-        "before": [
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.df"
+              },
+              0,
+              "day"
+            ]
+          },
           {
             "plusTime": [
               {
@@ -41,10 +51,10 @@
           {
             "plusTime": [
               {
-                "var": "payload.t.0.sc"
+                "var": "payload.r.0.du"
               },
-              72,
-              "hour"
+              0,
+              "day"
             ]
           }
         ]

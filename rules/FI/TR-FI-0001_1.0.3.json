@@ -1,51 +1,39 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.sc"
+    "t.0.tt"
   ],
   "CertificateType": "Test",
   "Country": "FI",
   "Description": [
     {
-      "desc": "Test has expired (72 h)",
+      "desc": "Test type is not RAT or NAAT",
       "lang": "en"
     },
     {
-      "desc": "Testi on vanhentunut (72 tuntia)",
+      "desc": "Testityyppi ei ole RAT eikä NAAT",
       "lang": "fi"
     },
     {
-      "desc": "Testet är föråldrat (72 timmar)",
+      "desc": "Testets typ är inte RAT och inte heller NAAT",
       "lang": "sv"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FI-0002",
+  "Identifier": "TR-FI-0001",
   "Logic": {
     "if": [
       {
         "var": "payload.t.0"
       },
       {
-        "before": [
+        "in": [
           {
-            "plusTime": [
-              {
-                "var": "external.validationClock"
-              },
-              0,
-              "day"
-            ]
+            "var": "payload.t.0.tt"
           },
           {
-            "plusTime": [
-              {
-                "var": "payload.t.0.sc"
-              },
-              72,
-              "hour"
-            ]
+            "var": "external.valueSets.covid-19-lab-test-type"
           }
         ]
       },

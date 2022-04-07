@@ -1,34 +1,34 @@
 {
   "AffectedFields": [
-    "t.0",
-    "t.0.sc"
+    "v.0",
+    "v.0.dt"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Vaccination",
   "Country": "FI",
   "Description": [
     {
-      "desc": "Test has expired (72 h)",
+      "desc": "Vaccination date is invalid",
       "lang": "en"
     },
     {
-      "desc": "Testi on vanhentunut (72 tuntia)",
+      "desc": "Rokotuspäivä on virheellinen",
       "lang": "fi"
     },
     {
-      "desc": "Testet är föråldrat (72 timmar)",
+      "desc": "Vaccinationsdatumet är felaktigt",
       "lang": "sv"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FI-0002",
+  "Identifier": "VR-FI-0002",
   "Logic": {
     "if": [
       {
-        "var": "payload.t.0"
+        "var": "payload.v.0"
       },
       {
-        "before": [
+        "not-before": [
           {
             "plusTime": [
               {
@@ -41,10 +41,10 @@
           {
             "plusTime": [
               {
-                "var": "payload.t.0.sc"
+                "var": "payload.v.0.dt"
               },
-              72,
-              "hour"
+              0,
+              "day"
             ]
           }
         ]

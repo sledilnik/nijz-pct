@@ -1,30 +1,30 @@
 {
   "AffectedFields": [
-    "t.1"
+    "r.1"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Recovery",
   "Country": "FI",
   "Description": [
     {
-      "desc": "Test certificate has more than one entry",
+      "desc": "Recovery certificate has more than one entry",
       "lang": "en"
     },
     {
-      "desc": "Testitodistus ei ole määritysten mukainen",
+      "desc": "Sairastamistodistus ei ole määritysten mukainen",
       "lang": "fi"
     },
     {
-      "desc": "Intyget om covid-19-test uppfyller inte bestämningarna",
+      "desc": "Intyget om tillfrisknande från covid-19 uppfyller inte bestämningarna",
       "lang": "sv"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FI-0000",
+  "Identifier": "RR-FI-0000",
   "Logic": {
     "!": [
       {
-        "var": "payload.t.1"
+        "var": "payload.r.1"
       }
     ]
   },
