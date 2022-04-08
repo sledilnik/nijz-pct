@@ -1,41 +1,38 @@
 {
   "AffectedFields": [
-    "v.0",
-    "v.0.dn",
-    "v.0.sd"
+    "t.0",
+    "t.0.tr"
   ],
-  "CertificateType": "Vaccination",
+  "CertificateType": "Test",
   "Country": "FI",
   "Description": [
     {
-      "desc": "Vaccination series is not full",
+      "desc": "Test result must be negative",
       "lang": "en"
     },
     {
-      "desc": "Rokotussarja ei ole täysi",
+      "desc": "Testituloksen pitää olla negatiivinen",
       "lang": "fi"
     },
     {
-      "desc": "Vaccinationsserien är inte fullständig",
+      "desc": "Testresultatet måste vara negativt",
       "lang": "sv"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-FI-0001",
+  "Identifier": "TR-FI-0003",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.t.0"
       },
       {
-        ">=": [
+        "===": [
           {
-            "var": "payload.v.0.dn"
+            "var": "payload.t.0.tr"
           },
-          {
-            "var": "payload.v.0.sd"
-          }
+          "260415000"
         ]
       },
       true
