@@ -187,12 +187,12 @@
       "version": "2021-07-13 05:50:37 CEST"
     },
     "1244": {
-      "active": false,
+      "active": true,
       "display": "GenBody, Inc, GenBody COVID-19 Ag",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
-      "version": "2021-12-16 00:00:00 CET"
+      "version": "2022-04-08 00:00:00 CEST"
     },
     "1253": {
       "active": true,
@@ -738,6 +738,14 @@
       "validUntil": null,
       "version": "2021-12-21 00:00:00 CET"
     },
+    "1783": {
+      "active": true,
+      "display": "InTec PRODUCTS, INC., Rapid SARS-CoV-2 Antigen Test (nasopharyngeal/nasal specimen)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
     "1800": {
       "active": true,
       "display": "AVALUN SAS, Ksmart® SARS-COV2 Antigen Rapid Test",
@@ -889,6 +897,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-07-13 05:48:08 CEST"
+    },
+    "1926": {
+      "active": true,
+      "display": "ARISTA Biotech Pte. Ltd, ARISTA™ COVID-19 Antigen Rapid Test",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
     },
     "1929": {
       "active": true,
@@ -1418,6 +1434,14 @@
       "validUntil": null,
       "version": "2021-12-08 00:00:00 CET"
     },
+    "2302": {
+      "active": true,
+      "display": "Hangzhou AllTest Biotech Co., Ltd., COVID-19 Antigen Test Cassette (Nasopharyngeal Swab)(FIA)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
     "2317": {
       "active": true,
       "display": "Hangzhou Immuno Biotech Co.,Ltd, SARS-CoV-2 Antigen Rapid Test",
@@ -1586,6 +1610,14 @@
       "validUntil": null,
       "version": "2021-12-08 00:00:00 CET"
     },
+    "2685": {
+      "active": true,
+      "display": "PRIMA Lab SA, COVID-19 Antigen Rapid Test",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
     "2695": {
       "active": true,
       "display": "Glallergen CO., LTD., Novel Coronavirus (2019-nCoV) Antigen Test Kit (Colloidal gold immunochromatography)",
@@ -1673,6 +1705,38 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-02-10 00:00:00 CET"
+    },
+    "2862": {
+      "active": true,
+      "display": "Hangzhou Funworld Biotech Co., Ltd, SARS-CoV-2 Antigen Rapid Test Device",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
+    "2941": {
+      "active": true,
+      "display": "Shenzhen Kingfocus Biomedical Engineering Co., Ltd., COVID-19 Antigen Detection Kit(Quantum Dots-Based Immunofluorescence Chromatography)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
+    "2963": {
+      "active": true,
+      "display": "Jiangxi Province JinHuan Medical Instrument Co., LTD., DREHA Novel Coronavirus (SARS-CoV-2) Antigen Rapid Detection Kit",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
+    },
+    "2979": {
+      "active": true,
+      "display": "Hangzhou Jucheng Medical Products Co., Ltd, SARS-CoV-2 Ag Rapid Test Kit",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-04-08 00:00:00 CEST"
     },
     "308": {
       "active": true,
