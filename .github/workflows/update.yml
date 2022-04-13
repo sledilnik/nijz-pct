@@ -69,7 +69,7 @@ jobs:
 
     - name: Publish other NIJZ PCT data changes to git
       if: github.ref == 'refs/heads/main'
-      uses: github-actions-x/commit@v2.8
+      uses: github-actions-x/commit@v2.9
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'main'
