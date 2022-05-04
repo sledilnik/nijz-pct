@@ -4,6 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Version | Valid from | Valid to | Source | Description |
 | ---- | ------- | ---------- | -------- | ------ | ----------- |
+| [IR-DE-0001](IR-DE-0001.json) | [1.0.3](IR-DE-0001_1.0.3.json) | 2022-05-06T16:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/DE/aea6c50a7163abb97bd676262de01c77963b4fdd1d8a085912d5d362712369cf) | The certificate must not be issued by an unauthorized party. |
 | [RR-DE-0001](RR-DE-0001.json) | [1.0.0](RR-DE-0001_1.0.0.json) | 2021-07-03T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/DE/5a73c97d8c59495a5b48f3169e85d2cca0b4872548be21d9180f8c835c5004ba) | The positive NAA test result (e.g., PCR) must be older than 28 days. |
 | [RR-DE-0002](RR-DE-0002.json) | [1.0.3](RR-DE-0002_1.0.3.json) | 2022-02-24T17:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/DE/71b10c1d78bcdd9e0f27afb6368a4a086d6d558616a1cd890765f6b1178d3325) | The positive NAA test result (e.g., PCR) must be no older than 90 days. |
 | [TR-DE-0001](TR-DE-0001.json) | [1.0.0](TR-DE-0001_1.0.0.json) | 2021-07-03T00:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/DE/b3c4e2af3259bf5c793e0bed4ccf965ac54cb704a4949dfb55f4681d494a9a0e) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |
