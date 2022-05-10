@@ -4,7 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Version | Valid from | Valid to | Source | Description |
 | ---- | ------- | ---------- | -------- | ------ | ----------- |
-| [GR-UA-0000](GR-UA-0000.json) | [null](GR-UA-0000_null.json) | null | null | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/9ba853e242846f968c7d3404b6e604ea1180f647d86f33763053eb8d2ed0b890) |  |
+| [GR-UA-0000](GR-UA-0000.json) | [1.0.0](GR-UA-0000_1.0.0.json) | 2021-08-22T10:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/9ba853e242846f968c7d3404b6e604ea1180f647d86f33763053eb8d2ed0b890) | Exactly one type of event. |
 | [GR-UA-0001](GR-UA-0001.json) | [1.0.0](GR-UA-0001_1.0.0.json) | 2021-08-22T10:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/681e61115cc42b7542996e5b833fd1d59c3dc5fd7d15b6af2f11a2a80dcf2cca) | The "disease or agent targeted" must be COVID-19 of the value set list. |
 | [RR-UA-0000](RR-UA-0000.json) | [1.0.0](RR-UA-0000_1.0.0.json) | 2021-08-22T10:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/472d54858f8ab105b819891f87209b2c031ce16a028a80c1ce43877d47adc5dd) | At most one r-event. |
 | [RR-UA-0001](RR-UA-0001.json) | [1.0.0](RR-UA-0001_1.0.0.json) | 2021-08-22T10:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/UA/25645b9fd43bd7e3fa632ee700db212190bc939613e81b4d291e2a7f37e9b496) | The Verification Datetime must be between "Certificate Valid From" and "Certificate Valid Until". |
