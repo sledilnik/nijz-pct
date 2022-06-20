@@ -1,0 +1,112 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dt",
+    "v.0.sd",
+    "v.0.dn"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "EE",
+  "Description": [
+    {
+      "desc": "Verification Datetime must be less than 270 days after the last date of full vaccination.",
+      "lang": "en"
+    },
+    {
+      "desc": "Vaktsineerimisest on möödas üle 270 päeva.",
+      "lang": "ee"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-EE-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "and": [
+              {
+                "===": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
+              },
+              {
+                "<=": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  2
+                ]
+              }
+            ]
+          },
+          {
+            "if": [
+              {
+                "before": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.dob"
+                      },
+                      18,
+                      "year"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              {
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      270,
+                      "day"
+                    ]
+                  }
+                ]
+              },
+              true
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-04-06T00:00:00Z",
+  "ValidTo": "2023-04-06T00:00:00Z",
+  "Version": "1.0.6"
+}
