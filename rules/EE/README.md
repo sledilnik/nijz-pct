@@ -4,6 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Version | Valid from | Valid to | Source | Description |
 | ---- | ------- | ---------- | -------- | ------ | ----------- |
+| [GR-EE-0001](GR-EE-0001.json) | [1.0.0](GR-EE-0001_1.0.0.json) | 2022-06-27T00:00:00Z | 2099-01-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/EE/71344ea607497be561c618f4a835b70c5d9380b1f4a5fd895eb38ad530622f35) | Entry to the country is currently possible without pandemic-related measures. |
 | [GR-EE-0005](GR-EE-0005.json) | [1.0.2](GR-EE-0005_1.0.2.json) | 2021-09-06T00:00:00Z | 2022-09-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/EE/66788ea647400c8757cb07256b2442d95da2f5180d73a9db78ea590f9cfd3fbd) | The "disease or agent targeted" must be COVID-19 of the value set list. |
 | [RR-EE-0001](RR-EE-0001.json) | [1.0.2](RR-EE-0001_1.0.2.json) | 2021-09-06T00:00:00Z | 2022-09-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/EE/93555c044722f169cab47169869818baeb94f88f6fc888c43c54d6b5fa78aace) | The Verification Datetime must be between 11 days and 180 days after the test date. |
 | [TR-EE-0001](TR-EE-0001.json) | [1.0.2](TR-EE-0001_1.0.2.json) | 2021-09-06T00:00:00Z | 2022-09-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/EE/476099328aef33006beb29431ee9ca3624febbbe516d65cb47dbeb7593693c40) | This must be an antigen test (e.g., rapid test) or NAAT (e.g., PCR). |
