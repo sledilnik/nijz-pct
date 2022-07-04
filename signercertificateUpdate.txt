@@ -1,42 +1,27 @@
 Certificate:
     Data:
-        Version: 3 (0x2)
+        Version: 1 (0x0)
         Serial Number:
-            19:af:94:ad:2d:8d:b9:cf:00:64:7c:26:25:25:e8:cc:db:dd:84:6d
+            19:af:94:ad:2d:8d:b9:cf:00:64:7c:26:25:25:e8:cc:db:dd:84:69
         Signature Algorithm: ecdsa-with-SHA256
         Issuer: C = ID, ST = DKI Jakarta, L = Jakarta Selatan, O = Kementerian Kesehatan Republik Indonesia, OU = Digital Transformation Office, CN = CSCA_DGC_ID_03
         Validity
-            Not Before: May 13 08:08:18 2022 GMT
-            Not After : May 12 08:08:18 2024 GMT
-        Subject: C = ID, ST = DKI Jakarta, L = Jakarta Selatan, O = Kementerian Kesehatan Republik Indonesia, OU = Digital Transformation Office, CN = DSC_DGC_ID_PROD_T03
+            Not Before: Apr  8 16:10:52 2022 GMT
+            Not After : Apr  7 16:10:52 2024 GMT
+        Subject: C = ID, ST = DKI Jakarta, L = South Jakarta, O = Ministry of Health Republic of Indonesia, CN = eu.kemkes.go.id
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:9d:cb:bb:be:dc:88:92:5d:7b:ae:67:18:4d:39:
-                    6b:26:d6:65:3d:a5:86:e3:3e:b3:f9:04:4e:a4:d5:
-                    20:ae:bf:b7:fb:40:fe:78:eb:ae:e9:81:a0:27:f4:
-                    eb:c0:26:be:d5:04:21:33:df:a9:e5:e4:55:9d:cd:
-                    f9:cc:ae:70:a7
+                    04:f5:8a:a0:35:79:a6:5e:05:a2:8c:b8:3a:72:2e:
+                    de:44:af:cf:55:6a:db:d5:84:81:ab:3a:4a:7a:4f:
+                    2b:e0:bf:d0:86:5f:91:fb:89:7e:84:98:b6:43:e4:
+                    a1:ca:12:6d:04:bd:83:f7:26:1a:8f:26:32:92:40:
+                    be:f8:ba:66:c7
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
-        X509v3 extensions:
-            X509v3 Key Usage: critical
-                Digital Signature
-            X509v3 Subject Key Identifier: 
-                37:C7:8D:5A:00:68:53:4E:7B:1F:A2:D4:0B:CA:7A:C5:CB:69:2D:2B
-            X509v3 Authority Key Identifier: 
-                keyid:DE:34:03:C3:18:CE:CC:FB:68:8D:5A:68:2B:49:FA:2D:7B:B6:A8:0C
-
-            X509v3 CRL Distribution Points: 
-
-                Full Name:
-                  URI:http://dto.kemkes.go.id/CRL/CSCA.crl
-
-            X509v3 Extended Key Usage: 
-                1.3.6.1.4.1.1847.2021.1.1, 1.3.6.1.4.1.1847.2021.1.2, 1.3.6.1.4.1.1847.2021.1.3
     Signature Algorithm: ecdsa-with-SHA256
-         30:44:02:20:6c:ce:3c:13:96:b8:86:9f:75:13:8d:9d:e1:34:
-         77:c5:65:d2:56:61:96:5e:19:67:4b:69:63:91:ac:78:b6:4b:
-         02:20:6c:5a:ba:44:78:bc:43:c3:1f:cc:b8:21:61:c2:c7:9a:
-         f3:ca:2a:5d:b3:49:a3:3b:9e:c0:06:07:76:50:44:07
+         30:45:02:20:22:e4:c9:0b:40:90:a1:6c:e2:18:30:4a:5b:aa:
+         21:54:f2:5a:6d:ff:d4:cd:cb:2b:a4:93:62:72:1f:00:ad:8b:
+         02:21:00:9c:8b:db:0a:61:31:ab:d6:fc:ea:37:d9:22:c0:d8:
+         2a:9f:b7:dd:88:70:28:79:36:33:c7:0f:3f:22:04:54:f3
