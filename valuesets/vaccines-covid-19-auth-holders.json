@@ -23,6 +23,13 @@
       "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
       "version": "1.4"
     },
+    "Finlay-Institute": {
+      "active": true,
+      "display": "Finlay Institute of Vaccines",
+      "lang": "en",
+      "system": "http://ec.europa.eu/temp/vaccinemanufacturer",
+      "version": "1.10"
+    },
     "Fiocruz": {
       "active": true,
       "display": "Fiocruz",
