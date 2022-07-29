@@ -1,0 +1,42 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr"
+  ],
+  "CertificateType": "Test",
+  "Country": "CZ",
+  "Description": [
+    {
+      "desc": "The test result must be negative",
+      "lang": "en"
+    },
+    {
+      "desc": "Výsledek testu musí být negativní",
+      "lang": "cs"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CZ-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-08-04T22:00:00Z",
+  "ValidTo": "2032-08-04T22:00:00Z",
+  "Version": "7.0.0"
+}

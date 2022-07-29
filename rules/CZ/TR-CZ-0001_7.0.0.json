@@ -8,17 +8,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The PCR test may not be older than 72 hours ago",
+      "desc": "The antigen test may not be older than 24 hours ago",
       "lang": "en"
     },
     {
-      "desc": "PCR test nesmí být starší více než 72 hodin",
+      "desc": "Antigenní test nesmí být starší více než 24 hodin",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0002",
+  "Identifier": "TR-CZ-0001",
   "Logic": {
     "if": [
       {
@@ -31,7 +31,7 @@
               {
                 "var": "payload.t.0.tt"
               },
-              "LP6464-4"
+              "LP217198-3"
             ]
           },
           {
@@ -50,7 +50,7 @@
                   {
                     "var": "payload.t.0.sc"
                   },
-                  72,
+                  24,
                   "hour"
                 ]
               }

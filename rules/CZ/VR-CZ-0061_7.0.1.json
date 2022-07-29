@@ -11,17 +11,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Booster dose of vaccination Nuvaxovid may not be older than 99 months",
+      "desc": "Vaccination Nuvaxovid may not be older than 9 months",
       "lang": "en"
     },
     {
-      "desc": "Posilovací dávka očkování Nuvaxovid nesmí být starší než 99 měsíců",
+      "desc": "Očkování Nuvaxovid nesmí být starší než 9 měsíců",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0064",
+  "Identifier": "VR-CZ-0061",
   "Logic": {
     "if": [
       {
@@ -40,54 +40,25 @@
                 ]
               },
               {
-                "in": [
-                  true,
-                  [
-                    {
-                      "and": [
-                        {
-                          ">=": [
-                            {
-                              "var": "payload.v.0.dn"
-                            },
-                            {
-                              "var": "payload.v.0.sd"
-                            }
-                          ]
-                        },
-                        {
-                          ">": [
-                            {
-                              "var": "payload.v.0.sd"
-                            },
-                            2
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "and": [
-                        {
-                          ">": [
-                            {
-                              "var": "payload.v.0.dn"
-                            },
-                            {
-                              "var": "payload.v.0.sd"
-                            }
-                          ]
-                        },
-                        {
-                          "===": [
-                            {
-                              "var": "payload.v.0.sd"
-                            },
-                            1
-                          ]
-                        }
-                      ]
-                    }
-                  ]
+                "and": [
+                  {
+                    "===": [
+                      {
+                        "var": "payload.v.0.dn"
+                      },
+                      {
+                        "var": "payload.v.0.sd"
+                      }
+                    ]
+                  },
+                  {
+                    "<=": [
+                      {
+                        "var": "payload.v.0.dn"
+                      },
+                      2
+                    ]
+                  }
                 ]
               }
             ]
@@ -159,7 +130,7 @@
                           {
                             "var": "payload.v.0.dt"
                           },
-                          99,
+                          9,
                           "month"
                         ]
                       }
@@ -183,7 +154,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      99,
+                      9,
                       "month"
                     ]
                   }
