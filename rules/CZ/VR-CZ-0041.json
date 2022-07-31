@@ -4,8 +4,7 @@
     "v.0.mp",
     "v.0.dt",
     "v.0.dn",
-    "v.0.sd",
-    "dob"
+    "v.0.sd"
   ],
   "CertificateType": "Vaccination",
   "Country": "CZ",
@@ -64,100 +63,23 @@
             ]
           },
           {
-            "if": [
+            "not-after": [
               {
-                "var": "payload.dob"
-              },
-              {
-                "if": [
+                "plusTime": [
                   {
-                    "not-after": [
-                      {
-                        "plusTime": [
-                          {
-                            "var": "external.validationClock"
-                          },
-                          0,
-                          "day"
-                        ]
-                      },
-                      {
-                        "plusTime": [
-                          {
-                            "var": "payload.dob"
-                          },
-                          216,
-                          "month"
-                        ]
-                      }
-                    ]
+                    "var": "external.validationClock"
                   },
-                  {
-                    "not-after": [
-                      {
-                        "plusTime": [
-                          {
-                            "var": "external.validationClock"
-                          },
-                          0,
-                          "day"
-                        ]
-                      },
-                      {
-                        "plusTime": [
-                          {
-                            "var": "payload.v.0.dt"
-                          },
-                          99,
-                          "month"
-                        ]
-                      }
-                    ]
-                  },
-                  {
-                    "not-after": [
-                      {
-                        "plusTime": [
-                          {
-                            "var": "external.validationClock"
-                          },
-                          0,
-                          "day"
-                        ]
-                      },
-                      {
-                        "plusTime": [
-                          {
-                            "var": "payload.v.0.dt"
-                          },
-                          9,
-                          "month"
-                        ]
-                      }
-                    ]
-                  }
+                  0,
+                  "day"
                 ]
               },
               {
-                "not-after": [
+                "plusTime": [
                   {
-                    "plusTime": [
-                      {
-                        "var": "external.validationClock"
-                      },
-                      0,
-                      "day"
-                    ]
+                    "var": "payload.v.0.dt"
                   },
-                  {
-                    "plusTime": [
-                      {
-                        "var": "payload.v.0.dt"
-                      },
-                      9,
-                      "month"
-                    ]
-                  }
+                  9,
+                  "month"
                 ]
               }
             ]
@@ -170,7 +92,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-08-04T22:00:00Z",
-  "ValidTo": "2032-08-04T22:00:00Z",
-  "Version": "7.0.1"
+  "ValidFrom": "2022-02-27T23:00:00Z",
+  "ValidTo": "2032-02-27T23:00:00Z",
+  "Version": "6.0.0"
 }
