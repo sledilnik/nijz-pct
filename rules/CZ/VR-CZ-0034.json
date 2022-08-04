@@ -4,17 +4,18 @@
     "v.0.mp",
     "v.0.dt",
     "v.0.dn",
-    "v.0.sd"
+    "v.0.sd",
+    "dob"
   ],
   "CertificateType": "Vaccination",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Booster dose of vaccination Comirnaty may not be older than 48 months",
+      "desc": "Booster dose of vaccination Comirnaty may not be older than 99 months",
       "lang": "en"
     },
     {
-      "desc": "Posilovací dávka očkování Comirnaty nesmí být starší než 48 měsíců",
+      "desc": "Posilovací dávka očkování Comirnaty nesmí být starší než 99 měsíců",
       "lang": "cs"
     }
   ],
@@ -92,23 +93,100 @@
             ]
           },
           {
-            "not-after": [
+            "if": [
               {
-                "plusTime": [
+                "var": "payload.dob"
+              },
+              {
+                "if": [
                   {
-                    "var": "external.validationClock"
+                    "not-after": [
+                      {
+                        "plusTime": [
+                          {
+                            "var": "external.validationClock"
+                          },
+                          0,
+                          "day"
+                        ]
+                      },
+                      {
+                        "plusTime": [
+                          {
+                            "var": "payload.dob"
+                          },
+                          216,
+                          "month"
+                        ]
+                      }
+                    ]
                   },
-                  0,
-                  "day"
+                  {
+                    "not-after": [
+                      {
+                        "plusTime": [
+                          {
+                            "var": "external.validationClock"
+                          },
+                          0,
+                          "day"
+                        ]
+                      },
+                      {
+                        "plusTime": [
+                          {
+                            "var": "payload.v.0.dt"
+                          },
+                          99,
+                          "month"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "not-after": [
+                      {
+                        "plusTime": [
+                          {
+                            "var": "external.validationClock"
+                          },
+                          0,
+                          "day"
+                        ]
+                      },
+                      {
+                        "plusTime": [
+                          {
+                            "var": "payload.v.0.dt"
+                          },
+                          99,
+                          "month"
+                        ]
+                      }
+                    ]
+                  }
                 ]
               },
               {
-                "plusTime": [
+                "not-after": [
                   {
-                    "var": "payload.v.0.dt"
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "day"
+                    ]
                   },
-                  48,
-                  "month"
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      99,
+                      "month"
+                    ]
+                  }
                 ]
               }
             ]
@@ -121,7 +199,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-27T23:00:00Z",
-  "ValidTo": "2032-02-27T23:00:00Z",
-  "Version": "6.0.0"
+  "ValidFrom": "2022-08-04T22:00:00Z",
+  "ValidTo": "2032-08-04T22:00:00Z",
+  "Version": "7.0.1"
 }
