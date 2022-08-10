@@ -1,49 +1,48 @@
 {
   "AffectedFields": [
-    "t.0",
-    "t.0.is",
-    "t.0.tt"
+    "r.0",
+    "r.0.fr"
   ],
-  "CertificateType": "Test",
+  "CertificateType": "Recovery",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The PCR test must have a certificate issuer",
+      "desc": "The positive PCR test result must be older than 10 days",
       "lang": "en"
     },
     {
-      "desc": "PCR test musí mít vydavatele certifikátu",
+      "desc": "Pozitivní PCR test musí být starší více než 10 dní",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0006",
+  "Identifier": "RR-CZ-0001",
   "Logic": {
     "if": [
       {
-        "var": "payload.t.0"
+        "var": "payload.r.0"
       },
       {
-        "if": [
+        "not-before": [
           {
-            "===": [
+            "plusTime": [
               {
-                "var": "payload.t.0.tt"
+                "var": "external.validationClock"
               },
-              "LP6464-4"
+              0,
+              "day"
             ]
           },
           {
-            "if": [
+            "plusTime": [
               {
-                "var": "payload.t.0.is"
+                "var": "payload.r.0.fr"
               },
-              true,
-              false
+              10,
+              "day"
             ]
-          },
-          true
+          }
         ]
       },
       true

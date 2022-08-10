@@ -1,49 +1,34 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.is",
-    "t.0.tt"
+    "t.0.tr"
   ],
   "CertificateType": "Test",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The PCR test must have a certificate issuer",
+      "desc": "The test result must be negative",
       "lang": "en"
     },
     {
-      "desc": "PCR test musí mít vydavatele certifikátu",
+      "desc": "Výsledek testu musí být negativní",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0006",
+  "Identifier": "TR-CZ-0004",
   "Logic": {
     "if": [
       {
         "var": "payload.t.0"
       },
       {
-        "if": [
+        "===": [
           {
-            "===": [
-              {
-                "var": "payload.t.0.tt"
-              },
-              "LP6464-4"
-            ]
+            "var": "payload.t.0.tr"
           },
-          {
-            "if": [
-              {
-                "var": "payload.t.0.is"
-              },
-              true,
-              false
-            ]
-          },
-          true
+          "260415000"
         ]
       },
       true

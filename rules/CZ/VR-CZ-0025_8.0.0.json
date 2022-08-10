@@ -1,25 +1,24 @@
 {
   "AffectedFields": [
     "v.0",
-    "v.0.dn",
-    "v.0.sd",
-    "v.0.mp"
+    "v.0.mp",
+    "v.0.co"
   ],
   "CertificateType": "Vaccination",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The certificate of the first dose of VAXZEVRIA is not accepted",
+      "desc": "Vaccination COVID-19 Vaccine Janssen has to contain a country property",
       "lang": "en"
     },
     {
-      "desc": "Certifikát první dávky VAXZEVRIA není akceptován",
+      "desc": "Očkování COVID-19 Vaccine Janssen musí mít vyplněnou položku země",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0053",
+  "Identifier": "VR-CZ-0025",
   "Logic": {
     "if": [
       {
@@ -32,17 +31,16 @@
               {
                 "var": "payload.v.0.mp"
               },
-              "EU/1/21/1529"
+              "EU/1/20/1525"
             ]
           },
           {
-            ">=": [
+            "if": [
               {
-                "var": "payload.v.0.dn"
+                "var": "payload.v.0.co"
               },
-              {
-                "var": "payload.v.0.sd"
-              }
+              true,
+              false
             ]
           },
           true
