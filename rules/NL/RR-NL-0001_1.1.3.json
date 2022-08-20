@@ -1,0 +1,82 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.df",
+    "r.0.du"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "NL",
+  "Description": [
+    {
+      "desc": "The moment of verification must lie within the validity period of this recovery certificate.",
+      "lang": "en"
+    },
+    {
+      "desc": "Der Zeitpunkt der Überprüfung muss innerhalb der Gültigkeitsdauer dieser Wiederherstellungsbescheinigung liegen.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le moment de la vérification doit se situer dans la période de validité de ce certificat de récupération.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El momento de la verificación debe estar dentro del período de validez de este certificado de recuperación.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il momento della verifica deve rientrare nel periodo di validità di questo certificato di recupero.",
+      "lang": "it"
+    },
+    {
+      "desc": "Het tijdstip van verificatie moet binnen de geldigheid van het herstelbewijs vallen.",
+      "lang": "nl"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-NL-0001",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "not-after": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.df"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "external.validationClock"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.du"
+              },
+              0,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-06-02T00:00:00+01:00",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.1.3"
+}
