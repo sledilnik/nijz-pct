@@ -7,11 +7,11 @@
   "Country": "UA",
   "Description": [
     {
-      "desc": "Only vaccines in the allowed valueset that have been approved by the WHO are allowed.",
+      "desc": "List of vaccines that are prohibited in Ukraine.",
       "lang": "en"
     },
     {
-      "desc": "Дозволені лише вакцини з дозволеного набору значень, затверджені WHO.",
+      "desc": "Список заборонених в Україні вакцин.",
       "lang": "ua"
     }
   ],
@@ -42,7 +42,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-03-12T14:00:00Z",
+  "ValidFrom": "2022-08-24T14:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.2.1"
+  "Version": "1.2.2"
 }
