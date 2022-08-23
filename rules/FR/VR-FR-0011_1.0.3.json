@@ -1,0 +1,98 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn",
+    "v.0.dt",
+    "dob"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "There must not be a delay of more than 9 months for first and second vaccination dose between the date of the last vaccination and the control date",
+      "lang": "en"
+    },
+    {
+      "desc": "Il ne doit pas y avoir un délais de plus de 9 mois pour la dose 1 et 2 entre la date de dernière vaccination et la date de controle",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-FR-0011",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "and": [
+              {
+                "<=": [
+                  1,
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  2
+                ]
+              },
+              {
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.dob"
+                      },
+                      18,
+                      "year"
+                    ]
+                  },
+                  {
+                    "plusTime": [
+                      {
+                        "var": "external.validationClock"
+                      },
+                      0,
+                      "year"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "month"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  9,
+                  "month"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-03-28T08:00:00Z",
+  "ValidTo": "2032-01-28T08:00:00Z",
+  "Version": "1.0.3"
+}
