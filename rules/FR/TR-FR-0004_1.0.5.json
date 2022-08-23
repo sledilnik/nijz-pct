@@ -18,7 +18,7 @@
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-FR-0006",
+  "Identifier": "TR-FR-0004",
   "Logic": {
     "if": [
       {
@@ -73,7 +73,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-03-28T08:00:00Z",
-  "ValidTo": "2032-01-28T08:00:00Z",
-  "Version": "1.0.4"
+  "ValidFrom": "2022-08-25T08:00:00Z",
+  "ValidTo": "2032-08-20T08:00:00Z",
+  "Version": "1.0.5"
 }

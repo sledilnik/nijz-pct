@@ -1,18 +1,18 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.ma",
-    "t.0.tt"
+    "t.0.tr",
+    "t.0.sc"
   ],
   "CertificateType": "Test",
   "Country": "FR",
   "Description": [
     {
-      "desc": "The antigen test (e.g., rapid test) must be included in the EU’s \"Common list of COVID-19 rapid antigen tests\".",
+      "desc": "The Verification Datetime must be between +11 days and +183 days after the test date.",
       "lang": "en"
     },
     {
-      "desc": "Le test antigénique (p. ex. test rapide) doit figurer sur la liste commune des tests antigéniques rapides « Common list of rapid antigen tests » de l’UE.",
+      "desc": "La date de verification doit etre comprise entre +11 jours et +183 jours après la date de test.",
       "lang": "fr"
     }
   ],
@@ -29,18 +29,39 @@
           {
             "===": [
               {
-                "var": "payload.t.0.tt"
+                "var": "payload.t.0.tr"
               },
-              "LP217198-3"
+              "260373001"
             ]
           },
           {
-            "in": [
+            "not-after": [
               {
-                "var": "payload.t.0.ma"
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  11,
+                  "day"
+                ]
               },
               {
-                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  183,
+                  "day"
+                ]
               }
             ]
           },
@@ -52,7 +73,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-10-31T00:00:00Z",
-  "ValidTo": "2030-10-31T00:00:00Z",
-  "Version": "1.0.2"
+  "ValidFrom": "2022-08-25T08:00:00Z",
+  "ValidTo": "2032-08-20T08:00:00Z",
+  "Version": "1.0.5"
 }
