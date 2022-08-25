@@ -4,7 +4,7 @@ Busineess rules are defined using [JsonLogic](https://jsonlogic.com) and served 
 
 | Rule | Version | Valid from | Valid to | Source | Description |
 | ---- | ------- | ---------- | -------- | ------ | ----------- |
-| [RR-RS-0001](RR-RS-0001.json) | [](RR-RS-0001_.json) |  |  | [API](https://dgca-businessrule-service.ezdrav.si/rules/RS/f424b45722de40ef871228ac17836b8a8e308b667b9cfa84bca1681d5226142c) |  |
+| [RR-RS-0001](RR-RS-0001.json) | [1.1.0](RR-RS-0001_1.1.0.json) | 2021-12-04T01:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/RS/f424b45722de40ef871228ac17836b8a8e308b667b9cfa84bca1681d5226142c) | The positive NAA test result (e.g., PCR) must be no older than 7 months. |
 | [RR-RS-0002](RR-RS-0002.json) | [1.1.0](RR-RS-0002_1.1.0.json) | 2021-12-04T01:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/RS/53db2dc0319346fc53d95226d236ed47d5be13f401ba92e80a9a882ec7a83182) | The positive NAA test result (e.g., PCR) must be older than 14 days. |
 | [TR-RS-0001](TR-RS-0001.json) | [1.1.0](TR-RS-0001_1.1.0.json) | 2021-12-04T01:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/RS/cf01297da2ce34f6174157fed545c934a746d4e5ab45b0a9c684b9c62ab9893c) | This must be an antigen test (e.g., rapid test) or NAA test (e.g., PCR). |
 | [TR-RS-0002](TR-RS-0002.json) | [1.1.0](TR-RS-0002_1.1.0.json) | 2021-12-04T01:00:00Z | 2030-06-01T00:00:00Z | [API](https://dgca-businessrule-service.ezdrav.si/rules/RS/9921e7292c2c56b2dc6bcc194f7efac0223105d50d629cc6e5174ec5810785ba) | The sample for an antigen test (e.g., rapid test) must have been taken no longer than 48 hours ago. |
