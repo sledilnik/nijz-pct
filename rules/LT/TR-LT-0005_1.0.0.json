@@ -4,16 +4,20 @@
     "t.0.tr"
   ],
   "CertificateType": "Test",
-  "Country": "MT",
+  "Country": "LT",
   "Description": [
     {
-      "desc": "Test result must be negative (NOT DETECTED).",
+      "desc": "Testo rezultatas turi būti - Nerasta",
+      "lang": "lt"
+    },
+    {
+      "desc": "Test result must be negative (not detected).",
       "lang": "en"
     }
   ],
   "Engine": "CERTLOGIC",
-  "EngineVersion": "0.7.5",
-  "Identifier": "TR-MT-0002",
+  "EngineVersion": "1.0.0",
+  "Identifier": "TR-LT-0005",
   "Logic": {
     "if": [
       {
@@ -32,7 +36,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-01-20T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.1.1"
+  "ValidFrom": "2021-07-04T15:00:00Z",
+  "ValidTo": "2023-07-04T00:00:00Z",
+  "Version": "1.0.0"
 }
