@@ -6,6 +6,28 @@ BASEURL="https://dgca-verifier-service.ezdrav.si"
 # context
 curl -s "${BASEURL}/context" | jq --sort-keys > context.json
 
+## valuesets
+ValuesetsBaseURL=$(jq -r '.versions.default.endpoints.valuesets.url' "context.json")
+echo "valuesets URL: ${ValuesetsBaseURL}"
+
+rm -rf valuesets/*
+
+cat << ENDHEADER > "valuesets/README.md"
+# List of valuesets
+
+| ID | Source |
+| -- | ------ |
+ENDHEADER
+
+curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
+| while IFS=" " read -r ID HASH; do
+    echo "Downloading valueset: ${ID}"
+    curl -s "${ValuesetsBaseURL}/${HASH}" | jq --sort-keys > "valuesets/${ID}.json"
+    echo "| [${ID}](${ID}.json) | [API](${ValuesetsBaseURL}/${HASH}) |" >> "valuesets/README.md"
+
+done
+## /valuesets
+
 ## rules
 RuleBaseURL=$(jq -r '.versions.default.endpoints.rules.url' "context.json")
 echo "Rule URL: ${RuleBaseURL}"
@@ -50,28 +72,6 @@ ENDCOUTRYHEADER
     echo "| [${ID}](${ID}.json) | [${VERSION}](${ID}_${VERSION}.json) | ${ValidFrom} | ${ValidTo} | [API](${RuleBaseURL}/${COUNTRY}/${HASH}) | ${DESC} |" >> "rules/${COUNTRY}/README.md"
 done
 ## /rules
-
-## valuesets
-ValuesetsBaseURL=$(jq -r '.versions.default.endpoints.valuesets.url' "context.json")
-echo "valuesets URL: ${ValuesetsBaseURL}"
-
-rm -rf valuesets/*
-
-cat << ENDHEADER > "valuesets/README.md"
-# List of valuesets
-
-| ID | Source |
-| -- | ------ |
-ENDHEADER
-
-curl -s "${ValuesetsBaseURL}" | jq -r '.[] | .id + " " + .hash ' \
-| while IFS=" " read -r ID HASH; do
-    echo "Downloading valueset: ${ID}"
-    curl -s "${ValuesetsBaseURL}/${HASH}" | jq --sort-keys > "valuesets/${ID}.json"
-    echo "| [${ID}](${ID}.json) | [API](${ValuesetsBaseURL}/${HASH}) |" >> "valuesets/README.md"
-
-done
-## /valuesets
 
 ## countryList
 CountrylistBaseURL=$(jq -r '.versions.default.endpoints.countryList.url' "context.json")
