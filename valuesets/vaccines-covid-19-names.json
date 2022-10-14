@@ -128,6 +128,13 @@
       "system": "https://ec.europa.eu/health/documents/community-register/html/",
       "version": ""
     },
+    "EU/1/21/1624": {
+      "active": true,
+      "display": "COVID-19 Vaccine Valneva",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
     "EpiVacCorona": {
       "active": true,
       "display": "EpiVacCorona",
@@ -227,8 +234,8 @@
       "version": "1.0"
     },
     "VLA2001": {
-      "active": true,
-      "display": "VLA2001",
+      "active": false,
+      "display": "VLA2001 (deprecated)",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.8"
