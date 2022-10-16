@@ -56,7 +56,8 @@
             "NVX-CoV2373",
             "EU/1/21/1618",
             "Convidecia",
-            "VLA2001"
+            "VLA2001",
+            "EU/1/21/1624"
           ]
         ]
       },
@@ -65,7 +66,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-07-18T00:00:00+02:00",
+  "ValidFrom": "2022-10-17T00:00:00+02:00",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.6.0"
+  "Version": "1.7.0"
 }
