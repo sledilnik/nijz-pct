@@ -1,36 +1,34 @@
 {
   "AffectedFields": [
-    "r.0",
-    "r.0.df",
-    "r.0.du"
+    "v.0",
+    "v.0.dt"
   ],
-  "CertificateType": "Recovery",
-  "Country": "CY",
+  "CertificateType": "Vaccination",
+  "Country": "PL",
   "Description": [
     {
-      "desc": "The Verification Datetime must be between Certificate Valid From and Certificate Valid Until.",
+      "desc": "Od daty szczepienia może upłynąć nie więcej niż 270 dni.",
+      "lang": "pl"
+    },
+    {
+      "desc": "The vaccine must have been administered no longer than 270 days ago.",
       "lang": "en"
+    },
+    {
+      "desc": "Seit der Impfung darf maximal 270 tage vergangen sein.",
+      "lang": "de"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "RR-CY-0001",
+  "Identifier": "VR-PL-0003",
   "Logic": {
     "if": [
       {
-        "var": "payload.r.0"
+        "var": "payload.v.0"
       },
       {
         "not-after": [
-          {
-            "plusTime": [
-              {
-                "var": "payload.r.0.df"
-              },
-              0,
-              "day"
-            ]
-          },
           {
             "plusTime": [
               {
@@ -43,9 +41,9 @@
           {
             "plusTime": [
               {
-                "var": "payload.r.0.du"
+                "var": "payload.v.0.dt"
               },
-              1,
+              270,
               "day"
             ]
           }
@@ -56,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-04-07T00:00:00Z",
-  "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "2.1.4"
+  "ValidFrom": "2022-02-03T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.1.0"
 }

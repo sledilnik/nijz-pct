@@ -1,6 +1,49 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: PL, hash: 22884dafc7e59dc6361510fb0c9c78b6c8c4c640c20660668cc838087ea33f77"
+  "AffectedFields": [
+    "t.0",
+    "t.0.tt"
+  ],
+  "CertificateType": "Test",
+  "Country": "PL",
+  "Description": [
+    {
+      "desc": "Typ testu musi być jednym z listy zestawów wartości (RAT lub NAAT).",
+      "lang": "pl"
+    },
+    {
+      "desc": "The test type must be one of the value set list (RAT OR NAA).",
+      "lang": "en"
+    },
+    {
+      "desc": "Es muss ein Antigen-Test (z.B. Schnelltest) oder NAA-Test (z.B. PCR) sein.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-PL-0000",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "in": [
+          {
+            "var": "payload.t.0.tt"
+          },
+          [
+            "LP217198-3",
+            "LP6464-4"
+          ]
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.0.0"
 }

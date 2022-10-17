@@ -1,6 +1,46 @@
 {
-  "code": "0x006",
-  "details": "",
-  "problem": "Possible reasons: The provided hash or country may not be correct.",
-  "sendValue": "country: PL, hash: dca4914084fa2d4c98f2b293e59b7ab5bdb0e48270568ccaf1102c371f9eb5a3"
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr"
+  ],
+  "CertificateType": "Test",
+  "Country": "PL",
+  "Description": [
+    {
+      "desc": "Wynik testu musi być ujemny (\"not detected\").",
+      "lang": "pl"
+    },
+    {
+      "desc": "Test result must be negative (\"not detected\").",
+      "lang": "en"
+    },
+    {
+      "desc": "Das Ergebnis des Tests muss negativ sein.",
+      "lang": "de"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-PL-0002",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-10-11T00:00:00Z",
+  "ValidTo": "2030-10-11T00:00:00Z",
+  "Version": "1.0.0"
 }
