@@ -1,0 +1,53 @@
+{
+  "AffectedFields": [
+    "r.0",
+    "r.0.df",
+    "r.0.du"
+  ],
+  "CertificateType": "Recovery",
+  "Country": "CY",
+  "Description": [
+    {
+      "desc": "The validity start date must be before the validity end date.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "RR-CY-0003",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.r.0"
+      },
+      {
+        "before": [
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.df"
+              },
+              0,
+              "day"
+            ]
+          },
+          {
+            "plusTime": [
+              {
+                "var": "payload.r.0.du"
+              },
+              0,
+              "day"
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-04-07T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "2.1.4"
+}

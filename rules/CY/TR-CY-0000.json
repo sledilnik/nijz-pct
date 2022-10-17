@@ -1,0 +1,28 @@
+{
+  "AffectedFields": [
+    "t.1"
+  ],
+  "CertificateType": "Test",
+  "Country": "CY",
+  "Description": [
+    {
+      "desc": "At most one t-event.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-CY-0000",
+  "Logic": {
+    "!": [
+      {
+        "var": "payload.t.1"
+      }
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-04-07T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "2.1.4"
+}
