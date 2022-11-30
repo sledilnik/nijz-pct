@@ -20,11 +20,12 @@ Certificate:
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
     Signature Algorithm: sha256WithRSAEncryption
-         51:80:78:ba:5c:22:cf:1a:83:dc:a3:19:7b:cc:6b:56:6b:7b:
-         21:47:c5:54:0b:58:ac:9a:b6:e1:de:f0:44:a2:ca:5d:18:81:
-         cc:df:53:df:c5:49:3f:b1:93:cf:03:0b:6d:f2:79:6e:2b:d1:
-         69:8d:72:b2:16:f6:28:83:da:03:e7:cf:38:87:8a:b5:5b:0f:
-         d5:ea:24:2e:f1:1a:84:d4:bd:58:82:36:f6:46:9b:c7:d8:4e:
-         13:66:ee:3d:1c:2a:1b:9f:de:85:42:8e:09:11:f6:ff:66:9c:
-         54:36:da:09:a6:6f:47:1e:00:8f:8e:b2:88:fd:fb:ed:10:7f:
-         05:12
+    Signature Value:
+        51:80:78:ba:5c:22:cf:1a:83:dc:a3:19:7b:cc:6b:56:6b:7b:
+        21:47:c5:54:0b:58:ac:9a:b6:e1:de:f0:44:a2:ca:5d:18:81:
+        cc:df:53:df:c5:49:3f:b1:93:cf:03:0b:6d:f2:79:6e:2b:d1:
+        69:8d:72:b2:16:f6:28:83:da:03:e7:cf:38:87:8a:b5:5b:0f:
+        d5:ea:24:2e:f1:1a:84:d4:bd:58:82:36:f6:46:9b:c7:d8:4e:
+        13:66:ee:3d:1c:2a:1b:9f:de:85:42:8e:09:11:f6:ff:66:9c:
+        54:36:da:09:a6:6f:47:1e:00:8f:8e:b2:88:fd:fb:ed:10:7f:
+        05:12
