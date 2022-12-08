@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2022-01-26",
+  "valueSetDate": "2022-11-30",
   "valueSetId": "vaccines-covid-19-names",
   "valueSetValues": {
     "AZD2816": {
@@ -117,6 +117,13 @@
     "EU/1/21/1529": {
       "active": true,
       "display": "Vaxzevria",
+      "lang": "en",
+      "system": "https://ec.europa.eu/health/documents/community-register/html/",
+      "version": ""
+    },
+    "EU/1/21/1580": {
+      "active": true,
+      "display": "VidPrevtyn Beta",
       "lang": "en",
       "system": "https://ec.europa.eu/health/documents/community-register/html/",
       "version": ""
@@ -241,8 +248,8 @@
       "version": "1.8"
     },
     "Vidprevtyn": {
-      "active": true,
-      "display": "Vidprevtyn",
+      "active": false,
+      "display": "Vidprevtyn (deprecated)",
       "lang": "en",
       "system": "http://ec.europa.eu/temp/vaccineproductname",
       "version": "1.8"
