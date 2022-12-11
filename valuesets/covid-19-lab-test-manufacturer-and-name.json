@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2022-12-10",
+  "valueSetDate": "2022-12-11",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -1903,8 +1903,8 @@
       "display": "Beijing Hotgen Biotech Co. Ltd., Coronavirus (2019-nCoV)-Antigentest",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2022-12-11 00:00:00 CET",
-      "version": "2022-11-12 00:00:00 CET"
+      "validUntil": null,
+      "version": "2022-12-11 00:00:00 CET"
     },
     "2812": {
       "active": true,
