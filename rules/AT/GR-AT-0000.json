@@ -8,11 +8,11 @@
   "Country": "AT",
   "Description": [
     {
-      "desc": "Exactly one type of event.",
+      "desc": "Currently no entry rules for AT.",
       "lang": "en"
     },
     {
-      "desc": "Genau ein Event-Typ vorhanden.",
+      "desc": "Aktuell keine Einreiseregeln in AT.",
       "lang": "de"
     }
   ],
@@ -20,46 +20,16 @@
   "EngineVersion": "0.7.5",
   "Identifier": "GR-AT-0000",
   "Logic": {
-    "===": [
-      {
-        "reduce": [
-          [
-            {
-              "var": "payload.r"
-            },
-            {
-              "var": "payload.t"
-            },
-            {
-              "var": "payload.v"
-            }
-          ],
-          {
-            "+": [
-              {
-                "var": "accumulator"
-              },
-              {
-                "if": [
-                  {
-                    "var": "current.0"
-                  },
-                  1,
-                  0
-                ]
-              }
-            ]
-          },
-          0
-        ]
-      },
-      1
+    "if": [
+      true,
+      true,
+      true
     ]
   },
   "Region": "AT",
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2021-12-09T00:00:00Z",
+  "ValidFrom": "2022-12-24T00:00:00Z",
   "ValidTo": "2030-06-01T00:00:00Z",
-  "Version": "1.0.12"
+  "Version": "1.0.15"
 }
