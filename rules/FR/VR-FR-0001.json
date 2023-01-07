@@ -44,7 +44,8 @@
             "R-COVI",
             "Covid-19 vaccine (recombinante)",
             "VLA2001",
-            "EU/1/21/1624"
+            "EU/1/21/1624",
+            "EU/1/21/1580"
           ]
         ]
       },
@@ -53,7 +54,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-11-12T12:00:00Z",
-  "ValidTo": "2032-11-12T12:00:00Z",
-  "Version": "1.0.9"
+  "ValidFrom": "2023-01-07T12:00:00Z",
+  "ValidTo": "2033-01-07T12:00:00Z",
+  "Version": "1.0.10"
 }
