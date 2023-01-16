@@ -3,23 +3,24 @@
     "v.0",
     "v.0.dn",
     "v.0.sd",
-    "v.0.dt"
+    "v.0.dt",
+    "v.0.mp"
   ],
   "CertificateType": "Vaccination",
   "Country": "SK",
   "Description": [
     {
-      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 14 days must have elapsed since the first dose of COVID-19 vaccine was administered.",
+      "desc": "Does not meet full vaccination criteria. At the moment of check, at least 21 and not more than 270 days must have elapsed since a single-shot of COVID-19 vaccine was administered.",
       "lang": "en"
     },
     {
-      "desc": "Nevyhovuje podmienke plnej očkovanosti. V čase kontroly musí uplynúť najmenej 14 dní od podania očkovacej látky.",
+      "desc": "Nevyhovuje podmienke plnej očkovanosti.  V čase kontroly musí uplynúť najmenej 14 dní, ak bola dávka podaná do 180 dní od prekonania ochorenia COVID-19, alebo najmenej 21 dní a nie viac ako 270 dní od podania prvej dávky očkovacej látky proti ochoreniu COVID-19 s jednodávkovou schémou.",
       "lang": "sk"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.1.0",
-  "Identifier": "VR-SK-0002",
+  "Identifier": "VR-SK-0004",
   "Logic": {
     "if": [
       {
@@ -28,11 +29,11 @@
       {
         "if": [
           {
-            ">=": [
+            "===": [
               {
-                "var": "payload.v.0.sd"
+                "var": "payload.v.0.mp"
               },
-              1
+              "EU/1/20/1525"
             ]
           },
           {
@@ -46,7 +47,16 @@
                 ]
               },
               {
-                "not-before": [
+                "not-after": [
+                  {
+                    "plusTime": [
+                      {
+                        "var": "payload.v.0.dt"
+                      },
+                      21,
+                      "day"
+                    ]
+                  },
                   {
                     "plusTime": [
                       {
@@ -61,7 +71,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      14,
+                      270,
                       "day"
                     ]
                   }
