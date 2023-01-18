@@ -30,9 +30,9 @@
                   {
                     "var": "payload.r.0.tg"
                   },
-                  {
-                    "var": "external.valueSets.disease-agent-targeted"
-                  }
+                  [
+                    "840539006"
+                  ]
                 ]
               }
             ]
@@ -44,9 +44,9 @@
                   {
                     "var": "payload.t.0.tg"
                   },
-                  {
-                    "var": "external.valueSets.disease-agent-targeted"
-                  }
+                  [
+                    "840539006"
+                  ]
                 ]
               }
             ]
@@ -58,9 +58,9 @@
                   {
                     "var": "payload.v.0.tg"
                   },
-                  {
-                    "var": "external.valueSets.disease-agent-targeted"
-                  }
+                  [
+                    "840539006"
+                  ]
                 ]
               }
             ]
@@ -71,7 +71,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-02-06T13:42:12Z",
+  "ValidFrom": "2023-01-18T17:02:10Z",
   "ValidTo": "2030-07-26T00:00:00Z",
-  "Version": "1.0.2"
+  "Version": "1.0.3"
 }
