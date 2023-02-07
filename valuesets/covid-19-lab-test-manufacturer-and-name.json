@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-02-06",
+  "valueSetDate": "2023-02-07",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -401,6 +401,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-07-07 05:21:41 CEST"
+    },
+    "1371": {
+      "active": true,
+      "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B Antigen Combo Test Device",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-12-09 00:00:00 CET"
     },
     "1375": {
       "active": true,
@@ -1561,6 +1569,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-10-20 00:00:00 CEST"
+    },
+    "2277": {
+      "active": true,
+      "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 Antigen Nasal Test Kit",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-12-09 00:00:00 CET"
     },
     "2278": {
       "active": true,
