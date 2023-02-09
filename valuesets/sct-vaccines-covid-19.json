@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2021-04-27",
+  "valueSetDate": "2023-01-25",
   "valueSetId": "sct-vaccines-covid-19",
   "valueSetValues": {
     "1119305005": {
@@ -30,6 +30,20 @@
       "system": "http://snomed.info/sct",
       "version": "2022-01-31"
     },
+    "1187593009": {
+      "active": true,
+      "display": "SARS-CoV-2 DNA plasmid encoding spike protein vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
+    "28531000087107": {
+      "active": true,
+      "display": "COVID-19 vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
     "29061000087103": {
       "active": true,
       "display": "COVID-19 non-replicating viral vector vaccine",
@@ -37,9 +51,16 @@
       "system": "http://snomed.info/sct",
       "version": "2022-01-31"
     },
-    "J07BX03": {
+    "30141000087107": {
       "active": true,
-      "display": "covid-19 vaccines",
+      "display": "SARS-CoV-2 virus-like particle antigen vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
+    "J07BX03": {
+      "active": false,
+      "display": "covid-19 vaccines (deprecated)",
       "lang": "en",
       "system": "http://www.whocc.no/atc",
       "version": "2021-01"
