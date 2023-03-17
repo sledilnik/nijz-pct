@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-03-15",
+  "valueSetDate": "2023-03-17",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -215,7 +215,7 @@
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2 and Influenza A+B Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2022-11-11 00:00:00 CET"
     },
     "1263": {
@@ -407,7 +407,7 @@
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B Antigen Combo Test Device",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2022-12-09 00:00:00 CET"
     },
     "1375": {
@@ -1226,6 +1226,14 @@
       "validUntil": null,
       "version": "2021-07-07 05:25:18 CEST"
     },
+    "2075": {
+      "active": true,
+      "display": "Amazing Biotech (Shanghai) Co. Ltd., COVID-19 Antigen Sealing Tube Test Strip (Colloidal Gold)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
+    },
     "2078": {
       "active": true,
       "display": "ArcDia International Ltd., mariPOC Respi+",
@@ -1591,7 +1599,7 @@
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B Antigen Nasal Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2022-12-09 00:00:00 CET"
     },
     "2282": {
@@ -1695,7 +1703,7 @@
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2023-01-31 00:00:00 CET"
     },
     "2392": {
@@ -1703,7 +1711,7 @@
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV/Adenovirus Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2023-01-31 00:00:00 CET"
     },
     "2414": {
@@ -1785,6 +1793,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-12-08 00:00:00 CET"
+    },
+    "2560": {
+      "active": true,
+      "display": "Lomina Superbio a.s., Lomina SARS-CoV-2 Antigen LTX test",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
     },
     "2579": {
       "active": true,
@@ -2210,6 +2226,14 @@
       "validUntil": null,
       "version": "2022-11-11 00:00:00 CET"
     },
+    "3966": {
+      "active": true,
+      "display": "Chastru Biotech Limited, COVID-19 Antigen Test Cassette",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
+    },
     "4049": {
       "active": true,
       "display": "NINGBO LVTANG BIOTECHNOLOGY Co. Ltd., SARS-CoV-2 Antigen Detection Kit (Colloidal Gold Method)",
@@ -2250,12 +2274,20 @@
       "validUntil": null,
       "version": "2022-11-11 00:00:00 CET"
     },
+    "4064": {
+      "active": true,
+      "display": "Glallergen Co. Ltd., Novel Coronavirus (2019-nCoV) Antigen Test Kit (Latex Method)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
+    },
     "4065": {
       "active": true,
       "display": "Vitrosens Biotechnology Co. Ltd., RapidFor™ SARS-CoV-2 & FLU A/B Antigen Combo Test",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2022-12-09 00:00:00 CET"
     },
     "4075": {
@@ -2266,6 +2298,14 @@
       "validUntil": null,
       "version": "2022-12-09 00:00:00 CET"
     },
+    "4081": {
+      "active": true,
+      "display": "General Biologicals Corporation, GB COVID-19 Ag POCT",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
+    },
     "4083": {
       "active": true,
       "display": "Vitrosens Biotechnology Co. Ltd., ENMED SARS-CoV-2 Rapid Antigen Test Kit",
@@ -2273,6 +2313,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-11-11 00:00:00 CET"
+    },
+    "4111": {
+      "active": true,
+      "display": "Wuhan Uni-science Biotechnology Co. Ltd., SARS-CoV-2 Antigen Rapid Test Kit",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
     },
     "5743": {
       "active": true,
@@ -2295,7 +2343,7 @@
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B& RSV Antigen Nasal Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2023-01-31 00:00:00 CET"
     },
     "5804": {
@@ -2303,8 +2351,16 @@
       "display": "Vitrosens Biotechnology Co. Ltd., RapidFor™ SARS-CoV-2 + FLU A/B + RSV Combo Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
+      "validUntil": "2023-05-04 00:00:00 CEST",
       "version": "2023-01-31 00:00:00 CET"
+    },
+    "5812": {
+      "active": true,
+      "display": "Rapid Labs Ltd., SARS-CoV-2 Antigen Rapid Test  (Nasal Swab)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-03-15 00:00:00 CET"
     },
     "768": {
       "active": true,
