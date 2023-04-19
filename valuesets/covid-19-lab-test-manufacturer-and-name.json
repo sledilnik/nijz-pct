@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-04-01",
+  "valueSetDate": "2023-04-11",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -1746,6 +1746,14 @@
       "validUntil": null,
       "version": "2022-06-10 00:00:00 CEST"
     },
+    "24759": {
+      "active": true,
+      "display": "SD BIOSENSOR Inc., STANDARD F COVID-19 Ag FIA",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2021-02-17 00:00:00 CET"
+    },
     "2494": {
       "active": true,
       "display": "Beijing O&D Biotech Co. Ltd., COVID-19 Antigen Rapid Test",
@@ -1785,6 +1793,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-10-05 00:00:00 CEST"
+    },
+    "25542": {
+      "active": false,
+      "display": "Humasis Co. Ltd., Humasis COVID-19 Ag Test",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-07-09 00:00:00 CEST"
     },
     "2555": {
       "active": true,
