@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-04-11",
+  "valueSetDate": "2023-05-10",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -211,12 +211,12 @@
       "version": "2021-06-16 00:00:00 CEST"
     },
     "1258": {
-      "active": true,
+      "active": false,
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2 and Influenza A+B Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2022-11-11 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "1263": {
       "active": false,
@@ -403,12 +403,12 @@
       "version": "2021-07-07 05:21:41 CEST"
     },
     "1371": {
-      "active": true,
+      "active": false,
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B Antigen Combo Test Device",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2022-12-09 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "1375": {
       "active": true,
@@ -1595,12 +1595,12 @@
       "version": "2021-10-20 00:00:00 CEST"
     },
     "2280": {
-      "active": true,
+      "active": false,
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B Antigen Nasal Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2022-12-09 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "2282": {
       "active": true,
@@ -1699,20 +1699,20 @@
       "version": "2022-11-11 00:00:00 CET"
     },
     "2390": {
-      "active": true,
+      "active": false,
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2023-01-31 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "2392": {
-      "active": true,
+      "active": false,
       "display": "Hangzhou AllTest Biotech Co. Ltd., SARS-CoV-2/Influenza A+B/RSV/Adenovirus Antigen Combo Rapid Test (Nasopharyngeal Swab)",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2023-01-31 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "2414": {
       "active": true,
@@ -2299,12 +2299,12 @@
       "version": "2023-03-15 00:00:00 CET"
     },
     "4065": {
-      "active": true,
+      "active": false,
       "display": "Vitrosens Biotechnology Co. Ltd., RapidFor™ SARS-CoV-2 & FLU A/B Antigen Combo Test",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2022-12-09 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "4075": {
       "active": true,
@@ -2355,20 +2355,20 @@
       "version": "2023-01-31 00:00:00 CET"
     },
     "5803": {
-      "active": true,
+      "active": false,
       "display": "Assure Tech (Hangzhou) Co. Ltd., COVID-19 & Influenza A/B& RSV Antigen Nasal Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2023-01-31 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "5804": {
-      "active": true,
+      "active": false,
       "display": "Vitrosens Biotechnology Co. Ltd., RapidFor™ SARS-CoV-2 + FLU A/B + RSV Combo Test Kit",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": "2023-05-04 00:00:00 CEST",
-      "version": "2023-01-31 00:00:00 CET"
+      "validUntil": null,
+      "version": "2023-05-04 00:00:00 CEST"
     },
     "5812": {
       "active": true,
