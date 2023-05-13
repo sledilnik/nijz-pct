@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-05-10",
+  "valueSetDate": "2023-05-13",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -2185,6 +2185,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-12-09 00:00:00 CET"
+    },
+    "3099": {
+      "active": true,
+      "display": "BioDetect (Xiamen) Biotechnology Co. Ltd., RAPID SARS-COV-2 ANTIGEN TEST CARD",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2022-07-22 00:00:00 CEST"
     },
     "3107": {
       "active": true,
