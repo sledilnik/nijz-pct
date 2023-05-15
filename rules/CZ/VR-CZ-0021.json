@@ -11,11 +11,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination COVID-19 Vaccine Janssen may not be older than 9 months",
+      "desc": "Vaccination Spikevax bivalent Original/Omicron BA.1 may not be older than 9 months",
       "lang": "en"
     },
     {
-      "desc": "Očkování COVID-19 Vaccine Janssen nesmí být starší než 9 měsíců",
+      "desc": "Očkování Spikevax bivalent Original/Omicron BA.1 nesmí být starší než 9 měsíců",
       "lang": "cs"
     }
   ],
@@ -36,7 +36,7 @@
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "EU/1/20/1525"
+                  "EU/1/20/1507"
                 ]
               },
               {
@@ -170,7 +170,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2022-08-14T22:00:00Z",
-  "ValidTo": "2032-08-14T22:00:00Z",
-  "Version": "8.0.1"
+  "ValidFrom": "2023-05-14T22:00:00Z",
+  "ValidTo": "2033-05-14T22:00:00Z",
+  "Version": "9.0.1"
 }
