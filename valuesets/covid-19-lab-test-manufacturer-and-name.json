@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-05-17",
+  "valueSetDate": "2023-05-18",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -1562,6 +1562,14 @@
       "validUntil": null,
       "version": "2022-02-10 00:00:00 CET"
     },
+    "2267": {
+      "active": true,
+      "display": "Acro Biotech Inc., SARS-CoV-2 Antigen Rapid Test (Nasal Swab)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
+    },
     "2271": {
       "active": true,
       "display": "Pantest SA, Pantest Coronavirus Ag (Nasopharyngeal Swab)",
@@ -1746,6 +1754,30 @@
       "validUntil": null,
       "version": "2022-06-10 00:00:00 CEST"
     },
+    "24756": {
+      "active": true,
+      "display": "SD BIOSENSOR Inc., STANDARD i-Q COVID/Flu Ag Combo Test",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
+    },
+    "24757": {
+      "active": true,
+      "display": "SD BIOSENSOR Inc., STANDARD F COVID/Flu Ag Combo FIA",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
+    },
+    "24758": {
+      "active": true,
+      "display": "SD BIOSENSOR Inc., STANDARD Q COVID-19 Ag Test 2.0",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
+    },
     "24759": {
       "active": true,
       "display": "SD BIOSENSOR Inc., STANDARD F COVID-19 Ag FIA",
@@ -1753,6 +1785,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-02-17 00:00:00 CET"
+    },
+    "2491": {
+      "active": true,
+      "display": "Shen Zhen Zi Jian Biotechnology Co. Ltd., SARS-CoV-2（ COVID-19）Antigen Rapid Detection Kit (Lateral Flow Method)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
     },
     "2494": {
       "active": true,
@@ -1801,6 +1841,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-07-09 00:00:00 CEST"
+    },
+    "25546": {
+      "active": true,
+      "display": "Roche (SD BIOSENSOR), SARS-CoV-2 Rapid Antigen Test 2.0 ",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
     },
     "2555": {
       "active": true,
@@ -1881,6 +1929,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-12-08 00:00:00 CET"
+    },
+    "2671": {
+      "active": true,
+      "display": "Hangzhou Sejoy Electronics & Instruments Co. Ltd., SARS-CoV-2 Antigen Rapid Test Cassette",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
     },
     "2672": {
       "active": true,
@@ -2066,6 +2122,14 @@
       "validUntil": null,
       "version": "2022-06-10 00:00:00 CEST"
     },
+    "2935": {
+      "active": true,
+      "display": "SG Medical Inc., InstaView COVID-19 Antigen",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
+    },
     "2936": {
       "active": true,
       "display": "AMPER Inc., AMPER COVID-19 Antigen Rapid Testing Kit (Colloidal Gold)",
@@ -2105,6 +2169,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-11-11 00:00:00 CET"
+    },
+    "2975": {
+      "active": true,
+      "display": "Abionic SA, IVD CAPSULE COVID-19-NP",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-05-17 00:00:00 CEST"
     },
     "2979": {
       "active": true,
