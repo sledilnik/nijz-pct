@@ -4,7 +4,7 @@
 | -- | ------ |
 | [country-2-codes](country-2-codes.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/669ef04a4a5676597093f18b7b01df9d1498003e312e37a09758a84ea28f5c9d) |
 | [covid-19-lab-result](covid-19-lab-result.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/64f946691cc68966335da6dfe16d4177de8c5d3ce6abc2cf18c30103a70763d6) |
-| [covid-19-lab-test-manufacturer-and-name](covid-19-lab-test-manufacturer-and-name.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/f4579d46503a0e6709b787b13435f730d137ac3e42ac8c01eb46a7cf32aa1607) |
+| [covid-19-lab-test-manufacturer-and-name](covid-19-lab-test-manufacturer-and-name.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/8fea1040ea60dc531bd9e2bc3266a974d2af0f05812b44e836b47c0a6959af61) |
 | [covid-19-lab-test-type](covid-19-lab-test-type.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/3b30b9a612ff5ae09feb60977d1d4394761237dfcd489b83bed30d8e3508f49d) |
 | [disease-agent-targeted](disease-agent-targeted.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/9810aafdbb7ad976845179c152c356987553eb82291b18d300db5044c4185bd8) |
 | [sct-vaccines-covid-19](sct-vaccines-covid-19.json) | [API](https://dgca-businessrule-service.ezdrav.si/valuesets/fec7472273dfeeb048915a86c11b99ffde2d35cf883c70861f7d75e469762635) |
