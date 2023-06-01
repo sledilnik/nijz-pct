@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-01-26",
+  "valueSetDate": "2023-05-05",
   "valueSetId": "vaccines-covid-19-encoding-instructions",
   "valueSetValues": {
     "AZD2816": {
@@ -25,6 +25,14 @@
       ],
       "vaccine-code": "BBIBP-CorV",
       "vaccine-manufacturer": "ORG-100020693"
+    },
+    "Bimervax": {
+      "note": "Previously known as COVID-19 Vaccine HIPRA",
+      "sct-codes": [
+        "28531000087107"
+      ],
+      "vaccine-code": "EU/1/22/1709",
+      "vaccine-manufacturer": "ORG-100036914"
     },
     "COVID-19 Vaccine Valneva": {
       "note": "Previously known as VLA2001.",
