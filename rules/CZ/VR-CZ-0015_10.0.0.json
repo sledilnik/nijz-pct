@@ -8,17 +8,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination Spikevax bivalent Original/Omicron BA.1 has to contain a country property",
+      "desc": "Vaccination SPIKEVAX has to contain a country property",
       "lang": "en"
     },
     {
-      "desc": "Očkování Spikevax bivalent Original/Omicron BA.1 musí mít vyplněnou položku země",
+      "desc": "Očkování SPIKEVAX musí mít vyplněnou položku země",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0025",
+  "Identifier": "VR-CZ-0015",
   "Logic": {
     "if": [
       {

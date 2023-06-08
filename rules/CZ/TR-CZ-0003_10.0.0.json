@@ -1,46 +1,47 @@
 {
   "AffectedFields": [
-    "v.0",
-    "v.0.mp",
-    "v.0.co"
+    "t.0",
+    "t.0.ma",
+    "t.0.tt"
   ],
-  "CertificateType": "Vaccination",
+  "CertificateType": "Test",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination Spikevax bivalent Original/Omicron BA.1 has to contain a country property",
+      "desc": "The antigen test  must be included in the EU’s Common list of COVID-19 rapid antigen tests",
       "lang": "en"
     },
     {
-      "desc": "Očkování Spikevax bivalent Original/Omicron BA.1 musí mít vyplněnou položku země",
+      "desc": "Antigenní test musí mít výrobce uznávaného v rámci EU a musí být součástí seznamu publikovaných výrobců",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0025",
+  "Identifier": "TR-CZ-0003",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.t.0"
       },
       {
         "if": [
           {
             "===": [
               {
-                "var": "payload.v.0.mp"
+                "var": "payload.t.0.tt"
               },
-              "EU/1/20/1507"
+              "LP217198-3"
             ]
           },
           {
-            "if": [
+            "in": [
               {
-                "var": "payload.v.0.co"
+                "var": "payload.t.0.ma"
               },
-              true,
-              false
+              {
+                "var": "external.valueSets.covid-19-lab-test-manufacturer-and-name"
+              }
             ]
           },
           true

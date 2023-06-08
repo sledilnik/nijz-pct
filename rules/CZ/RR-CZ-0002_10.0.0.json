@@ -1,49 +1,48 @@
 {
   "AffectedFields": [
-    "v.0",
-    "v.0.mp",
-    "v.0.co"
+    "r.0",
+    "r.0.fr"
   ],
-  "CertificateType": "Vaccination",
+  "CertificateType": "Recovery",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination Comirnaty 5-11 has to contain a country property",
+      "desc": "The positive PCR test result may not be older than 180 days",
       "lang": "en"
     },
     {
-      "desc": "Očkování Comirnaty 5-11 musí mít vyplněnou položku země",
+      "desc": "Pozitivní PCR test nesmí být starší  více než 180 dní",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0055",
+  "Identifier": "RR-CZ-0002",
   "Logic": {
     "if": [
       {
-        "var": "payload.v.0"
+        "var": "payload.r.0"
       },
       {
-        "if": [
+        "not-after": [
           {
-            "===": [
+            "plusTime": [
               {
-                "var": "payload.v.0.mp"
+                "var": "external.validationClock"
               },
-              "EU/1/20/1528"
+              0,
+              "day"
             ]
           },
           {
-            "if": [
+            "plusTime": [
               {
-                "var": "payload.v.0.co"
+                "var": "payload.r.0.fr"
               },
-              true,
-              false
+              180,
+              "day"
             ]
-          },
-          true
+          }
         ]
       },
       true
