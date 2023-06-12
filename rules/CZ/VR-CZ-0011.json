@@ -11,11 +11,11 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination SPIKEVAX may not be older than 99 months",
+      "desc": "Vaccination SPIKEVAX may not be older than 9 months",
       "lang": "en"
     },
     {
-      "desc": "Očkování SPIKEVAX nesmí být starší než 99 měsíců",
+      "desc": "Očkování SPIKEVAX nesmí být starší než 9 měsíců",
       "lang": "cs"
     }
   ],
@@ -130,7 +130,7 @@
                           {
                             "var": "payload.v.0.dt"
                           },
-                          99,
+                          9,
                           "month"
                         ]
                       }
@@ -154,7 +154,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      99,
+                      9,
                       "month"
                     ]
                   }
@@ -170,7 +170,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2023-05-14T22:00:00Z",
-  "ValidTo": "2033-05-14T22:00:00Z",
-  "Version": "9.0.1"
+  "ValidFrom": "2023-06-11T22:00:00Z",
+  "ValidTo": "2033-06-11T22:00:00Z",
+  "Version": "10.0.1"
 }

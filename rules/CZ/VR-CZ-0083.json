@@ -53,7 +53,7 @@
   },
   "SchemaVersion": "1.0.0",
   "Type": "Acceptance",
-  "ValidFrom": "2023-05-14T22:00:00Z",
-  "ValidTo": "2033-05-14T22:00:00Z",
-  "Version": "9.0.0"
+  "ValidFrom": "2023-06-11T22:00:00Z",
+  "ValidTo": "2033-06-11T22:00:00Z",
+  "Version": "10.0.0"
 }
