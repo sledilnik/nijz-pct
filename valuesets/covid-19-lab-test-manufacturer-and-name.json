@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-07-27",
+  "valueSetDate": "2023-07-28",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -130,6 +130,14 @@
       "validUntil": null,
       "version": "2021-02-17 00:00:00 CET"
     },
+    "1220": {
+      "active": true,
+      "display": "Hangzhou Realy Tech Co. Ltd., Novel Coronavirus (SARS-Cov-2) Antigen Rapid Test Cassette (swab)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
+    },
     "1223": {
       "active": true,
       "display": "BIOSYNEX S.A., BIOSYNEX COVID-19 Ag BSS",
@@ -219,12 +227,12 @@
       "version": "2023-05-04 00:00:00 CEST"
     },
     "1263": {
-      "active": false,
+      "active": true,
       "display": "Humasis Co. Ltd., Humasis COVID-19 Ag Test",
       "lang": "en",
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
-      "version": "2022-07-09 00:00:00 CEST"
+      "version": "2023-07-26 00:00:00 CEST"
     },
     "1266": {
       "active": true,
@@ -585,6 +593,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-07-07 05:10:05 CEST"
+    },
+    "1588": {
+      "active": true,
+      "display": "Xiamen Jiqing Biomedical Technology Co. Ltd., SARS-CoV-2 Antigen Detection Kit (Colloidal Gold Method)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
     },
     "1592": {
       "active": true,
@@ -1474,6 +1490,14 @@
       "validUntil": null,
       "version": "2022-03-04 00:00:00 CET"
     },
+    "2210": {
+      "active": false,
+      "display": "Hangzhou Singclean Medical Products Co. Ltd., COVID-19 Test Kit (Colloidal Gold Method)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
+    },
     "2226": {
       "active": true,
       "display": "ZET medikal tekstil dis tic Ltd. sti, SOFTEC SARS COV-2 COVID-19 ANTIGEN TEST KIT",
@@ -1785,6 +1809,14 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2021-02-17 00:00:00 CET"
+    },
+    "24766": {
+      "active": true,
+      "display": "Hangzhou Tongzhou Biotechnology Co Ltd, SARS-CoV-2 Antigen Test（nasopharyngeal swab）",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
     },
     "2491": {
       "active": true,
@@ -2457,6 +2489,22 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2023-03-15 00:00:00 CET"
+    },
+    "5827": {
+      "active": true,
+      "display": "BIOTEKE CORPORATION (WUXI) Co. Ltd., Multiple Respiratory Multipathogen Antigen Test Kit (immunochromatographic assay)",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
+    },
+    "5853": {
+      "active": true,
+      "display": "BIOTEKE CORPORATION (WUXI) Co. Ltd., SARS-CoV-2 Antigen Test Kit",
+      "lang": "en",
+      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
+      "validUntil": null,
+      "version": "2023-07-26 00:00:00 CEST"
     },
     "768": {
       "active": true,
