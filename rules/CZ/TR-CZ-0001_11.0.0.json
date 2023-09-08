@@ -1,24 +1,24 @@
 {
   "AffectedFields": [
     "t.0",
-    "t.0.is",
+    "t.0.sc",
     "t.0.tt"
   ],
   "CertificateType": "Test",
   "Country": "CZ",
   "Description": [
     {
-      "desc": "The PCR test must have a certificate issuer",
+      "desc": "The antigen test may not be older than 24 hours ago",
       "lang": "en"
     },
     {
-      "desc": "PCR test musí mít vydavatele certifikátu",
+      "desc": "Antigenní test nesmí být starší více než 24 hodin",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "TR-CZ-0006",
+  "Identifier": "TR-CZ-0001",
   "Logic": {
     "if": [
       {
@@ -31,16 +31,29 @@
               {
                 "var": "payload.t.0.tt"
               },
-              "LP6464-4"
+              "LP217198-3"
             ]
           },
           {
-            "if": [
+            "not-after": [
               {
-                "var": "payload.t.0.is"
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
               },
-              true,
-              false
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  24,
+                  "hour"
+                ]
+              }
             ]
           },
           true

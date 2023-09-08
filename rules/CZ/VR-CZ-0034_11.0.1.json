@@ -11,17 +11,17 @@
   "Country": "CZ",
   "Description": [
     {
-      "desc": "Vaccination Comirnaty may not be older than 9 months",
+      "desc": "Booster dose of vaccination COVID-19 Vaccine Janssen may not be older than 99 months",
       "lang": "en"
     },
     {
-      "desc": "Očkování Comirnaty nesmí být starší než 9 měsíců",
+      "desc": "Posilovací dávka očkování COVID-19 Vaccine Janssen nesmí být starší než 99 měsíců",
       "lang": "cs"
     }
   ],
   "Engine": "CERTLOGIC",
   "EngineVersion": "0.7.5",
-  "Identifier": "VR-CZ-0041",
+  "Identifier": "VR-CZ-0034",
   "Logic": {
     "if": [
       {
@@ -36,29 +36,58 @@
                   {
                     "var": "payload.v.0.mp"
                   },
-                  "EU/1/20/1528"
+                  "EU/1/20/1525"
                 ]
               },
               {
-                "and": [
-                  {
-                    "===": [
-                      {
-                        "var": "payload.v.0.dn"
-                      },
-                      {
-                        "var": "payload.v.0.sd"
-                      }
-                    ]
-                  },
-                  {
-                    "<=": [
-                      {
-                        "var": "payload.v.0.dn"
-                      },
-                      2
-                    ]
-                  }
+                "in": [
+                  true,
+                  [
+                    {
+                      "and": [
+                        {
+                          ">=": [
+                            {
+                              "var": "payload.v.0.dn"
+                            },
+                            {
+                              "var": "payload.v.0.sd"
+                            }
+                          ]
+                        },
+                        {
+                          ">": [
+                            {
+                              "var": "payload.v.0.sd"
+                            },
+                            2
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "and": [
+                        {
+                          ">": [
+                            {
+                              "var": "payload.v.0.dn"
+                            },
+                            {
+                              "var": "payload.v.0.sd"
+                            }
+                          ]
+                        },
+                        {
+                          "===": [
+                            {
+                              "var": "payload.v.0.sd"
+                            },
+                            1
+                          ]
+                        }
+                      ]
+                    }
+                  ]
                 ]
               }
             ]
@@ -130,7 +159,7 @@
                           {
                             "var": "payload.v.0.dt"
                           },
-                          9,
+                          99,
                           "month"
                         ]
                       }
@@ -154,7 +183,7 @@
                       {
                         "var": "payload.v.0.dt"
                       },
-                      9,
+                      99,
                       "month"
                     ]
                   }
