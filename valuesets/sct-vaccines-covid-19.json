@@ -1,0 +1,69 @@
+{
+  "valueSetDate": "2023-01-25",
+  "valueSetId": "sct-vaccines-covid-19",
+  "valueSetValues": {
+    "1119305005": {
+      "active": true,
+      "display": "SARS-CoV-2 antigen vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+    },
+    "1119349007": {
+      "active": true,
+      "display": "SARS-CoV-2 mRNA vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "http://snomed.info/sct/900000000000207008/version/20210131"
+    },
+    "1157024006": {
+      "active": true,
+      "display": "Inactivated whole SARS-CoV-2 antigen vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-01-31"
+    },
+    "1162643001": {
+      "active": true,
+      "display": "SARS-CoV-2 recombinant spike protein antigen vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-01-31"
+    },
+    "1187593009": {
+      "active": true,
+      "display": "SARS-CoV-2 DNA plasmid encoding spike protein vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
+    "28531000087107": {
+      "active": true,
+      "display": "COVID-19 vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
+    "29061000087103": {
+      "active": true,
+      "display": "COVID-19 non-replicating viral vector vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-01-31"
+    },
+    "30141000087107": {
+      "active": true,
+      "display": "SARS-CoV-2 virus-like particle antigen vaccine",
+      "lang": "en",
+      "system": "http://snomed.info/sct",
+      "version": "2022-12-31"
+    },
+    "J07BX03": {
+      "active": false,
+      "display": "covid-19 vaccines (deprecated)",
+      "lang": "en",
+      "system": "http://www.whocc.no/atc",
+      "version": "2021-01"
+    }
+  }
+}
