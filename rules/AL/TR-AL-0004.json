@@ -1,0 +1,58 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr"
+  ],
+  "CertificateType": "Test",
+  "Country": "AL",
+  "Description": [
+    {
+      "desc": "The test result must be negative.",
+      "lang": "en"
+    },
+    {
+      "desc": "Das Ergebnis des Tests muss negativ sein.",
+      "lang": "de"
+    },
+    {
+      "desc": "Le résultat du test doit être négatif.",
+      "lang": "fr"
+    },
+    {
+      "desc": "El resultado de la prueba debe ser negativo.",
+      "lang": "es"
+    },
+    {
+      "desc": "Il risultato del test deve essere negativo.",
+      "lang": "it"
+    },
+    {
+      "desc": "Rezultati i testit duhet të jetë negativ.",
+      "lang": "sq"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-AL-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "===": [
+          {
+            "var": "payload.t.0.tr"
+          },
+          "260415000"
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2021-09-17T12:00:00Z",
+  "ValidTo": "2022-09-01T00:00:00Z",
+  "Version": "1.0.0"
+}

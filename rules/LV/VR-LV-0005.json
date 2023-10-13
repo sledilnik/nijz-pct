@@ -1,0 +1,54 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dn"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "LV",
+  "Description": [
+    {
+      "desc": "Saņemtā vakcīnas deva ir robežās no 1 līdz 12",
+      "lang": "lv"
+    },
+    {
+      "desc": "Number in a series of vaccinations is between 1 and 12",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-LV-0005",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "and": [
+          {
+            ">=": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              1
+            ]
+          },
+          {
+            "<=": [
+              {
+                "var": "payload.v.0.dn"
+              },
+              12
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-01-10T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.0.0"
+}

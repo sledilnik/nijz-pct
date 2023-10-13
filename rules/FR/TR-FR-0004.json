@@ -1,0 +1,79 @@
+{
+  "AffectedFields": [
+    "t.0",
+    "t.0.tr",
+    "t.0.sc"
+  ],
+  "CertificateType": "Test",
+  "Country": "FR",
+  "Description": [
+    {
+      "desc": "The Verification Datetime must be between +11 days and +183 days after the test date.",
+      "lang": "en"
+    },
+    {
+      "desc": "La date de verification doit etre comprise entre +11 jours et +183 jours après la date de test.",
+      "lang": "fr"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "TR-FR-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.t.0"
+      },
+      {
+        "if": [
+          {
+            "===": [
+              {
+                "var": "payload.t.0.tr"
+              },
+              "260373001"
+            ]
+          },
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  11,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.t.0.sc"
+                  },
+                  183,
+                  "day"
+                ]
+              }
+            ]
+          },
+          true
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-08-25T08:00:00Z",
+  "ValidTo": "2032-08-20T08:00:00Z",
+  "Version": "1.0.5"
+}

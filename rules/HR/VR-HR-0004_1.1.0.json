@@ -1,0 +1,86 @@
+{
+  "AffectedFields": [
+    "v.0",
+    "v.0.dt",
+    "v.0.sd",
+    "v.0.dn"
+  ],
+  "CertificateType": "Vaccination",
+  "Country": "HR",
+  "Description": [
+    {
+      "desc": "Primarno cijepljenje može biti prije najviše 270 dana. Buster doze vrijede beskonačno.",
+      "lang": "hr"
+    },
+    {
+      "desc": "The primary vaccination may have been completed 270 days ago at most. Booster vaccinations are valid for an unlimited period.",
+      "lang": "en"
+    }
+  ],
+  "Engine": "CERTLOGIC",
+  "EngineVersion": "0.7.5",
+  "Identifier": "VR-HR-0004",
+  "Logic": {
+    "if": [
+      {
+        "var": "payload.v.0"
+      },
+      {
+        "if": [
+          {
+            "not-after": [
+              {
+                "plusTime": [
+                  {
+                    "var": "external.validationClock"
+                  },
+                  0,
+                  "day"
+                ]
+              },
+              {
+                "plusTime": [
+                  {
+                    "var": "payload.v.0.dt"
+                  },
+                  270,
+                  "day"
+                ]
+              }
+            ]
+          },
+          true,
+          {
+            "if": [
+              {
+                ">": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  2
+                ]
+              },
+              true,
+              {
+                ">": [
+                  {
+                    "var": "payload.v.0.dn"
+                  },
+                  {
+                    "var": "payload.v.0.sd"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      true
+    ]
+  },
+  "SchemaVersion": "1.0.0",
+  "Type": "Acceptance",
+  "ValidFrom": "2022-04-01T00:00:00Z",
+  "ValidTo": "2030-06-01T00:00:00Z",
+  "Version": "1.1.0"
+}
