@@ -1,6 +1,6 @@
 {
   "valueSetDate": "2019-11-01",
-  "valueSetId": "country-2-codes",
+  "valueSetId-": "country-2-codes",
   "valueSetValues": {
     "AD": {
       "active": true,
