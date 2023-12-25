@@ -1,5 +1,5 @@
 {
-  "valueSetDate": "2023-12-22",
+  "valueSetDate": "2023-12-25",
   "valueSetId": "covid-19-lab-test-manufacturer-and-name",
   "valueSetValues": {
     "1065": {
@@ -1865,14 +1865,6 @@
       "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
       "validUntil": null,
       "version": "2022-10-05 00:00:00 CEST"
-    },
-    "25542": {
-      "active": false,
-      "display": "Humasis Co. Ltd., Humasis COVID-19 Ag Test",
-      "lang": "en",
-      "system": "https://covid-19-diagnostics.jrc.ec.europa.eu/devices",
-      "validUntil": null,
-      "version": "2022-07-09 00:00:00 CEST"
     },
     "25546": {
       "active": true,

@@ -2,36 +2,47 @@ Certificate:
     Data:
         Version: 3 (0x2)
         Serial Number:
-            6f:bd:b8:a5:e5:35:dd:d7:4a:d9:48:9a:5d:f6:7c:94:90:37:2a:90
+            34:a6:ed:59:5b:9e:9b:df:86:3b:d3:66:09:51:86:73:33:7e:f1:94
         Signature Algorithm: ecdsa-with-SHA256
-        Issuer: CN = CSCA Saude, serialNumber = 001, O = Republica Portuguesa - Portuguese Republic, C = PT
+        Issuer: CN = CSCA Health NL, serialNumber = 1, OU = Ministry of Health Welfare and Sport, O = Kingdom of the Netherlands, C = NL
         Validity
-            Not Before: May 21 16:17:11 2021 GMT
-            Not After : May 21 16:17:10 2023 GMT
-        Subject: CN = DGC DS, serialNumber = 001, O = Republica Portuguesa - Portuguese Republic, C = PT
+            Not Before: Dec 21 14:32:00 2022 GMT
+            Not After : Dec 18 14:32:00 2033 GMT
+        Subject: C = NL, O = Kingdom of the Netherlands, OU = Ministry of Health Welfare and Sport, serialNumber = 10, CN = Health DSC for recovery
         Subject Public Key Info:
             Public Key Algorithm: id-ecPublicKey
                 Public-Key: (256 bit)
                 pub:
-                    04:9e:32:bc:03:c6:ad:a3:dd:34:6b:ec:10:d4:86:
-                    b1:27:26:9e:50:64:39:97:0b:18:38:24:65:ab:8e:
-                    d7:e0:32:86:7b:e3:f7:2f:6d:ae:b5:87:06:4d:6b:
-                    42:7a:40:6a:6a:b7:04:cf:34:87:1f:f5:fe:b3:96:
-                    9e:11:08:18:60
+                    04:63:1f:9c:14:ab:98:34:de:6d:bc:a9:9e:d7:d4:
+                    2b:05:a9:9e:a8:98:9b:cb:73:61:18:bb:1d:18:5d:
+                    ed:4f:0d:d4:6f:1b:26:09:06:25:b1:61:2a:4d:5e:
+                    2b:23:78:13:f7:bd:ef:c5:98:07:08:ec:c0:b9:5d:
+                    7b:37:55:0e:43
                 ASN1 OID: prime256v1
                 NIST CURVE: P-256
         X509v3 extensions:
-            X509v3 Basic Constraints: critical
-                CA:FALSE
+            2.23.136.1.1.6.2: 
+                0....1...H
             X509v3 Authority Key Identifier: 
-                7E:32:BC:6F:97:2E:F9:5F:EB:D0:15:47:67:9F:89:8C:CA:21:68:0E
+                22:4D:F8:C3:8D:29:73:53:83:77:86:9A:F7:52:C1:1A:EC:A1:A1:1F
+            X509v3 Issuer Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Subject Alternative Name: 
+                DirName:/L=NLD
+            X509v3 Extended Key Usage: 
+                1.3.6.1.4.1.0.1847.2021.1.3
+            X509v3 CRL Distribution Points: 
+                Full Name:
+                  URI:http://crl.npkd.nl/CRLs/NL-Health.crl
             X509v3 Subject Key Identifier: 
-                25:62:2B:94:A2:39:80:14:36:23:02:6A:30:6A:40:5B:81:EA:9E:35
+                D0:73:A7:56:81:04:FF:31:91:F5:D9:E2:6A:31:65:9C:D5:9E:71:CB
+            X509v3 Private Key Usage Period: 
+                Not Before: Dec 21 14:32:00 2022 GMT, Not After: Jul 19 14:32:00 2023 GMT
             X509v3 Key Usage: critical
                 Digital Signature
     Signature Algorithm: ecdsa-with-SHA256
     Signature Value:
-        30:46:02:21:00:b7:bf:a0:81:88:09:d4:97:85:d3:ce:1f:bc:
-        85:88:f0:14:47:f1:61:8d:d5:fe:76:c0:b2:bd:4f:00:9b:8a:
-        4b:02:21:00:d8:7b:40:ef:c6:4e:de:32:ec:ec:1a:08:82:1f:
-        b1:67:97:ea:68:96:c2:20:53:1d:c1:5c:dd:27:f8:42:bd:66
+        30:45:02:20:4a:31:aa:6d:5b:83:38:53:aa:c8:05:c9:de:e8:
+        c1:47:87:a0:2e:02:51:ad:35:6c:08:f0:38:09:78:74:a8:57:
+        02:21:00:c8:74:eb:22:f0:0d:9d:dd:09:68:98:0b:06:dd:74:
+        1a:e1:4b:71:07:b6:50:be:c6:2f:e0:a9:51:fc:45:cf:4f
