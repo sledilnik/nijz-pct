@@ -1,6 +1,9 @@
 
 # Slovenian digital covid certificate check apps & rules (PCT)
 
+> [!IMPORTANT]  
+> According to [update workflow execution logs](https://github.com/sledilnik/nijz-pct/actions/workflows/update.yml) the [NIJZ's business rules server](https://dgca-businessrule-service.ezdrav.si/rules/) stopped serving the PCT business rules on 2025-07-05, making any further scraping impossible, prompting us to archive this repository on 2025-09-02.
+
 ## Mobile application
 
 See [`app/`](app/) sub-directory for version descriptions, application and manual snapshots.
